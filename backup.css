@@ -1,0 +1,40 @@
+
+nav ul li a {
+    color: #000;
+    /* background-color: #fff; */
+    text-decoration: none;
+    cursor: pointer;
+  }  
+  
+  nav ul li ul li a {
+    text-decoration: none;
+    color: #000; */
+  }
+  
+  nav ul li ul li {
+     Display: block; 
+     /* color: #fff; */
+  }
+  
+  nav ul li ul li a:hover {  /* .btn:hover, */ 
+    background: #117bff;
+    cursor: pointer; 
+    transition: background .5s;
+  }
+  
+  th {
+      border: 2px solid #8c6b48;
+  }
+    
+  table {
+    text-align: center;
+    margin: 20px auto;
+    width: 50%;
+    border-collapse: collapse;
+  }
+    
+  td {
+    border: 2px solid #8c6b48;
+    width: 500px;
+    text-align: left;
+  }

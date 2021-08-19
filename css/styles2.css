@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #e6e6e6;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: 'Candal', sans-serif;
+    color: #363636;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    height: 100%;
+    background: url(../images/mining-rig-gs2.jpg);
+    background-size: cover;
+}
+
+header {
+    background: #000000;
+    height: 67px;
+}
+
+header * {
+    color: white;
+}
+
+header .menu-toggle {
+    display: none;
+}
+
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+    /* border: 1px solid tan; */
+}
+
+header .logo .logo-text {
+    margin-top: 10px;
+    font-family: 'Candal', sans-serif;
+}
+
+header .logo .logo-text span {
+    color: #6d92c7;
+}
+
+nav {
+    height: inherit;
+}
+
+nav ul {
+    float: right;
+    list-style:  none;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 22px 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a .fa-styling {
+    font-size: 0.6em; 
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    left: 0px;
+    width: 300px;
+    z-index: 999999;
+}
+
+nav ul li ul li {
+    float: none;
+    padding: 0px 0px;
+    display: block;
+}
+
+nav ul li ul li a {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+nav ul li ul a.logout {
+    color: #ff0000;
+}
+
+nav ul li a:hover {
+    color: #6d92c7;
+    transition: 0.2s;
+}
+
+nav ul li a:hover .fa-user {
+    color: #6d92c7;
+}
+
+nav ul li a:hover .fa-styling {
+    color:#6d92c7; 
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li a:hover {
+    background: #000000;
+    color: white;
+}
+
+main .page-wrapper {
+    padding: 30px 0;
+    /*border: 1px solid blue;*/
+}
+
+main .page-wrapper .slider-title {
+    text-align: center;
+    margin: 0 auto;
+    color: #363636;
+}
+
+main .page-wrapper a:hover {
+    /* color: rgb(55, 168, 146); */
+    color: #6d92c7;
+}
+
+/* POST SLIDER*/
+
+main .page-wrapper .post-slider {
+    position: relative;
+    padding: 30px 0;
+    /*border: 1px solid red;*/
+}
+
+main .page-wrapper .post-slider .prev{
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    font-size: 3em;
+    cursor: pointer;
+    color: #000000;
+}
+
+main .page-wrapper .post-slider .next{
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    font-size: 3em;
+    cursor: pointer;
+    color: #000000; 
+}
+
+main .page-wrapper .post-slider .post-wrapper {
+    display: relative;
+    width: 84%;
+    height: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+    /*border: 1px dashed blue;*/
+    padding: 10px 0;
+}
+
+main .page-wrapper .post-slider .post-wrapper .post {
+    background: #ffffff;
+    display: inline-block;
+    height: 330px;
+    margin: 0 10px;
+    border-radius: 5px; 
+    box-shadow: 1rem 1rem 1rem -1rem #cccccc;
+}
+
+main .page-wrapper .post-slider .post-wrapper .post .post-image {
+    width: 100%;
+    height: 230px;
+    /*border: 1px solid hotpink;*/
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+main .page-wrapper .post-slider .post-wrapper .post .post-info {
+    height: 100px;
+    /*border: 1px solid green;*/
+    padding: 0 5px;
+}
+
+main .page-wrapper .post-slider .post-wrapper .post .post-info h4 {
+    margin: 5px 5px;
+}  
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    background: #242424;
+    color: #ffffff;
+    height: 400px;
+}
+
+footer .footer-content .footer-section h2 {
+    padding: 0 0 10px 0;
+}
+
+footer .footer-content {
+    /*border: 1px solid red;*/
+    height: 350px;
+    display: flex;
+}    
+
+footer .footer-content .footer-section {
+    flex: 1;
+    /*border: 1px solid white;*/
+    padding: 25px;
+}
+
+    
+footer .footer-content .footer-section .footer-section-title {
+    color: #ffffff;
+}
+
+footer .footer-content .footer-section .footer-section-title span {
+    color: #6d92c7;
+}
+
+footer .footer-bottom {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 25px;
+    background: #181818;
+    color: #686868;
+    left: 0px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 903px) {
+    header {
+        position: relative;
+    }
+
+    nav ul {
+        width: 100%;
+        background: #6d92c7;
+        max-height: 0px;
+        overflow: hidden;
+    }  
+
+    nav ul li {
+        width: 100%;
+    } 
+
+    nav ul li ul {
+        position: static;
+        display: block;
+        width: 100%;
+    } 
+   
+    nav ul li ul li a {
+        background: #9ab9e4;
+        color: #ffffff;
+        padding-left: 50px;
+    }
+
+    header {
+        height: 50px; 
+    }
+
+    header .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 1.6em;
+      }
+    
+     header .logo {
+        margin-left: .5em;
+        padding-top: 3px;
+    }
+    
+    header .logo-text {
+        font-family: 'Candal', sans-serif;
+        font-size: 1.2em;
+    }  
+
+    .page-wrapper .post-slider .post-wrapper .post .post-info {
+        font-size: .75rem;
+    }   
+
+    .showing {
+        max-height: 100em;
+    }
+}
