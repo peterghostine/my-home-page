@@ -1,252 +1,347 @@
-* {
+/* Reference info 
+
+font-family: 'Dancing Script', cursive;
+font-family: 'Fira Sans Condensed', sans-serif;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Share Tech', sans-serif;
+font-family: 'Share Tech Mono', monospace;
+font-family: 'Lora', serif;
+font-family: 'Monofett', cursive;
+
+color: #6d92c7; That's the blue used throughout the site (logo, etc). 
+
+*/
+
+  * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover{
+    color: #6d92c7;
+  }
 
-html, body {
+  html,
+  body {
     height: 100%;
-    padding: 0;
-    margin: 0;
-    background: #e6e6e6;
-    font-family: 'Lora', serif;
-    font-size: 16px;
-}
-
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 {
-    font-family: 'Candal', sans-serif;
+    background: #ffffff;
+    /* font-family: 'Oxygen', sans-serif; */
+    font-family: "Share Tech", sans-serif;
+    font-size: 20px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Share Tech Mono", monospace;
     color: #363636;
-}
-
-a {
+  }
+  
+  a {
     text-decoration: none;
     color: inherit;
-}
-
-main {
-    height: 100%;
-    background: url(../images/mining-rig-gs2.jpg);
-    background-size: cover;
-}
-
-header {
+  }
+  
+  main {
+      position: relative;
+      height: 100%;
+      background: url(../images/mining-rig.jpg);
+      background-size: cover;
+  }
+  
+  main::before { /* Overlay */
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #e6e6e6b3;
+    }
+  
+  header { /* Use flex to properly  align logo and nav elements */
     background: #000000;
-    height: 67px;
-}
-
-header * {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header * {
     color: white;
-}
-
-header .menu-toggle {
+  }
+  
+  header .menu-toggle {
+    /* Hide mobile menu by default */
     display: none;
+  }
+  
+  header .logo { /* Use flex to vettically align image insde logo div */
+    display: flex;
+    align-items: center;
+  }
+
+  /* THIS SECTION COVERS THE NON-IMAGE LOGO SPECS. I USED IT TO BUILD TEXT LOGO TO CAPTURE AS IMAGE
+  
+  header .logo {
+      width: 600px;
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: flex-start;
+      align-items: center;
+      margin-left: 20px;
+  }
+  
+  header .name-text {
+      font-size: 100px;
+      line-height: 1;
+      font-family: 'Share Tech Mono', monospace; 
+      padding-bottom: 10px;
+      display: flex;
+  }
+  
+  header .name-text .blue {
+      color: #6d92c7;
+  }
+  
+  header .name-text .bracket {
+      margin-top: 8px;
+      font-size: 110px;
+  }
+  
+  header .tagline {
+      display: flex;
+  }
+  
+  header .tagline div {
+      height: 40px;
+      width: 27px;
+      color: #000;
+      background-color: #fff;
+      text-align: center;
+      margin: 0 3px;
+      font-size: 26px;
+      font-family: 'Nova Mono', monospace;
+      padding-bottom: 5px;
+      border-radius: 3px;
+  }
+  
+  header .tagline .tagline-dark-foreground {
+      background-color: #6d92c7;
+      color: #fff;
+  }
+  
+  NON-IMAGE LOGO SPECS END HERE */
+  
+/* styling begins here */
+  
+  .nav {
+    /* Navigation section */
+    display: flex;  /* Use flex to center the UL */ 
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .nav ul {
+    /* First-level menu */
+    list-style: none;
 }
 
-header .logo {
-    float: left;
-    height: inherit;
-    margin-left: 2em;
-    /* border: 1px solid tan; */
-}
-
-header .logo .logo-text {
-    margin-top: 10px;
-    font-family: 'Candal', sans-serif;
-}
-
-header .logo .logo-text span {
-    color: #6d92c7;
-}
-
-nav {
-    height: inherit;
-}
-
-nav ul {
-    float: right;
-    list-style:  none;
-}
-
-nav ul li {
+  .nav ul > li {
+    /* First-level menu choices */
     float: left;
     position: relative;
-}
-
-nav ul li a {
+  }
+  
+  .nav ul li a {
+    /* Hyperlinks of the first-level menu selections */
     display: block;
-    padding: 22px 30px;
-    text-decoration: none;
+    padding: 20px 30px;
     font-size: 1.1em;
-}
-
-nav ul li a .fa-styling {
-    font-size: 0.6em; 
-}
-
-nav ul li ul {
+  }
+  
+  .nav ul li a .fa-styling {
+    /* Style the Font Awesome down icon */
+    font-size: 0.6em;
+  }
+  
+  .nav ul li ul {
+    /* Second-level menu */
     display: none;
+    list-style: none;
     position: absolute;
-    left: 0px;
+    left: 10px;
     width: 300px;
-    z-index: 999999;
 }
 
-nav ul li ul li {
+  .nav ul li ul li { 
     float: none;
     padding: 0px 0px;
-    display: block;
 }
 
-nav ul li ul li a {
+  .nav ul li ul li a {
+    /* Hyperlinks of the second-level menu selections */
+    padding: 16px 30px;
+    font-size: 1em;
     color: #000000;
     background-color: #ffffff;
-}
-
-nav ul li ul a.logout {
-    color: #ff0000;
-}
-
-nav ul li a:hover {
+  }
+  
+ 
+  /* When the cursor hovers over first-level menu selections */
+  .nav ul li a:hover {
     color: #6d92c7;
     transition: 0.2s;
-}
-
-nav ul li a:hover .fa-user {
+  }
+  
+  .nav ul li a:hover .fa-user {
     color: #6d92c7;
-}
-
-nav ul li a:hover .fa-styling {
-    color:#6d92c7; 
-}
-
-nav ul li:hover ul {
+  }
+  
+  .nav ul li a:hover .fa-styling {
+    color: #6d92c7;
+  }
+  /* -------------------------------------------------------- */
+  
+  .nav ul li:hover ul {
+    /* Unhide second-level menu upon hover */
     display: block;
-}
-
-nav ul li ul li a:hover {
+  }
+  
+  .nav ul li ul li a:hover {
+    /* Style second-level menu selection upon hover */
     background: #000000;
     color: white;
-}
-
-main .page-wrapper {
-    padding: 30px 0;
-    /*border: 1px solid blue;*/
-}
-
-main .page-wrapper .slider-title {
-    text-align: center;
-    margin: 0 auto;
-    color: #363636;
-}
-
-main .page-wrapper a:hover {
-    /* color: rgb(55, 168, 146); */
-    color: #6d92c7;
-}
-
-/* POST SLIDER*/
-
-main .page-wrapper .post-slider {
+  }
+  
+  /* POST SLIDER*/
+  
+  main .page-wrapper .post-slider {
     position: relative;
-    padding: 30px 0;
-    /*border: 1px solid red;*/
-}
-
-main .page-wrapper .post-slider .prev{
+    top: 60px;
+  }
+  
+  main .page-wrapper .post-slider .slider-title {
+    text-align: center;
+  }
+  
+  main .page-wrapper .post-slider .prev {
     position: absolute;
-    top: 40%;
-    left: 2%;
+    top: 50%;
+    left: 3%;
     font-size: 3em;
     cursor: pointer;
-    color: #000000;
-}
-
-main .page-wrapper .post-slider .next{
+    color: #ffffff;
+  }
+  
+  main .page-wrapper .post-slider .next {
     position: absolute;
-    top: 40%;
-    right: 2%;
+    top: 50%;
+    right: 3%;
     font-size: 3em;
     cursor: pointer;
-    color: #000000; 
-}
+    color: #ffffff;
+  }
 
-main .page-wrapper .post-slider .post-wrapper {
+  main .page-wrapper .post-slider .next:hover {
+    color: #6d92c7;
+  }
+  
+  main .page-wrapper .post-slider .prev:hover {
+    color: #6d92c7;
+  }
+  
+  main .page-wrapper .post-slider .post-wrapper {
     display: relative;
     width: 84%;
     height: 350px;
-    margin: 0 auto;
+    margin: 20px auto;
     overflow: hidden;
-    /*border: 1px dashed blue;*/
     padding: 10px 0;
-}
-
-main .page-wrapper .post-slider .post-wrapper .post {
+  }
+  
+  main .page-wrapper .post-slider .post-wrapper .post {
     background: #ffffff;
     display: inline-block;
-    height: 330px;
+    height: 340px;
     margin: 0 10px;
-    border-radius: 5px; 
+    border-radius: 5px;
     box-shadow: 1rem 1rem 1rem -1rem #cccccc;
-}
-
-main .page-wrapper .post-slider .post-wrapper .post .post-image {
+  }
+  
+  main .page-wrapper .post-slider .post-wrapper .post .post-image {
     width: 100%;
     height: 230px;
-    /*border: 1px solid hotpink;*/
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-}
-
-main .page-wrapper .post-slider .post-wrapper .post .post-info {
+  }
+  
+  main .page-wrapper .post-slider .post-wrapper .post .post-info {
     height: 100px;
-    /*border: 1px solid green;*/
-    padding: 0 5px;
-}
+    padding: 0 0 0 5px;
+  }
+  
+  main .page-wrapper .post-slider .post-wrapper .post .post-info h4 {
+    padding: 5px 0px;
+  }
 
-main .page-wrapper .post-slider .post-wrapper .post .post-info h4 {
-    margin: 5px 5px;
-}  
+  main .page-wrapper .post-slider .post-wrapper .post .post-info .post-info-2 {
+    font-size: 13px;
+  }
 
-/* FOOTER */
-
-footer {
+  main .page-wrapper .post-slider .post-wrapper .post .post-info .post-info-2 .post-info-3 {
+    font-family: 'Share Tech', sans-serif;
+  }
+  
+  /* FOOTER */
+  
+  footer {
+    display: static;
     position: relative;
-    background: #242424;
+    background: #000000;
     color: #ffffff;
     height: 400px;
-}
-
-footer .footer-content .footer-section h2 {
+  }
+  
+  footer .footer-content .footer-section h2 {
     padding: 0 0 10px 0;
-}
-
-footer .footer-content {
+  }
+  
+  footer .footer-content {
     /*border: 1px solid red;*/
     height: 350px;
     display: flex;
-}    
-
-footer .footer-content .footer-section {
+  }
+  
+  footer .footer-content .footer-section {
     flex: 1;
     /*border: 1px solid white;*/
     padding: 25px;
-}
-
-    
-footer .footer-content .footer-section .footer-section-title {
+  }
+  
+  footer .footer-content .footer-section .footer-section-title {
     color: #ffffff;
-}
-
-footer .footer-content .footer-section .footer-section-title span {
+  }
+  
+  footer .footer-content .footer-section .footer-section-title span {
     color: #6d92c7;
-}
-
-footer .footer-bottom {
+  }
+  
+  footer .footer-bottom {
     position: absolute;
     bottom: 0px;
     width: 100%;
@@ -255,73 +350,91 @@ footer .footer-bottom {
     color: #686868;
     left: 0px;
     text-align: center;
-}
+  }
 
-
-
-
-
-
-
-
-
-/* MEDIA QUERIES */
-
-@media only screen and (max-width: 903px) {
+ 
+ 
+ 
+ 
+  /* MEDIA QUERIES */
+  
+  @media only screen and (max-width: 1037px) {
     header {
-        position: relative;
+      position: relative;
+    }
+  
+    .logo img {
+      width: 139.5px;
+      height: 46px;
+    }
+  
+    .nav {
+      width: 100%;
     }
 
-    nav ul {
+    .nav ul {
+      width: 100%;
+      max-height: 0em;
+      background: #9ab9e4;
+      overflow: hidden;
+    }
+  
+    .nav ul li {
         width: 100%;
-        background: #6d92c7;
-        max-height: 0px;
-        overflow: hidden;
-    }  
-
-    nav ul li {
-        width: 100%;
-    } 
-
-    nav ul li ul {
-        position: static;
-        display: block;
-        width: 100%;
-    } 
-   
-    nav ul li ul li a {
-        background: #9ab9e4;
-        color: #ffffff;
-        padding-left: 50px;
+    }
+  
+    .nav ul li ul {
+      position: static;
+      display: none;
+      width: 100%;
     }
 
+    .nav ul li ul li a {
+      background: #9ab9e4;
+      color: #ffffff;
+      padding-left: 50px;
+    }
+  
     header {
-        height: 50px; 
+      height: 46px;
     }
-
+  
     header .menu-toggle {
-        display: block;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        font-size: 1.6em;
+      display: block;
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      font-size: 1.6em;
+    }
+
+    .nav ul li ul li a:hover {
+        color: #9ab9e4;
+        transition: 0.2s;
+    }
+
+    .nav ul li a:hover {
+        background-color: #000000;
+        transition: 0.2s;
+    }
+
+    /*
+       header .logo {
+          margin-left: .5em;
+          padding-top: 3px;
       }
-    
-     header .logo {
-        margin-left: .5em;
-        padding-top: 3px;
-    }
-    
-    header .logo-text {
-        font-family: 'Candal', sans-serif;
-        font-size: 1.2em;
-    }  
-
+      
+      header .logo-text {
+          font-family: 'Candal', sans-serif;
+          font-size: 1.2em;
+      }  
+      */
+  
     .page-wrapper .post-slider .post-wrapper .post .post-info {
-        font-size: .75rem;
-    }   
-
-    .showing {
-        max-height: 100em;
+      font-size: 0.8rem;
     }
-}
+  
+    .nav .showing {
+      max-height: 100em;
+    }
+  }
+  
