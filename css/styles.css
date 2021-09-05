@@ -13,78 +13,80 @@ color: #6d92c7; That's the blue used throughout the site (logo, etc).
 
 */
 
-  * { /* Reset browser settings */
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  a:hover {
-    color: #6d92c7;
-  }
+* {
+  /* Reset browser settings */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  html,
-  body {
-    font-family: "Share Tech", sans-serif;
-    font-size: 1.2rem;
-    background-color: #f8f8f8;
-    height: 100%;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Share Tech Mono", monospace;
-    color: #000000;
-  }
-  
-  input,
-  textarea {
-    font-family: 'Share Tech', sans-serif;
-    font-size: 1rem;
-    outline: none;
-    padding: 0.25rem;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-  header { /* Using flex to properly align logo and nav elements */
-    background: #000;
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    z-index: 100;
-  }
-  
-  header * {
-    color: #fff;
-  }
-  
-  /* LOGO */
+a:hover {
+  color: #6d92c7;
+}
 
-  header .logo { /* Using flex to vertically align image inside logo div */
-    display: flex;
-    align-items: center;
-    width: 300px;
-    height: 100%;
-  }
+html,
+body {
+  font-family: "Share Tech", sans-serif;
+  font-size: 1.2rem;
+  background-color: #f8f8f8;
+  height: 100%;
+}
 
-  header .logo img {
-    width: 100%;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Share Tech Mono", monospace;
+  color: #000000;
+}
 
+input,
+textarea {
+  font-family: "Share Tech", sans-serif;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.25rem;
+}
 
-  /* THIS SECTION COVERS THE NON-IMAGE LOGO SPECS. I USED IT TO BUILD TEXT LOGO TO CAPTURE AS IMAGE
+header {
+  /* Using flex to properly align logo and nav elements */
+  background: #000;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+}
+
+header * {
+  color: #fff;
+}
+
+/* LOGO */
+
+header .logo {
+  /* Using flex to vertically align image inside logo div */
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 100%;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+/* THIS SECTION COVERS THE NON-IMAGE LOGO SPECS. I USED IT TO BUILD TEXT LOGO TO CAPTURE AS IMAGE
   
   header .logo {
       width: 600px;
@@ -138,92 +140,100 @@ color: #6d92c7; That's the blue used throughout the site (logo, etc).
   
   NON-IMAGE LOGO SPECS END HERE */
 
-  /* BUTTON FOR RESPONSIVE MENU */
+/* BUTTON FOR RESPONSIVE MENU */
 
-  header .menu-toggle { /* Hiding mobile menu by default */
-    display: none;
-  }
-   
+header .menu-toggle {
+  /* Hiding mobile menu by default */
+  display: none;
+}
 
 /* NAVIGATION BAR */
-  
-  .nav { /* Using flex to center the UL */
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-  }
-  
-  .nav ul { /* First-level menu */
-    list-style: none;
+
+.nav {
+  /* Using flex to center the UL */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
 }
 
-  .nav > ul > li { /* First-level menu selections */
-    float: left;
-    position: relative;
-  }
-  
-  .nav > ul > li > a { /* Hyperlinks of first-level menu selections */
-    font-size: 1.1rem;
-    display: block;
-    padding: 1rem 1.5rem;
-  }
-  
-  .nav > ul > li > a:hover { /* When the cursor hovers over first-level menu selections */
-    color: #6d92c7;
-    transition: 0.2s;
-  }
-
-  .nav > ul > li > a:hover > .fa-user {
-    color: #6d92c7;
-  }
-
-  .nav > ul > li > a > .fa-styling { /* Style the Font Awesome down icon */
-    font-size: 0.6rem;
-  }
-
-  .nav > ul > li > a:hover > .fa-styling {
-    color: #6d92c7;
-  }
-
-  .nav ul li ul { /* Second-level menu */
-    display: none;
-    list-style: none;
-    position: absolute;
-    left: 0.5rem;
-    width: 300px;
-  }
-
-  .nav ul li:hover ul {
-    /* Unhide second-level menu upon hover */
-    display: block;
-  }
-
-  .nav ul li ul li a { /* Hyperlinks of the second-level menu selections */
-    display: block;
-    font-size: 1rem;
-    color: #000;
-    background-color: #ffffff;
-    padding: 1rem 1.5rem;
-  }
-  
-  .nav ul li ul li a:hover {
-    /* Style second-level menu selection upon hover */
-    background: #000;
-    color: #fff;
-  }
-  
-  /* MAIN, POST-WRAPPER, POST SLIDER, POST */
-  
-  main {
-    /* background: url(../images/mining-rig.jpg); */
-    background-size: cover;
-    position: relative;
-    top: 100px;
-    min-height: 100%;
+.nav ul {
+  /* First-level menu */
+  list-style: none;
 }
 
-  /*
+.nav > ul > li {
+  /* First-level menu selections */
+  float: left;
+  position: relative;
+}
+
+.nav > ul > li > a {
+  /* Hyperlinks of first-level menu selections */
+  font-size: 1.1rem;
+  display: block;
+  padding: 1rem 1.5rem;
+}
+
+.nav > ul > li > a:hover {
+  /* When the cursor hovers over first-level menu selections */
+  color: #6d92c7;
+  transition: 0.2s;
+}
+
+.nav > ul > li > a:hover > .fa-user {
+  color: #6d92c7;
+}
+
+.nav > ul > li > a > .fa-styling {
+  /* Style the Font Awesome down icon */
+  font-size: 0.6rem;
+}
+
+.nav > ul > li > a:hover > .fa-styling {
+  color: #6d92c7;
+}
+
+.nav ul li ul {
+  /* Second-level menu */
+  display: none;
+  list-style: none;
+  position: absolute;
+  left: 0.5rem;
+  width: 300px;
+}
+
+.nav ul li:hover ul {
+  /* Unhide second-level menu upon hover */
+  display: block;
+}
+
+.nav ul li ul li a {
+  /* Hyperlinks of the second-level menu selections */
+  display: block;
+  font-size: 1rem;
+  color: #000;
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+}
+
+.nav ul li ul li a:hover {
+  /* Style second-level menu selection upon hover */
+  background: #000;
+  color: #fff;
+}
+
+/* MAIN, POST-WRAPPER, POST SLIDER, POST */
+
+main {
+  /* background: url(../images/mining-rig.jpg); */
+  background-size: cover;
+  position: relative;
+  top: 100px;
+  min-height: 100%;
+}
+
+/*
   main::before {
     position: absolute;
     content: "";
@@ -235,117 +245,125 @@ color: #6d92c7; That's the blue used throughout the site (logo, etc).
   }
   */
 
-  main .page-wrapper { /* This basically wraps the entire content of the main section. 
+main .page-wrapper {
+  /* This basically wraps the entire content of the main section. 
                           I could do away with the .page-wrapper div element and apply 
                           the styling directly to main */
-    display: flex;
-    flex-direction: column;
-    /* border: 3px solid green; */
-  }
+  display: flex;
+  flex-direction: column;
+  /* border: 3px solid green; */
+}
 
-  main .page-wrapper .post-slider {
-    position: relative;
-    margin-top: 3rem;
-    /* border: 3px solid yellow; */
-  }
-  
-  main .page-wrapper .post-slider .slider-title {
-    text-align: center;
-  }
-  
-  main .page-wrapper .post-slider .arrows {
-    font-size: 2rem;
-    color: #000;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-  }
-  
-  main .page-wrapper .post-slider .prev {
-    left: 2%;
-  }
-  
-  main .page-wrapper .post-slider .next {
-    right: 2%;
-  }
+main .page-wrapper .post-slider {
+  position: relative;
+  margin-top: 3rem;
+  /* border: 3px solid yellow; */
+}
 
-  main .page-wrapper .post-slider .arrows:hover {
-    color: #6d92c7;
-  }
-  
-  main .page-wrapper .post-slider .post-wrapper {
-    display: relative;
-    width: 85%;
-    margin: 0.5rem auto;
-    padding: 0.5rem 0 0 0;
-    overflow: hidden;
-  }
-  
-  main .page-wrapper .post-slider .post-wrapper .post {
-    display: inline-block;
-    margin: 0 0.5rem;
-    border-radius: 5px;
-    box-shadow: 1rem 1rem 1rem -1rem #cccccc;
-    overflow: hidden;
-  }
-  
-  main .page-wrapper .post-slider .post-wrapper .post .post-image {
-    width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-  
-  main .page-wrapper .post-slider .post-wrapper .post .post-info {
-    padding: 0 0 1.25rem 0.25rem;
-  }
-  
-  main .page-wrapper .post-slider .post-wrapper .post .post-info h4 {
-    padding: 0.25rem 0;
-  }
+main .page-wrapper .post-slider .slider-title {
+  text-align: center;
+}
 
-  /* Resize author and date below post title */ 
-  main .page-wrapper .post-slider .post-wrapper .post .post-info .post-info-2 {
-    font-size: 0.7rem;
-  }
+main .page-wrapper .post-slider .arrows {
+  font-size: 2rem;
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
 
-  /* Apply font family to author and date, but not fa icon */ 
-  main .page-wrapper .post-slider .post-wrapper .post .post-info .post-info-2 .post-info-3 {
-    font-family: 'Share Tech', sans-serif;
-  }
-  
+main .page-wrapper .post-slider .prev {
+  left: 2%;
+}
+
+main .page-wrapper .post-slider .next {
+  right: 2%;
+}
+
+main .page-wrapper .post-slider .arrows:hover {
+  color: #6d92c7;
+}
+
+main .page-wrapper .post-slider .post-wrapper {
+  display: relative;
+  width: 85%;
+  margin: 0.5rem auto;
+  padding: 0.5rem 0 0 0;
+  overflow: hidden;
+}
+
+main .page-wrapper .post-slider .post-wrapper .post {
+  display: inline-block;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  box-shadow: 1rem 1rem 1rem -1rem #cccccc;
+  overflow: hidden;
+}
+
+main .page-wrapper .post-slider .post-wrapper .post .post-image {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+main .page-wrapper .post-slider .post-wrapper .post .post-info {
+  padding: 0 0 1.25rem 0.25rem;
+}
+
+main .page-wrapper .post-slider .post-wrapper .post .post-info h4 {
+  padding: 0.25rem 0;
+}
+
+/* Resize author and date below post title */
+main .page-wrapper .post-slider .post-wrapper .post .post-info .post-info-2 {
+  font-size: 0.7rem;
+}
+
+/* Apply font family to author and date, but not fa icon */
+main
+  .page-wrapper
+  .post-slider
+  .post-wrapper
+  .post
+  .post-info
+  .post-info-2
+  .post-info-3 {
+  font-family: "Share Tech", sans-serif;
+}
+
 /* CONTENT */
 
-  main .page-wrapper .content {
-    position: relative;
-    width: 85%;
-    margin: 3rem auto;
-    display: flex;
-    flex-wrap: nowrap;
-  }
+main .page-wrapper .content {
+  position: relative;
+  width: 85%;
+  margin: 3rem auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
 
-  main .page-wrapper .content .main-content {
-    width: 70%;
-    margin-right: 2rem;
-  }
+main .page-wrapper .content .main-content {
+  width: 70%;
+  margin-right: 2rem;
+}
 
-  main .page-wrapper .content .main-content .recent-post-title {
-    padding: 0;
-    margin-left: 0;
-  }
+main .page-wrapper .content .main-content .recent-post-title {
+  padding: 0;
+  margin-left: 0;
+}
 
-  main .page-wrapper .content .main-content .post {
-    background-color: #fff;
-    position: relative;
-    height: 10rem;
-    margin: 1rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    overflow: hidden;
-  }
+main .page-wrapper .content .main-content .post {
+  background-color: #fff;
+  position: relative;
+  height: 10rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+}
 
-  /*
+/*
   main .page-wrapper .content .main-content .post::after {
     content: '';
     display: block;
@@ -353,324 +371,321 @@ color: #6d92c7; That's the blue used throughout the site (logo, etc).
   }  
   */
 
-  main .page-wrapper .content .main-content .post .post-image {
-    width: 40%;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    /* padding: 10px 20px 0px 0; */
-  }
+main .page-wrapper .content .main-content .post .post-image {
+  width: 40%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  /* padding: 10px 20px 0px 0; */
+}
 
-  main .page-wrapper .content .main-content .post .post-info {
-    width: 60%;
-    padding: 0 0.25rem 0 1rem;
+main .page-wrapper .content .main-content .post .post-info {
+  width: 60%;
+  padding: 0 0.25rem 0 1rem;
+}
 
-  }
+/* Resize author and date below post title */
+main .page-wrapper .content .main-content .post .post-info .post-info-2 {
+  font-size: 0.8rem;
+}
 
-   /* Resize author and date below post title */ 
-   main .page-wrapper .content .main-content .post .post-info .post-info-2 {
-    font-size: 0.8rem;
-  }
+/* Apply font family to author and date, but not fa icon */
+main
+  .page-wrapper
+  .content
+  .main-content
+  .post
+  .post-info
+  .post-info-2
+  .post-info-3 {
+  font-family: "Share Tech", sans-serif;
+}
 
-  /* Apply font family to author and date, but not fa icon */ 
-  main .page-wrapper .content .main-content .post .post-info .post-info-2 .post-info-3 {
-    font-family: 'Share Tech', sans-serif;
-  }
+main .page-wrapper .content .main-content .post .post-info p {
+  padding: 0.5rem 0 0 0;
+}
 
-  main .page-wrapper .content .main-content .post .post-info p {
-    padding: 0.5rem 0 0 0;
-  }
+main .page-wrapper .content .main-content .post .btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: #000;
+  font-size: 0.8rem;
+  padding: 0.25rem;
+  margin-top: 1rem;
+  border: 1px solid #000;
+}
 
-
-  main .page-wrapper .content .main-content .post .btn {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background-color: transparent;
-    color: #000;
-    font-size: 0.8rem;
-    padding: 0.25rem;
-    margin-top: 1rem;
-    border: 1px solid #000;
-  }
-
-  main .page-wrapper .content .main-content .post .btn:hover {
-    background-color: #6d92c7;
-    color: #fff;
-    transition: 0.2s;
-  }  
+main .page-wrapper .content .main-content .post .btn:hover {
+  background-color: #6d92c7;
+  color: #fff;
+  transition: 0.2s;
+}
 
 /* SIDEBAR */
 
-  main .page-wrapper .sidebar {
-    width: 30%;
-    margin-top: 3.75rem;
-  }
+main .page-wrapper .sidebar {
+  width: 30%;
+  margin-top: 3.75rem;
+}
 
-  main .page-wrapper .sidebar .section {
-    padding: 1rem;
-    margin-bottom: 1rem;
-    background-color: #fff;  
-  }
+main .page-wrapper .sidebar .section {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
 
-  main .page-wrapper .sidebar .section .section-title {
-    padding: 0.5rem 0;
-  }
+main .page-wrapper .sidebar .section .section-title {
+  padding: 0.5rem 0;
+}
 
-  main .page-wrapper .sidebar .section ul {
-    list-style: none;
-    margin: 0;
-    border-top: 1px solid #d3d3d3;
-  }
+main .page-wrapper .sidebar .section ul {
+  list-style: none;
+  margin: 0;
+  border-top: 1px solid #d3d3d3;
+}
 
-  main .page-wrapper .sidebar .section ul li a {
-    display: block;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #d3d3d3;
-    transition: all 0.3s;
-  }
+main .page-wrapper .sidebar .section ul li a {
+  display: block;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #d3d3d3;
+  transition: all 0.3s;
+}
 
-  main .page-wrapper .sidebar .section ul li a:hover {
-    padding-left: 0.2rem;
-    transition: all 0.3s;
-  }
+main .page-wrapper .sidebar .section ul li a:hover {
+  padding-left: 0.2rem;
+  transition: all 0.3s;
+}
 
-  main .page-wrapper .sidebar .section.search .text-input {
-    margin-top: 0.2rem;
-    font-family: 'Share Tech', sans-serif;
-    font-size: 1.2rem;
-    outline: none;
-    display: block;
-    border-radius: 5px;
-    border: 1px solid #d3d3d3;
-    width: 100%;
-  } 
+main .page-wrapper .sidebar .section.search .text-input {
+  margin-top: 0.2rem;
+  font-family: "Share Tech", sans-serif;
+  font-size: 1.2rem;
+  outline: none;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  width: 100%;
+}
 
 /* FOOTER */
-  
-  footer {
+
+footer {
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+  background: #000;
+  color: #ffffff;
+  min-height: 400px;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+footer .footer-content .footer-section {
+  /*border: 1px solid white;*/
+  margin: 2rem 0 3rem 0;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .footer-content .footer-section.about p {
+  padding: 1rem;
+}
+
+footer .footer-content .footer-section.links ul {
+  list-style: none;
+}
+
+footer .footer-content .footer-section.contact-form form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding-bottom: 2rem;
+}
+
+footer .footer-content .footer-section.contact-form form input {
+  width: 100%;
+  height: 2rem;
+  border: 1px solid #000;
+}
+
+footer .footer-content .footer-section.contact-form form textarea {
+  width: 100%;
+  height: 5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #000;
+}
+
+footer .footer-content .footer-section.contact-form form button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 2rem;
+  font-size: 1rem;
+  border: 1px solid #000;
+}
+
+footer .footer-content .footer-section.contact-form form button:hover {
+  background-color: #6d92c7;
+  color: #fff;
+}
+
+footer .footer-content .footer-section.about {
+  width: 35%;
+}
+
+footer .footer-content .footer-section.links {
+  width: 30%;
+}
+
+footer .footer-content .footer-section.contact-form {
+  width: 35%;
+}
+
+footer .footer-content .footer-section .footer-section-title {
+  color: #ffffff;
+  text-decoration-line: underline;
+}
+
+footer .footer-content .footer-section .contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer .footer-content .footer-section .contact span {
+  padding: 0 1rem;
+}
+
+footer .footer-content .footer-section .socials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer .footer-content .footer-section .socials span {
+  padding: 1rem 1rem 0 1rem;
+}
+
+footer .footer-bottom {
+  background: #ffffff;
+  color: #000000;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MEDIA QUERIES 1230 */
+
+@media only screen and (max-width: 1230px) {
+  main .page-wrapper .post-slider .post-wrapper .post .post-info h4 {
+    font-size: 0.9rem;
+  }
+
+  main .page-wrapper .content .main-content .post .post-info h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Resize author and date below post title */
+  main .page-wrapper .content .main-content .post .post-info .post-info-2 {
+    font-size: 0.7rem;
+  }
+
+  main .page-wrapper .content .main-content .post .post-info p {
+    font-size: 0.8rem;
+  }
+}
+
+/* MEDIA QUERIES 1060 */
+
+@media only screen and (max-width: 1060px) {
+  header {
     position: relative;
-    margin-top: 100px;
-    display: flex;
-    flex-wrap: nowrap;
-    background: #000;
-    color: #ffffff;
-    min-height: 400px;
-  }
-  
-  footer .footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
-  footer .footer-content .footer-section {
-    /*border: 1px solid white;*/
-    margin: 2rem 0 3rem 0;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
-  footer .footer-content .footer-section.about p {
-    padding: 1rem;
-  }
-
-  footer .footer-content .footer-section.links ul {
-    list-style: none;
-  }
-
-  footer .footer-content .footer-section.contact-form form {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    padding-bottom: 2rem;
-  }
-
-  footer .footer-content .footer-section.contact-form form input {
-    width: 100%;
-    height: 2rem;
-    border: 1px solid #000;    
-  }
-
-  footer .footer-content .footer-section.contact-form form textarea {
-    width: 100%;
-    height: 5rem;
-    margin: 0.5rem 0;
-    border: 1px solid #000;
-  }
-
-  footer .footer-content .footer-section.contact-form form button {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100px;
-    height: 2rem;
-    font-size: 1rem;
-    border: 1px solid #000;
-  }
-
-  footer .footer-content .footer-section.contact-form form button:hover {
-    background-color: #6d92c7;
-    color: #fff;
-  }
-
-  footer .footer-content .footer-section.about {
-    width: 35%;
-  }
-  
-  footer .footer-content .footer-section.links {
-    width: 30%;
-  }
-  
-  footer .footer-content .footer-section.contact-form {
-    width: 35%;
-  }
-
-  footer .footer-content .footer-section .footer-section-title {
-    color: #ffffff;
-    text-decoration-line: underline;
-  }
-  
-  footer .footer-content .footer-section .contact {
-    display: flex; 
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  footer .footer-content .footer-section .contact span {
-    padding: 0 1rem;
-  }
-
-  footer .footer-content .footer-section .socials {
-    display: flex; 
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  footer .footer-content .footer-section .socials span {
-    padding: 1rem 1rem 0 1rem;
-  }
-  
-  footer .footer-bottom {
-    background: #ffffff;
-    color: #000000;
-    position: absolute;
-    left: 0px;
-    bottom: 0;
-    width: 100%;
-    height: 2rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-
-
-
-   /* MEDIA QUERIES 1230 */
-
-  @media only screen and (max-width: 1230px) {
-
-    main .page-wrapper .post-slider .post-wrapper .post .post-info h4 {
-      font-size: 0.9rem;
-    }
-
-    main .page-wrapper .content .main-content .post .post-info h2 {
-      font-size: 1.5rem;
-    }
-
-     /* Resize author and date below post title */ 
-     main .page-wrapper .content .main-content .post .post-info .post-info-2 {
-      font-size: 0.7rem;
-    }
-  
-    main .page-wrapper .content .main-content .post .post-info p {
-      font-size: 0.8rem;
-    }  
-
-  }  
- 
-
- 
-  /* MEDIA QUERIES 1060 */
-  
-  @media only screen and (max-width: 1060px) {
-  
-    header {
-      position: relative;
-    }
-  
-    /*
+  /*
     .logo img {
       width: 139.5px;
       height: 46px;
     }
   */
 
-    .nav {
-      width: 100%;
-    }
+  .nav {
+    width: 100%;
+  }
 
-    .nav ul {
-      width: 100%;
-      max-height: 0;
-      background: #9ab9e4;
-      overflow: hidden;
-    }
-  
-    .nav ul li {
-        width: 100%;
-    }
-  
-    .nav ul li ul {
-      position: static;
-      display: none;
-      width: 100%;
-    }
+  .nav ul {
+    width: 100%;
+    max-height: 0;
+    background: #9ab9e4;
+    overflow: hidden;
+  }
 
-    .nav ul li ul li a {
-      background: #9ab9e4;
-      color: #ffffff;
-      padding-left: 2.5rem;
-    }
-  
-    header {
-      height: 50px;
-    }
+  .nav ul li {
+    width: 100%;
+  }
 
-    header .logo { /* Use flex to vertically align image inside logo div */
-      width: 150px;
-    }
+  .nav ul li ul {
+    position: static;
+    display: none;
+    width: 100%;
+  }
 
-    header .logo img {
-      width: 100%;
-    }
-  
-    header .menu-toggle {
-      display: block;
-      position: absolute;
-      right: 12px;
-      top: 12px;
-      font-size: 1.4rem;
-    }
+  .nav ul li ul li a {
+    background: #9ab9e4;
+    color: #ffffff;
+    padding-left: 2.5rem;
+  }
 
-    header .nav ul li ul li a:hover {
-        color: #9ab9e4;
-        transition: 0.2s;
-    }
+  header {
+    height: 50px;
+  }
 
-    header .nav ul li a:hover {
-        background-color: #000;
-        transition: 0.2s;
-    }
+  header .logo {
+    /* Use flex to vertically align image inside logo div */
+    width: 150px;
+  }
 
-    /*
+  header .logo img {
+    width: 100%;
+  }
+
+  header .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 1.4rem;
+  }
+
+  header .nav ul li ul li a:hover {
+    color: #9ab9e4;
+    transition: 0.2s;
+  }
+
+  header .nav ul li a:hover {
+    background-color: #000;
+    transition: 0.2s;
+  }
+
+  /*
        header .logo {
           margin-left: .5em;
           padding-top: 3px;
@@ -682,139 +697,132 @@ color: #6d92c7; That's the blue used throughout the site (logo, etc).
       }  
       */
 
-    main {
-      top: 0;
-    }
+  main {
+    top: 0;
+  }
 
-    main .page-wrapper {
-      position: relative;
-      margin-top: 0;
-    }
+  main .page-wrapper {
+    position: relative;
+    margin-top: 0;
+  }
 
-    /*
+  /*
     main .page-wrapper .post-slider {
       display: none;
     }
     */
 
-    main .page-wrapper .post-slider .slider-title {
-      font-size: 1.5rem;
-    }
-
-    main .page-wrapper .content .main-content .recent-post-title {
-      font-size: 1.5rem;
-    }
-
-    main .page-wrapper .post-slider .prev {
-      font-size: 2rem;
-    }
-    
-    main .page-wrapper .post-slider .next {
-      font-size: 2rem;
-    }
-
-    main .page-wrapper .post-slider .post-wrapper .post .post-info {
-      font-size: 0.8rem;
-    }
-  
-    main .page-wrapper .content {
-      margin-top: 50px;
-    }
-    
-    main .page-wrapper .content .main-content {
-      width: 100%;
-      margin-right: 0;
-    }
-  
-    main .page-wrapper .content .main-content .post .post-info h2 {
-      font-size: 1.5rem;
-    }
-    
-    main .page-wrapper .content .main-content .post .post-info p {
-      font-size: 1rem;
-    }
-
-    main .page-wrapper .content .main-content .post .post-info .post-info-2 {
-      font-size: .7rem;
-    }
-
-    main .page-wrapper .content .sidebar {
-      display: none;
-    }
-
-    footer .footer-content {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      width: 100%;
-    }
-
-    footer .footer-content .footer-section.about {
-      width: 100%;
-    }
-
-    footer .footer-content .footer-section.about {
-      width: 100%;
-    }
-
-    footer .footer-content .footer-section.links {
-      width: 100%;
-    }
-
-    footer .footer-content .footer-section.contact-form {
-      width: 100%;
-    }
-  
-    footer .footer-bottom {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.8rem;
-    }
-
-    .nav .showing {
-      max-height: 100rem;
-    }
-  
+  main .page-wrapper .post-slider .slider-title {
+    font-size: 1.5rem;
   }
-  
-  /* MEDIA QUERIES 790 */
 
-  @media only screen and (max-width: 790px) {
-
-    main .page-wrapper .content .main-content .post .post-info h2 {
-      font-size: 1.3rem;
-    }
-
-    /* Resize author and date below post title */ 
-    main .page-wrapper .content .main-content .post .post-info .post-info-2 {
-      font-size: 0.6rem;
-    }
-
-    main .page-wrapper .content .main-content .post .post-info p {
-      font-size: 0.8rem;
-    }  
-    
+  main .page-wrapper .content .main-content .recent-post-title {
+    font-size: 1.5rem;
   }
-  
-  
 
-  /* MEDIA QUERIES 565 */
-
-    @media only screen and (max-width: 565px) {
-
-      main .page-wrapper .content .main-content .post .post-info h2 {
-        font-size: 1.2rem;
-      }
-  
-      /* Resize author and date below post title */ 
-      main .page-wrapper .content .main-content .post .post-info .post-info-2 {
-        font-size: 0.5rem;
-      }
-  
-      main .page-wrapper .content .main-content .post .post-info p {
-        font-size: 0.6rem;
-      }  
-
+  main .page-wrapper .post-slider .prev {
+    font-size: 2rem;
   }
+
+  main .page-wrapper .post-slider .next {
+    font-size: 2rem;
+  }
+
+  main .page-wrapper .post-slider .post-wrapper .post .post-info {
+    font-size: 0.8rem;
+  }
+
+  main .page-wrapper .content {
+    margin-top: 50px;
+  }
+
+  main .page-wrapper .content .main-content {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  main .page-wrapper .content .main-content .post .post-info h2 {
+    font-size: 1.5rem;
+  }
+
+  main .page-wrapper .content .main-content .post .post-info p {
+    font-size: 1rem;
+  }
+
+  main .page-wrapper .content .main-content .post .post-info .post-info-2 {
+    font-size: 0.7rem;
+  }
+
+  main .page-wrapper .content .sidebar {
+    display: none;
+  }
+
+  footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer .footer-content .footer-section.about {
+    width: 100%;
+  }
+
+  footer .footer-content .footer-section.about {
+    width: 100%;
+  }
+
+  footer .footer-content .footer-section.links {
+    width: 100%;
+  }
+
+  footer .footer-content .footer-section.contact-form {
+    width: 100%;
+  }
+
+  footer .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+
+  .nav .showing {
+    max-height: 100rem;
+  }
+}
+
+/* MEDIA QUERIES 790 */
+
+@media only screen and (max-width: 790px) {
+  main .page-wrapper .content .main-content .post .post-info h2 {
+    font-size: 1.3rem;
+  }
+
+  /* Resize author and date below post title */
+  main .page-wrapper .content .main-content .post .post-info .post-info-2 {
+    font-size: 0.6rem;
+  }
+
+  main .page-wrapper .content .main-content .post .post-info p {
+    font-size: 0.8rem;
+  }
+}
+
+/* MEDIA QUERIES 565 */
+
+@media only screen and (max-width: 565px) {
+  main .page-wrapper .content .main-content .post .post-info h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Resize author and date below post title */
+  main .page-wrapper .content .main-content .post .post-info .post-info-2 {
+    font-size: 0.5rem;
+  }
+
+  main .page-wrapper .content .main-content .post .post-info p {
+    font-size: 0.6rem;
+  }
+}
