@@ -4,6 +4,20 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  $(".nav > ul > li").mouseleave(function() {
+    $(".nav ul li ul").hide(); 
+  });
+});
+
+$(document).ready(function() {
+  $(".nav > ul > li").mouseenter(function() {
+    $(".nav > ul > li").click(function() {  
+      $(".nav ul li:hover ul").show(); 
+    });
+  });
+});
+
 $('.post-wrapper').slick({
   slidesToShow: 3,
   slidesToScroll: 1,

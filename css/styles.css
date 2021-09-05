@@ -203,10 +203,12 @@ header .menu-toggle {
   width: 300px;
 }
 
+/*
 .nav ul li:hover ul {
-  /* Unhide second-level menu upon hover */
+  /* Unhide second-level menu upon hover /
   display: block;
 }
+*/
 
 .nav ul li ul li a {
   /* Hyperlinks of the second-level menu selections */
@@ -592,6 +594,10 @@ footer .footer-bottom {
   align-items: center;
 }
 
+
+
+
+
 /* MEDIA QUERIES 1230 */
 
 @media only screen and (max-width: 1230px) {
@@ -612,6 +618,10 @@ footer .footer-bottom {
     font-size: 0.8rem;
   }
 }
+
+
+
+
 
 /* MEDIA QUERIES 1060 */
 
@@ -793,6 +803,10 @@ footer .footer-bottom {
   }
 }
 
+
+
+
+
 /* MEDIA QUERIES 790 */
 
 @media only screen and (max-width: 790px) {
@@ -809,6 +823,10 @@ footer .footer-bottom {
     font-size: 0.8rem;
   }
 }
+
+
+
+
 
 /* MEDIA QUERIES 565 */
 
