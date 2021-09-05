@@ -11,10 +11,12 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $(".nav > ul > li").mouseenter(function() {
-    $(".nav > ul > li").click(function() {  
-      $(".nav ul li:hover ul").show(); 
-    });
+  $(".nav > ul > li").click(function() {  
+    if ($(".nav ul li:hover ul").is(":visible")) {
+      $(".nav ul li:hover ul").hide();
+    } else {
+    $(".nav ul li:hover ul").show(); 
+    };
   });
 });
 
