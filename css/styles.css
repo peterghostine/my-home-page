@@ -822,11 +822,11 @@ footer .footer-bottom {
     border: 1px solid yellow;
   }
 
+
   main .page-wrapper .content .main-content .post .post-info h3 {
     font-size: 1.1rem;
   }
 
-  /* Resize author and date below post title */
   main .page-wrapper .content .main-content .post .post-info .post-info-2 {
     font-size: 0.6rem;
   }
@@ -840,11 +840,16 @@ footer .footer-bottom {
 /* MEDIA QUERIES 565 */
 /* ----------------- */
 @media only screen and (max-width: 565px) {
-  main .page-wrapper .content .main-content .post .post-info h2 {
+  main .page-wrapper .content .main-content .post {
+    height: 8rem;
+    border: 1px solid orange;
+  }
+
+/*
+  main .page-wrapper .content .main-content .post .post-info h3 {
     font-size: 1rem;
   }
 
-  /* Resize author and date below post title */
   main .page-wrapper .content .main-content .post .post-info .post-info-2 {
     font-size: 0.5rem;
   }
@@ -852,4 +857,5 @@ footer .footer-bottom {
   main .page-wrapper .content .main-content .post .post-info p {
     font-size: 0.6rem;
   }
+*/
 }

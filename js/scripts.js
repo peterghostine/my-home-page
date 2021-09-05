@@ -6,17 +6,20 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $(".nav > ul > li").mouseleave(function() {
-    $(".nav ul li ul").hide(); 
+    $(".nav ul li ul").slideUp(); 
   });
 });
 
 $(document).ready(function() {
   $(".nav > ul > li").click(function() {  
+    $(".nav ul li:hover ul").slideToggle();
+    /* 
     if ($(".nav ul li:hover ul").is(":visible")) {
       $(".nav ul li:hover ul").hide();
     } else {
     $(".nav ul li:hover ul").show(); 
     };
+    */
   });
 });
 
