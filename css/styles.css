@@ -356,7 +356,6 @@ main .page-wrapper .content .main-content .recent-post-title {
 main .page-wrapper .content .main-content .post {
   background-color: #fff;
   position: relative;
-  height: 10rem;
   margin: 1rem 0;
   display: flex;
   flex-wrap: wrap;
@@ -403,6 +402,7 @@ main
 }
 
 main .page-wrapper .content .main-content .post .post-info p {
+  font-size: 1rem;
   padding: 0.5rem 0 0 0;
 }
 
@@ -594,24 +594,26 @@ footer .footer-bottom {
   align-items: center;
 }
 
+/* ------------------ */
+/* MEDIA QUERIES 1320 */
+/* ------------------ */
+@media only screen and (max-width: 1320px) {
+  main .page-wrapper .content .main-content .post {
+    height: 9rem;
+    border: 1px solid green;
+  }
 
-
-
-
-/* MEDIA QUERIES 1230 */
-
-@media only screen and (max-width: 1230px) {
   main .page-wrapper .post-slider .post-wrapper .post .post-info h4 {
     font-size: 0.9rem;
   }
 
-  main .page-wrapper .content .main-content .post .post-info h2 {
-    font-size: 1.5rem;
+  main .page-wrapper .content .main-content .post .post-info h3 {
+    font-size: 1.4rem;
   }
 
   /* Resize author and date below post title */
   main .page-wrapper .content .main-content .post .post-info .post-info-2 {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   main .page-wrapper .content .main-content .post .post-info p {
@@ -619,12 +621,9 @@ footer .footer-bottom {
   }
 }
 
-
-
-
-
+/* ------------------ */
 /* MEDIA QUERIES 1060 */
-
+/* ------------------ */
 @media only screen and (max-width: 1060px) {
   header {
     position: relative;
@@ -696,16 +695,16 @@ footer .footer-bottom {
   }
 
   /*
-       header .logo {
-          margin-left: .5em;
-          padding-top: 3px;
-      }
+  header .logo {
+    margin-left: .5em;
+    padding-top: 3px;
+  }
       
-      header .logo-text {
-          font-family: 'Candal', sans-serif;
-          font-size: 1.2em;
-      }  
-      */
+  header .logo-text {
+    font-family: 'Candal', sans-serif;
+    font-size: 1.2em;
+  }  
+  */
 
   main {
     top: 0;
@@ -720,7 +719,7 @@ footer .footer-bottom {
     main .page-wrapper .post-slider {
       display: none;
     }
-    */
+  */
 
   main .page-wrapper .post-slider .slider-title {
     font-size: 1.5rem;
@@ -751,16 +750,27 @@ footer .footer-bottom {
     margin-right: 0;
   }
 
-  main .page-wrapper .content .main-content .post .post-info h2 {
-    font-size: 1.5rem;
+  /* Not needed
+  main .page-wrapper .content .main-content .post .post-info h3 {
+    font-size: 1.4rem;
+  }
+  */
+
+  main .page-wrapper .content .main-content .post {
+    height: 9rem;
+    border: 1px solid red;
+  }
+
+  main .page-wrapper .content .main-content .post .post-info h3 {
+    font-size: 1.1rem;
+  }
+
+  main .page-wrapper .content .main-content .post .post-info .post-info-2 {
+    font-size: 0.8rem;
   }
 
   main .page-wrapper .content .main-content .post .post-info p {
     font-size: 1rem;
-  }
-
-  main .page-wrapper .content .main-content .post .post-info .post-info-2 {
-    font-size: 0.7rem;
   }
 
   main .page-wrapper .content .sidebar {
@@ -803,15 +813,17 @@ footer .footer-bottom {
   }
 }
 
-
-
-
-
+/* ----------------- */
 /* MEDIA QUERIES 790 */
-
+/* ----------------- */
 @media only screen and (max-width: 790px) {
-  main .page-wrapper .content .main-content .post .post-info h2 {
-    font-size: 1.3rem;
+  main .page-wrapper .content .main-content .post {
+    height: 8rem;
+    border: 1px solid yellow;
+  }
+
+  main .page-wrapper .content .main-content .post .post-info h3 {
+    font-size: 1.1rem;
   }
 
   /* Resize author and date below post title */
@@ -820,19 +832,16 @@ footer .footer-bottom {
   }
 
   main .page-wrapper .content .main-content .post .post-info p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
-
-
-
-
+/* ----------------- */
 /* MEDIA QUERIES 565 */
-
+/* ----------------- */
 @media only screen and (max-width: 565px) {
   main .page-wrapper .content .main-content .post .post-info h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   /* Resize author and date below post title */
