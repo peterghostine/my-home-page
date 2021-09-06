@@ -59,7 +59,7 @@ button {
 
 header {
   /* Using flex to properly align logo and nav elements */
-  background: #000;
+  background: #000000;
   position: fixed;
   display: flex;
   flex-wrap: wrap;
@@ -71,7 +71,7 @@ header {
 }
 
 header * {
-  color: #fff;
+  color: #ffffff;
 }
 
 /* LOGO */
@@ -125,8 +125,8 @@ header .logo img {
   header .tagline div {
       height: 40px;
       width: 27px;
-      color: #000;
-      background-color: #fff;
+      color: #000000;
+      background-color: #ffffff;
       text-align: center;
       margin: 0 3px;
       font-size: 26px;
@@ -137,7 +137,7 @@ header .logo img {
   
   header .tagline .tagline-dark-foreground {
       background-color: #6d92c7;
-      color: #fff;
+      color: #ffffff;
   }
   
   NON-IMAGE LOGO SPECS END HERE */
@@ -176,24 +176,28 @@ nav > ul > li > a {
   padding: 1rem 1.5rem;
 }
 
-nav > ul > li > a:hover {
-  /* When the cursor hovers over first-level menu selections */
+nav > ul > li > a:hover span
+{
+/* When the cursor hovers over first-level menu selections */
   color: #6d92c7;
   transition: 0.2s;
+}
+
+/*
+nav > ul > li > a > .fa-styling {
+  font-size: 1rem;
+}
+*/
+
+/*
+nav > ul > li > a:hover > .fa-styling {
+  color: #6d92c7;
 }
 
 nav > ul > li > a:hover > .fa-user {
   color: #6d92c7;
 }
-
-nav > ul > li > a > .fa-styling {
-  /* Style the Font Awesome down icon */
-  font-size: 0.6rem;
-}
-
-nav > ul > li > a:hover > .fa-styling {
-  color: #6d92c7;
-}
+*/
 
 nav ul li ul {
   /* Second-level menu */
@@ -202,8 +206,10 @@ nav ul li ul {
   position: absolute;
   left: 0.5rem;
   width: 300px;
+  /*
   border-top: 3px solid #000000;
   border-bottom: 3px solid #000000;
+  */
 }
 
 /*
@@ -217,7 +223,7 @@ nav ul li ul li a {
   /* Hyperlinks of the second-level menu selections */
   display: block;
   font-size: 1.1rem;
-  color: #000;
+  color: #000000;
   background-color: #ffffff;
   padding: 1rem 1.5rem;
   border-bottom: 1px solid lightgray;
@@ -225,8 +231,8 @@ nav ul li ul li a {
 
 nav ul li ul li a:hover {
   /* Style second-level menu selection upon hover */
-  background: #000;
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
 }
 
 /* MAIN, POST-WRAPPER, POST SLIDER, POST */
@@ -271,7 +277,7 @@ main  .post-slider .slider-title {
 
 main  .post-slider .arrows {
   font-size: 2rem;
-  color: #000;
+  color: #000000;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -356,7 +362,7 @@ main .content .main-content .recent-post-title {
 }
 
 main .content .main-content .post {
-  background-color: #fff;
+  background-color: #ffffff;
   position: relative;
   margin: 1rem 0;
   display: flex;
@@ -413,16 +419,16 @@ main  .content .main-content .post .btn {
   bottom: 10px;
   right: 10px;
   background-color: transparent;
-  color: #000;
+  color: #000000;
   font-size: 0.8rem;
   padding: 0.25rem;
   margin-top: 1rem;
-  border: 1px solid #000;
+  border: 1px solid #000000;
 }
 
 main  .content .main-content .post .btn:hover {
   background-color: #6d92c7;
-  color: #fff;
+  color: #ffffff;
   transition: 0.2s;
 }
 
@@ -436,7 +442,7 @@ main  .sidebar {
 main  .sidebar .section {
   padding: 1rem;
   margin-bottom: 1rem;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 main  .sidebar .section .section-title {
@@ -475,7 +481,7 @@ main  .sidebar .section.search .text-input {
 /* FOOTER */
 
 footer {
-  background: #000;
+  background: #000000;
   color: #ffffff;
   width: 100%;
   position: relative;
@@ -560,14 +566,14 @@ footer  .footer-section.contact-form form {
 footer  .footer-section.contact-form form input {
   width: 100%;
   height: 2rem;
-  border: 1px solid #000;
+  border: 1px solid #000000;
 }
 
 footer  .footer-section.contact-form form textarea {
   width: 100%;
   height: 5rem;
   margin: 0.5rem 0;
-  border: 1px solid #000;
+  border: 1px solid #000000;
 }
 
 footer  .footer-section.contact-form form button {
@@ -577,12 +583,12 @@ footer  .footer-section.contact-form form button {
   width: 100px;
   height: 2rem;
   font-size: 1.1rem;
-  border: 1px solid #000;
+  border: 1px solid #000000;
 }
 
 footer  .footer-section.contact-form form button:hover {
   background-color: #6d92c7;
-  color: #fff;
+  color: ffffff;
 }
 
 footer  .footer-section .footer-section-title {
@@ -633,7 +639,7 @@ footer  .footer-section .footer-section-title {
   }
 
   header {
-    display: block;
+    display: inline-block;
     position: relative;
   }
 
@@ -685,9 +691,9 @@ footer  .footer-section .footer-section-title {
   header .menu-toggle {
     display: block;
     position: absolute;
-    right: 12px;
-    top: 12px;
-    font-size: 1.4rem;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
   }
 
   /*
@@ -697,7 +703,7 @@ footer  .footer-section .footer-section-title {
   }
 
   header nav ul li a:hover {
-    background-color: #000;
+    background-color: #000000;
     transition: 0.2s;
   }
   */
@@ -757,7 +763,7 @@ footer  .footer-section .footer-section-title {
   }
 
   footer .footer-section.about {
-    background-color: #000;
+    background-color: #000000;
   }
   
   footer .footer-section.links {
@@ -773,6 +779,12 @@ footer  .footer-section .footer-section-title {
     /* Hyperlinks of first-level menu selections */
     display: block;
     font-size: 25px;
+  }
+
+  nav > ul > li > .menu-wide {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
   }
 
   nav .showing {
