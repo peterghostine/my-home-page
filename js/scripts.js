@@ -32,7 +32,7 @@ $('.post-wrapper').slick({
   prevArrow: $('.prev'),
   responsive: [
     {
-      breakpoint: 1060,
+      breakpoint: 1260,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -41,7 +41,7 @@ $('.post-wrapper').slick({
       }
     },
     {
-      breakpoint: 790,
+      breakpoint: 860,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1
