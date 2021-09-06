@@ -5,6 +5,12 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  $("nav ul").mouseleave(function() {
+    $("nav ul").toggleClass("showing"); 
+  });
+});
+
+$(document).ready(function() {
   $("nav > ul > li").mouseleave(function() {
     $("nav ul li ul").slideUp(); 
   });
