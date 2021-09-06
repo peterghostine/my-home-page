@@ -484,7 +484,7 @@ main  .sidebar .section.search .text-input {
 footer {
   width: 100%;
   position: relative;
-
+  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   color: #ffffff;
@@ -638,7 +638,7 @@ footer  .footer-section .footer-section-title {
   html {
     font-size: 1.1rem;
   }
-  
+
   header {
     display: block;
   }
@@ -765,6 +765,7 @@ footer  .footer-section .footer-section-title {
   }
 
   footer  {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
