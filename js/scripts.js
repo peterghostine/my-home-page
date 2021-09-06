@@ -1,21 +1,20 @@
-
-/*
 $(document).ready(function() {
   $(".menu-toggle").click(function() {
     $("nav ul").toggleClass("showing"); 
   });
 });
-*/
 
+/*
 $(document).ready(function() {
   $(".menu-toggle").click(function() {
     $("nav > ul").slideToggle(); 
   });
 });
+*/
 
 $(document).ready(function() {
-  $("nav").mouseleave(function() {
-    $("nav ul").slideUp(); 
+  $("nav > ul > li").mouseleave(function() {
+    $("nav ul li ul").slideUp(); 
   });
 });
 
