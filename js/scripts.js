@@ -1,31 +1,27 @@
+
+/*
 $(document).ready(function() {
   $(".menu-toggle").click(function() {
     $("nav ul").toggleClass("showing"); 
   });
 });
+*/
 
 $(document).ready(function() {
-  $("nav ul").mouseleave(function() {
-    $("nav ul").toggleClass("showing"); 
+  $(".menu-toggle").click(function() {
+    $("nav > ul").slideToggle(); 
   });
 });
 
 $(document).ready(function() {
-  $("nav > ul > li").mouseleave(function() {
-    $("nav ul li ul").slideUp(); 
+  $("nav").mouseleave(function() {
+    $("nav ul").slideUp(); 
   });
 });
 
 $(document).ready(function() {
   $("nav > ul > li").click(function() {  
     $("nav ul li:hover ul").slideToggle();
-    /* 
-    if ($(".nav ul li:hover ul").is(":visible")) {
-      $(".nav ul li:hover ul").hide();
-    } else {
-    $(".nav ul li:hover ul").show(); 
-    };
-    */
   });
 });
 
@@ -38,7 +34,7 @@ $('.post-wrapper').slick({
   prevArrow: $('.prev'),
   responsive: [
     {
-      breakpoint: 1260,
+      breakpoint: 1060,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -47,7 +43,7 @@ $('.post-wrapper').slick({
       }
     },
     {
-      breakpoint: 860,
+      breakpoint: 790,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1

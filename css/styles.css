@@ -645,13 +645,14 @@ footer  .footer-section .footer-section-title {
   }
 
   nav {
-    width: 60%;
+    width: 70%;
     float: right;
   }
 
   nav ul {
     width: 100%;
-    max-height: 0;
+    display: none;
+    max-height: 100em;
     background: #000000;
     overflow: hidden;
   }
