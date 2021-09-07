@@ -1,28 +1,31 @@
+// Menu toggle //
+
 $(document).ready(function() {
   $(".menu-toggle").click(function() {
-    $("nav ul").toggleClass("showing"); 
+    $("nav > ul").toggleClass("showing"); 
   });
 });
 
-/*
 $(document).ready(function() {
-  $(".menu-toggle").click(function() {
-    $("nav > ul").slideToggle(); 
-  });
-});
-*/
-
-$(document).ready(function() {
-  $("nav > ul > li").mouseleave(function() {
-    $("nav ul li ul").slideUp(); 
+  $("nav > ul").mouseleave(function() {
+    $("nav > ul").toggleClass("showing"); 
   });
 });
 
 $(document).ready(function() {
   $("nav > ul > li").click(function() {  
-    $("nav ul li:hover ul").slideToggle();
+    $("nav > ul > li:hover > ul").slideToggle();
+  });
+
+});
+$(document).ready(function() {
+  $("nav > ul > li").mouseleave(function() {
+    $("nav > ul > li > ul").slideUp(); 
   });
 });
+
+
+// Carousel //
 
 $('.post-wrapper').slick({
   slidesToShow: 4,

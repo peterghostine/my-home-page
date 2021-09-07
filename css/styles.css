@@ -279,8 +279,8 @@ main  .post-slider .slider-title {
 main  .post-slider .arrows {
   position: absolute;
   top: 50%;
-  font-size: 2rem;
-  color: #000000;
+  font-size: 2.5rem;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -293,7 +293,8 @@ main  .post-slider .next {
 }
 
 main  .post-slider .arrows:hover {
-  color: #6d92c7;
+  font-size: 3rem;
+  transition: 0.2s;
 }
 
 main  .post-slider .post-wrapper {
@@ -499,6 +500,12 @@ footer .footer-section {
   align-items: center;
 }
 
+footer  .footer-section .footer-section-title {
+  color: #ffffff;
+  text-decoration-line: underline;
+  border: 1px solid red;
+}
+
 footer  .footer-section.about {
   width: 38%;
 }
@@ -533,6 +540,7 @@ footer  .footer-section.about .contact {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  align-items: center;
 }
 
 footer  .footer-section.about .contact span {
@@ -553,6 +561,8 @@ footer  .footer-section.about .socials span {
 footer  .footer-section.links ul {
   padding: 1rem 0 0 0;
   list-style: none;
+  border: 1px solid orange;
+  text-align: center;
 }
 
 footer  .footer-section.contact-form form {
@@ -560,6 +570,7 @@ footer  .footer-section.contact-form form {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 80%;
   padding-bottom: 2rem;
 }
@@ -578,9 +589,7 @@ footer  .footer-section.contact-form form textarea {
 }
 
 footer  .footer-section.contact-form form button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+
   width: 100px;
   height: 2rem;
   font-size: 1.1rem;
@@ -590,11 +599,6 @@ footer  .footer-section.contact-form form button {
 footer  .footer-section.contact-form form button:hover {
   background-color: #6d92c7;
   color: ffffff;
-}
-
-footer  .footer-section .footer-section-title {
-  color: #ffffff;
-  text-decoration-line: underline;
 }
 
 
@@ -648,7 +652,7 @@ footer  .footer-section .footer-section-title {
     float: right;
   }
 
-  nav ul {
+  nav > ul {
     width: 100%;
     max-height: 0;
     background: #000000;
