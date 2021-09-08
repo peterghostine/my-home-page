@@ -397,8 +397,8 @@ main .content .main-content article .post-info .post-info-sub {
   display: flex;
 }
 
-main .content .main-content article .post-info .post-info-sub .post-info-date {
-  padding: 0 0 0 1rem;
+main .content .main-content article .post-info .post-info-sub .post-info-author {
+  padding: 0 1rem 0 0;
 }
 
 /* Apply font family to author and date, but not fa icon */
@@ -464,7 +464,7 @@ main .sidebar .section {
 }
 
 main .sidebar .section .section-title {
-  padding: 0.5rem 0;
+  padding: 0 0.5rem 1rem 0;
 }
 
 main .sidebar .section ul {
