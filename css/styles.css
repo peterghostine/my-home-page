@@ -326,12 +326,12 @@ main .post-slider .post-wrapper article .post-info h4 {
 }
 
 /* Resize author and date below post title */
-main .post-slider .post-wrapper article .post-info .post-info-2 {
-  font-size: 0.8rem;
+main .post-slider .post-wrapper article .post-info .post-info-sub {
+  font-size: 1rem;
 }
 
 /* Apply font family to author and date, but not fa icon */
-main .post-slider .post-wrapper article .post-info .post-info-2 .post-info-3 {
+main .post-slider .post-wrapper article .post-info .post-info-sub .post-info-3 {
   font-family: "Share Tech", sans-serif;
 }
 
@@ -375,33 +375,35 @@ main .content .main-content article {
   */
 
 main .content .main-content article .post-image {
-  width: 300px;
-  min-width: 136px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  /* padding: 10px 20px 0px 0; */
+  width: 400px;
+  min-width: 300px;
 }
 
 main .content .main-content article .post-info {
-  width: 60%;
-  padding: 0 0.25rem 0 0.5rem;
+  position: relative;
+  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
 }
 
+main .content .main-content article .post-info .post-info-title {
+  padding: 0.25rem 0 0 0;
+}
+
 /* Resize author and date below post title */
-main .content .main-content article .post-info .post-info-2 {
+main .content .main-content article .post-info .post-info-sub {
+  padding: 0.25rem 0 0 0;
   font-size: 0.8rem;
   display: flex;
 }
 
-main .content .main-content article .post-info .post-info-date {
+main .content .main-content article .post-info .post-info-sub .post-info-date {
   padding: 0 0 0 1rem;
 }
 
 /* Apply font family to author and date, but not fa icon */
-main .post-info-author,
-.post-info-date {
+main .content .main-content article .post-info .post-info-sub .post-info-author,
+main .content .main-content article .post-info .post-info-sub .post-info-date {
   font-family: "Share Tech", sans-serif;
 }
 
@@ -410,13 +412,22 @@ main .content .main-content article .post-info p {
   font-size: 1rem;
 }
 
+main .content .main-content article .post-info p::after {
+  content:'';
+  display: block;
+  height: 1.5rem;
+}
+
 main .content .main-content article .read-more {
+  margin: 0 0 0.25rem 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   font-size: 0.9rem;
   color: #6d92c7;
   text-decoration-line: underline;
-  padding: 0.5rem 0;
-  display: block;
-  text-align: center;
+  text-align: center; 
 }
 
 /* Deprecated...
@@ -508,7 +519,6 @@ footer .footer-section {
 footer .footer-section .footer-section-title {
   color: #ffffff;
   text-decoration-line: underline;
-  border: 1px solid red;
 }
 
 footer .footer-section.about {
@@ -559,6 +569,12 @@ footer .footer-section.about .socials {
   flex-wrap: wrap;
 }
 
+footer .footer-section.about .socials i {
+  padding: 0.5rem;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
 footer .footer-section.about .socials span {
   padding: 0rem 1rem 0 0;
 }
@@ -566,8 +582,16 @@ footer .footer-section.about .socials span {
 footer .footer-section.links ul {
   padding: 1rem 0 0 0;
   list-style: none;
-  border: 1px solid orange;
   text-align: center;
+}
+
+footer .footer-section.links ul li a {
+  transition: all 0.3s;
+}
+
+footer .footer-section.links ul li a:hover {
+  padding-left: 0.2rem;
+  transition: all 0.3s;
 }
 
 footer .footer-section.contact-form form {
@@ -597,14 +621,14 @@ footer .footer-section.contact-form form button {
   width: 100px;
   height: 2rem;
   font-size: 1.1rem;
-  border: 1px solid #000000;
+  background-color: #6d92c7;
+  color: #ffffff;
+  border: none;
 }
 
 footer .footer-section.contact-form form button:hover {
-  background-color: #6d92c7;
-  color: ffffff;
+  background-color: #3c69a8;
 }
-
 
 
 
@@ -617,6 +641,9 @@ footer .footer-section.contact-form form button:hover {
   html {
     font-size: 1.1rem;
   }
+  main .content .main-content article .post-image {
+    min-width: 300px;
+  }
 }
 
 /* ------------------ */
@@ -624,7 +651,7 @@ footer .footer-section.contact-form form button:hover {
 /* ------------------ */
 @media only screen and (max-width: 1100px) {
   html {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   header {
@@ -786,6 +813,10 @@ footer .footer-section.contact-form form button:hover {
   html {
     font-size: 1rem;
   }
+
+  main .content .main-content article .post-image {
+    min-width: 250px;
+  }
 }
 
 /* ----------------- */
@@ -795,8 +826,9 @@ footer .footer-section.contact-form form button:hover {
   html {
     font-size: 0.9rem;
   }
+
   main .content .main-content article .post-image {
-    width: 225px;
+    min-width: 225px;
   }
 }
 
@@ -807,6 +839,10 @@ footer .footer-section.contact-form form button:hover {
   html {
     font-size: 0.9rem;
   }
+
+  main .content .main-content article .post-image {
+    min-width: 225px;
+  }  
 }
 
 /* ----------------- */
@@ -815,10 +851,6 @@ footer .footer-section.contact-form form button:hover {
 @media only screen and (max-width: 600px) {
   html {
     font-size: 0.8rem;
-  }
-
-  main .content .main-content article .post-image {
-    width: 200px;
   }
 }
 
@@ -831,14 +863,14 @@ footer .footer-section.contact-form form button:hover {
   }
 
   main .content .main-content article .post-image {
-    width: 175px;
-  }
+    min-width: 175px;
+  }  
 }
 
 /* ----------------- */
 /* MEDIA QUERIES 500 */
 /* ----------------- */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 500px) {
   html {
     font-size: 0.7rem;
   }
@@ -854,6 +886,6 @@ footer .footer-section.contact-form form button:hover {
   }
 
   main .content .main-content article .post-image {
-    width: 40%;
+    width: 100px;
   }
 }

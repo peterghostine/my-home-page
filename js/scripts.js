@@ -8,8 +8,10 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $("nav > ul").mouseleave(function() {
-    $("nav > ul").toggleClass("showing"); 
-  });
+    if ($(".menu-toggle").is(":visible")) {
+      $("nav > ul").toggleClass("showing"); 
+    };
+    });
 });
 
 $(document).ready(function() {
@@ -36,7 +38,7 @@ $('.post-wrapper').slick({
   prevArrow: $('.prev'),
   responsive: [
     {
-      breakpoint: 1160,
+      breakpoint: 1170,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -45,7 +47,7 @@ $('.post-wrapper').slick({
       }
     },
     {
-      breakpoint: 790,
+      breakpoint: 940,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1
