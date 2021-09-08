@@ -36,7 +36,7 @@ $('.post-wrapper').slick({
   prevArrow: $('.prev'),
   responsive: [
     {
-      breakpoint: 1060,
+      breakpoint: 1160,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
