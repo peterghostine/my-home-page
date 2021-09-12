@@ -50,7 +50,7 @@
       </div>
       <!-- Menu toggle (hidden until screen is too small to show default classic menu layout) -->
       <div class="menu-toggle">
-        <i class="fa fa-bars"></i>
+        <span class="fa fa-bars"></span>
       </div>
       <!-- Navigation bar -->
       <nav>
@@ -88,7 +88,7 @@
             <a class="menu-wide" href="#">RESOURCES </a>
           </li>
           <li>
-            <a class="menu-wide" class="has-submenu" href="#">
+            <a class="menu-wide has-submenu" href="#">
               <span>PETER GHOSTINE</span>
               <span class="fa fa-user"></span>
             </a>
@@ -97,7 +97,7 @@
                 <a class="menu-wide" href="#">DASHBOARD </a>
               </li>
               <li>
-                <a class="menu-wide" href="#" class="logout">LOGOUT </a>
+                <a class="logout menu-wide" href="#">LOGOUT </a>
               </li>
             </ul>
           </li>
@@ -108,79 +108,79 @@
       <!-- Post Slider -->
       <div class="post-slider">
         <h1 class="slider-title">Full-Stack Engineer Track</h1>
-        <i class="fas fa-chevron-left arrows prev"></i>
-        <i class="fas fa-chevron-right arrows next"></i>
+        <span class="fas fa-chevron-left arrows prev"></span>
+        <span class="fas fa-chevron-right arrows next"></span>
         <div class="post-wrapper">
-          <article>
+          <div class="post">
             <img src="images/htmlcssjs.png" alt="" class="post-image">
             <div class="post-info">
               <h4>
                 <a href="single.html">HTML/CSS/JavaScript </a>
               </h4>
-              <i class="far fa-user post-info-sub">
-                <span class="post-info-3">Peter E. Ghostine </span>
-              </i>
-              <i class="far fa-calendar post-info-sub">
-                <span class="post-info-3">August 27, 2021 </span>
-              </i>
+              <span class="far fa-user post-info-sub">
+                <span class="post-info-byline">Peter E. Ghostine </span>
+              </span>
+              <span class="far fa-calendar post-info-sub">
+                <span class="post-info-dateline">August 27, 2021 </span>
+              </span>
             </div>
-          </article>
-          <article>
+          </div>
+          <div class="post">
             <img src="images/markdown.png" alt="" class="post-image">
             <div class="post-info">
               <h4>
                 <a href="single.html">Markdown </a>
               </h4>
-              <i class="far fa-user post-info-sub">
-                <span class="post-info-3">Peter E. Ghostine </span>
-              </i>
-              <i class="far fa-calendar post-info-sub">
-                <span class="post-info-3">August 27, 2021 </span>
-              </i>
+              <span class="far fa-user post-info-sub">
+                <span class="post-info-byline">Peter E. Ghostine </span>
+              </span>
+              <span class="far fa-calendar post-info-sub">
+                <span class="post-info-dateline">August 27, 2021 </span>
+              </span>
             </div>
-          </article>
-          <article>
+          </div>
+          <div class="post">
             <img src="images/git-github.png" alt="" class="post-image">
             <div class="post-info">
               <h4>
                 <a href="single.html">Git/GitHub </a>
               </h4>
-              <i class="far fa-user post-info-sub">
-                <span class="post-info-3">Peter E. Ghostine </span>
-              </i>
-              <i class="far fa-calendar post-info-sub">
-                <span class="post-info-3">August 27, 2021 </span>
-              </i>
+              <span class="far fa-user post-info-sub">
+                <span class="post-info-byline">Peter E. Ghostine </span>
+              </span>
+              <span class="far fa-calendar post-info-sub">
+                <span class="post-info-dateline">August 27, 2021 </span>
+              </span>
             </div>
-          </article>
-          <article>
+          </div>
+          <div class="post">
             <img src="images/typography.png" alt="" class="post-image">
             <div class="post-info">
               <h4>
                 <a href="single.html">Typography </a>
               </h4>
-              <i class="far fa-user post-info-sub">
-                <span class="post-info-3">Peter E. Ghostine </span>
-              </i>
-              <i class="far fa-calendar post-info-sub">
-                <span class="post-info-3">August 27, 2021 </span>
-              </i>
+              <span class="far fa-user post-info-sub">
+                <span class="post-info-byline">Peter E. Ghostine </span>
+              </span>
+              <span class="far fa-calendar post-info-sub">
+                <span class="post-info-dateline">August 27, 2021 </span>
+              </span>
             </div>
-          </article>
-          <article>
+          </div>
+          <div class="post">
             <img src="images/uiux.png" alt="" class="post-image">
             <div class="post-info">
               <h4>
                 <a href="single.html">UI/UX </a>
               </h4>
-              <i class="far fa-user post-info-sub">
-                <span class="post-info-3">Peter E. Ghostine </span>
-              </i>
-              <i class="far fa-calendar post-info-sub">
-                <span class="post-info-3">August 27, 2021 </span>
-              </i>
+              <span class="far fa-user post-info-sub">
+                <span class="post-info-byline">Peter E. Ghostine </span>
+              </span>
+              <span class="far fa-calendar post-info-sub">
+                <span class="post-info-dateline">August 27, 2021 </span>
+              </span>
             </div>
-          </article>
+          </div>
         </div>
       </div>
       <!-- // Post Slider -->
@@ -188,8 +188,8 @@
       <div class="content">
         <!-- Contains 2 elements: main-content and side-bar -->
         <div class="main-content">
-          <h1 class="recent-post-title">Recent Posts</h1>
-          <article>
+          <h1>Recent Posts</h1>
+          <div class="post">
             <img src="images/htmlcssjs.png" alt="" class="post-image">
             <div class="post-info">
               <h3>
@@ -197,21 +197,19 @@
               </h3>
               <div class="post-info-sub">
                 <div>
-                  <i class="far fa-user">
-                    <span class="post-info-author">Peter E. Ghostine</span>
-                  </i>
+                  <span class="far fa-user"></span> 
+                  <span class="post-info-byline">Peter E. Ghostine</span>
                 </div>
                 <div>
-                  <i class="far fa-calendar">
-                    <span class="post-info-date">August 27, 2021</span>
-                  </i>
+                  <span class="far fa-calendar"> 
+                  <span class="post-info-dateline">August 27, 2021</span>
                 </div>
               </div>
               <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum repudiandae voluptates doloribus aperiam, at aliquam. </p>
               <a class="read-more" href="single.html"> Continue Reading...</a>
             </div>
-          </article>
-          <article>
+          </div>
+          <div class="post">
             <img src="images/markdown.png" alt="" class="post-image">
             <div class="post-info">
               <h3>
@@ -219,21 +217,19 @@
               </h3>
               <div class="post-info-sub">
                 <div>
-                  <i class="far fa-user">
-                    <span class="post-info-author">Peter E. Ghostine</span>
-                  </i>
+                  <span class="far fa-user"></span> 
+                  <span class="post-info-byline">Peter E. Ghostine</span>
                 </div>
                 <div>
-                  <i class="far fa-calendar">
-                    <span class="post-info-date">August 27, 2021</span>
-                  </i>
+                  <span class="far fa-calendar"> 
+                  <span class="post-info-dateline">August 27, 2021</span>
                 </div>
-              </div>
+              </div>  
               <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum repudiandae voluptates doloribus aperiam, at aliquam. </p>
               <a class="read-more" href="single.html"> Continue Reading...</a>
             </div>
-          </article>
-          <article>
+          </div>
+          <div class="post">
             <img src="images/git-github.png" alt="" class="post-image">
             <div class="post-info">
               <h3>
@@ -241,21 +237,19 @@
               </h3>
               <div class="post-info-sub">
                 <div>
-                  <i class="far fa-user">
-                    <span class="post-info-author">Peter E. Ghostine</span>
-                  </i>
+                  <span class="far fa-user"></span> 
+                  <span class="post-info-byline">Peter E. Ghostine</span>
                 </div>
                 <div>
-                  <i class="far fa-calendar">
-                    <span class="post-info-date">August 27, 2021</span>
-                  </i>
+                  <span class="far fa-calendar"> 
+                  <span class="post-info-dateline">August 27, 2021</span>
                 </div>
-              </div>
+              </div>  
               <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum repudiandae voluptates doloribus aperiam, at aliquam. </p>
               <a class="read-more" href="single.html"> Continue Reading...</a>
             </div>
-          </article>
-          <article>
+          </div>
+          <div class="post">
             <img src="images/typography.png" alt="" class="post-image">
             <div class="post-info">
               <h3>
@@ -263,44 +257,40 @@
               </h3>
               <div class="post-info-sub">
                 <div>
-                  <i class="far fa-user">
-                    <span class="post-info-author">Peter E. Ghostine</span>
-                  </i>
+                  <span class="far fa-user"></span> 
+                  <span class="post-info-byline">Peter E. Ghostine</span>
                 </div>
                 <div>
-                  <i class="far fa-calendar">
-                    <span class="post-info-date">August 27, 2021</span>
-                  </i>
+                  <span class="far fa-calendar"> 
+                  <span class="post-info-dateline">August 27, 2021</span>
                 </div>
-              </div>
+              </div>  
               <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum repudiandae voluptates doloribus aperiam, at aliquam. </p>
               <a class="read-more" href="single.html"> Continue Reading...</a>
             </div>
-          </article>
-          <article>
+          </div>
+          <div class="post">
             <img src="images/uiux.png" alt="" class="post-image">
             <div class="post-info">
               <div class="post-info-title">
                 <h3>
                   <a href="single.html">UI/UX</a>
                 </h3>
-              </div>  
+              </div>
               <div class="post-info-sub">
                 <div>
-                  <i class="far fa-user">
-                    <span class="post-info-author">Peter E. Ghostine</span>
-                  </i>
+                  <span class="far fa-user"></span> 
+                  <span class="post-info-byline">Peter E. Ghostine</span>
                 </div>
                 <div>
-                  <i class="far fa-calendar">
-                    <span class="post-info-date">August 27, 2021</span>
-                  </i>
+                  <span class="far fa-calendar"> 
+                  <span class="post-info-dateline">August 27, 2021</span>
                 </div>
-              </div>
+              </div>  
               <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum repudiandae voluptates doloribus aperiam, at aliquam. </p>
               <a class="read-more" href="single.html"> Continue Reading...</a>
             </div>
-          </article>
+          </div>
         </div>
         <div class="sidebar">
           <div class="section search">
@@ -336,37 +326,32 @@
     <footer>
       <!-- ABOUT SECTION -->
       <div class="footer-section about">
-        <div class="logo">
-          <img class="footer-section-title" src="images/logo-large.png" alt="Ghostine Technology Group" width="279" height="92">
-        </div>
-        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolore voluptatum omnis, doloremque amet dicta necessitatibus, iure debitis quaerat sapiente id temporibus. Reprehenderit, dolores vitae!</p>
+        <h2 class="footer-section-title">ABOUT </h2>
+        <!--
+        <div class="logo"><img class="footer-section-title" src="images/logo-large.png" alt="Ghostine Technology Group" width="279" height="92"></div>
+        -->
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolore voluptatum omnis, doloremque amet dicta necessitatibus, iure debitis quaerat sapiente id temporibus. Reprehenderit, dolores vitae! </p>
         <div class="contact">
-          <span>
-            <i class="fas fa-phone"></i> &nbsp; 703-629-5470 </span>
-          <span>
-            <i class="fas fa-envelope"></i> &nbsp; peterghostine@gmail.com </span>
+          <div class="phone">
+            <span class="fas fa-phone"></span> 703-629-5470
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span> peterghostine@gmail.com
+          </div>
         </div>
         <div class="socials">
-          <span>
-            <a href="#">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </span>
-          <span>
-            <a href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </span>
-          <span>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </span>
-          <span>
-            <a href="#">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </span>
+          <a href="#">
+            <span class="fab fa-facebook"></span>
+          </a>
+          <a href="#">
+            <span class="fab fa-instagram"></span>
+          </a>
+          <a href="#">
+            <span class="fab fa-twitter"></span>
+          </a>
+          <a href="#">
+            <span class="fab fa-linkedin"></span>
+          </a>
         </div>
       </div>
       <!-- LINKS SECTION -->
@@ -393,15 +378,16 @@
         <form action="index.html" method="POST">
           <input type="email" name="email" placeholder="Your email address...">
           <textarea name="message" placeholder="Your message..."></textarea>
-          <button type="submit" class="btn btn-big">SEND</button>
+          <button type="submit" class="btn btn-big">
+            <span class="fas fa-envelope"></span> SEND </button>
           <!--
-            <i class="fas fa-envelope"></i>
+            <span class="fas fa-envelope"></span>
             -->
         </form>
       </div>
-      </div>
       <div class="footer-section copyright">
         <p>Copyright &copy 2021, Ghostine Technology Group, LLC. ALL RIGHTS RESERVED.</p>
+      </div>  
     </footer>
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
