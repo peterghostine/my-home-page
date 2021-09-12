@@ -299,7 +299,6 @@ main .post-slider .arrows:hover {
 }
 
 main .post-slider .post-wrapper {
-  display: relative;
   width: 85%;
   margin: 0.5rem auto;
   padding-top: 0.5rem;
@@ -331,7 +330,7 @@ main .post-slider .post-wrapper .post .post-info h4 {
 
 /* Resize author and date below post title */
 main .post-slider .post-wrapper .post .post-info .post-info-sub {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 /* Apply font family to author and date, but not fa icon */
