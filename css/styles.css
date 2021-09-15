@@ -161,7 +161,6 @@ nav {
 nav ul {
   /* First-level menu */
   list-style: none;
-  overflow: scroll;
 }
 
 nav > ul > li {
@@ -434,17 +433,12 @@ main .content .main-content .post .post-info .post-info-sub .post-info-dateline 
   font-family: "Share Tech", sans-serif;
 }
 
-main .content .main-content .post-info {
+main .content .main-content .post .post-info p {
   padding-top: 0.5rem;
   font-size: 1rem;
 }
 
-main .content .main-content .post p {
-  padding-top: 0.5rem;
-  font-size: 1rem;
-}
-
-main .content .main-content .post p::after {
+main .content .main-content .post .post-info p::after {
   content:'';
   display: block;
   height: 1.5rem;
@@ -694,7 +688,7 @@ footer .footer-section.copyright {
   }
 
   nav {
-    width: 70%;
+    width: 50%;
     float: right;
   }
 
@@ -702,7 +696,7 @@ footer .footer-section.copyright {
     background: #000000;
     width: 100%;
     max-height: 0;
-    overflow: scroll;
+    overflow:auto;
   }
 
   nav ul li a,
@@ -714,6 +708,7 @@ footer .footer-section.copyright {
   nav > ul > li > .menu-wide {
     display: flex;
     justify-content: space-between;
+    align-content: flex-start;
   }
 
   nav ul li {
@@ -724,7 +719,6 @@ footer .footer-section.copyright {
     position: static;
     display: none;
     width: 100%;
-    overflow: scroll;
   }
 
   nav ul li a {
@@ -740,6 +734,7 @@ footer .footer-section.copyright {
 
   nav .showing {
     max-height: 100rem;
+    overflow:auto;
   }
 
   header {

@@ -4,23 +4,17 @@ $(document).ready(function() {
   $(".menu-toggle").click(function() {
     $("nav > ul").toggleClass("showing"); 
   });
-});
 
-$(document).ready(function() {
   $("nav > ul").mouseleave(function() {
     if ($(".menu-toggle").is(":visible")) {
       $("nav > ul").toggleClass("showing"); 
     };
-    });
-});
+  });
 
-$(document).ready(function() {
   $("nav > ul > li").click(function() {  
     $("nav > ul > li:hover > ul").slideToggle();
   });
 
-});
-$(document).ready(function() {
   $("nav > ul > li").mouseleave(function() {
     $("nav > ul > li > ul").slideUp(); 
   });
