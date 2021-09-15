@@ -434,12 +434,17 @@ main .content .main-content .post .post-info .post-info-sub .post-info-dateline 
   font-family: "Share Tech", sans-serif;
 }
 
-main .content .main-content .post .post-info p {
+main .content .main-content .post-info {
   padding-top: 0.5rem;
   font-size: 1rem;
 }
 
-main .content .main-content .post .post-info p::after {
+main .content .main-content .post p {
+  padding-top: 0.5rem;
+  font-size: 1rem;
+}
+
+main .content .main-content .post p::after {
   content:'';
   display: block;
   height: 1.5rem;
