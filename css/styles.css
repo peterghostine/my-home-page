@@ -161,7 +161,7 @@ nav {
 nav ul {
   /* First-level menu */
   list-style: none;
-  overflow: auto;
+  overflow: scroll;
 }
 
 nav > ul > li {
