@@ -38,7 +38,7 @@ $('.post-wrapper').slick({
   prevArrow: $('.prev'),
   responsive: [
     {
-      breakpoint: 1170,
+      breakpoint: 1585,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -47,7 +47,25 @@ $('.post-wrapper').slick({
       }
     },
     {
-      breakpoint: 940,
+      breakpoint: 1495,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 1270,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 955,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1
