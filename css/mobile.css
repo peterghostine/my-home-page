@@ -253,7 +253,7 @@
     }
   }
 
-  @media only screen and (max-width: 576px) and (orientation: portrait) {
+  @media only screen and (max-width: 576px) and (orientation: landscape) {
     nav {
       overflow: scroll;
     }
