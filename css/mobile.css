@@ -69,14 +69,13 @@
   
     nav {
       width: 100%;
-      overflow: auto;
     }
   
     nav > ul {
       background: #000000;
       width: 100%;
       max-height: 0;
-      overflow: auto;
+      overflow: hidden;
     }
   
     nav ul li a,
@@ -97,8 +96,7 @@
     nav ul li ul {
       position: static;
       display: none;
-      width: 100%;
-      overflow: auto;  
+      width: 100%;  
     }
   
     nav ul li a {
