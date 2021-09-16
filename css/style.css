@@ -163,6 +163,10 @@ nav ul {
   list-style: none;
 }
 
+nav > ul {
+  transition: 0.3s;
+}
+
 nav > ul > li {
   /* First-level menu selections */
   float: left;
@@ -178,7 +182,7 @@ nav > ul > li > a {
 nav > ul > li > a:hover span {
   /* When the cursor hovers over first-level menu selections */
   color: #6d92c7;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 /*
@@ -347,7 +351,7 @@ main .post-slider .post-wrapper .post .post-info .post-info-sub .post-info-datel
 
 main .content {
   position: relative;
-  width: 85%;
+  width: 86%;
   margin: 3rem auto;
   display: flex;
   flex-wrap: nowrap;

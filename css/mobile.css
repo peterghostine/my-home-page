@@ -23,9 +23,54 @@
       display: block;
     }
   
+    header {
+      height: 50px;
+    }
+  
+    header .logo {
+      width: 150px;
+    }
+  
+    header .logo img {
+      width: 100%;
+    }
+  
+    header .menu-toggle {
+      right: 10px;
+      top: 10px;
+      font-size: 30px;
+      display: block;
+      position: absolute;
+    }
+  
+    /*
+    header nav ul li ul li a:hover {
+      color: #9ab9e4;
+      transition: 0.2s;
+    }
+  
+    header nav ul li a:hover {
+      background-color: #000000;
+      transition: 0.2s;
+    }
+    */
+  
+    /*
+    header .logo {
+      margin-left: .5em;
+      padding-top: 3px;
+    }
+        
+    header .logo-text {
+      font-family: 'Candal', sans-serif;
+      font-size: 1.2em;
+    }  
+    */
+  
     nav {
       width: 70%;
       float: right;
+      overflow: auto;
     }
   
     nav > ul {
@@ -72,51 +117,7 @@
       max-height: 100rem;
       overflow:auto;
     }
-  
-    header {
-      height: 50px;
-    }
-  
-    header .logo {
-      width: 150px;
-    }
-  
-    header .logo img {
-      width: 100%;
-    }
-  
-    header .menu-toggle {
-      right: 10px;
-      top: 10px;
-      font-size: 30px;
-      display: block;
-      position: absolute;
-    }
-  
-    /*
-    header nav ul li ul li a:hover {
-      color: #9ab9e4;
-      transition: 0.2s;
-    }
-  
-    header nav ul li a:hover {
-      background-color: #000000;
-      transition: 0.2s;
-    }
-    */
-  
-    /*
-    header .logo {
-      margin-left: .5em;
-      padding-top: 3px;
-    }
-        
-    header .logo-text {
-      font-family: 'Candal', sans-serif;
-      font-size: 1.2em;
-    }  
-    */
-  
+
     main {
       position: relative;
       top: 50px;
@@ -140,6 +141,10 @@
       display: none;
     }
   
+    main .post-slider .arrows {
+      font-size: 2rem;
+    }
+
     footer {
       margin: 50px 0 0 0;
       width: 100%;
@@ -224,6 +229,10 @@
 
     main .content .main-content .post .read-more {
       text-align: center;
+    }
+
+    main .post-slider .arrows {
+      font-size: 1.5rem;
     }
 
     footer .footer-section.copyright {
