@@ -185,7 +185,11 @@
       flex-direction: column;
       align-items: center;
     }
-        
+    
+    main .content .main-content .post .read-more {
+      text-align: center;
+    }
+
     main .content .main-content .post .post-image {
       width: 100%;
     }
