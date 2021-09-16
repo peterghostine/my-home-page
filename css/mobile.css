@@ -1,0 +1,232 @@
+
+
+/* ----------------- */
+/* MEDIA QUERIES 1495 */
+/* ----------------- */
+@media only screen and (max-width: 1495px) {
+    html {
+      font-size: 19px;
+    }
+  
+    nav {
+      font-size: 1rem;
+    }
+  
+    main .content .main-content .post .post-image {
+      min-width: 320px;
+    }
+  }
+  
+  /* ------------------ */
+  /* MEDIA QUERIES 1120 */
+  /* ------------------ */
+  @media only screen and (max-width: 1120px) {
+    html {
+      font-size: 22px;
+    }
+
+    header {
+      display: block;
+    }
+  
+    nav {
+      width: 70%;
+      float: right;
+    }
+  
+    nav > ul {
+      background: #000000;
+      width: 100%;
+      max-height: 0;
+      overflow:auto;
+    }
+  
+    nav ul li a,
+    nav ul li ul li a {
+      font-size: 25px;
+      display: block;
+    }
+  
+    nav > ul > li > .menu-wide {
+      display: flex;
+      justify-content: space-between;
+      align-content: flex-start;
+    }
+  
+    nav ul li {
+      width: 100%;
+    }
+  
+    nav ul li ul {
+      position: static;
+      display: none;
+      width: 100%;
+    }
+  
+    nav ul li a {
+      text-align: right;
+    }
+  
+    nav ul li ul li a {
+      color: #000000;
+      background-color: #ffffff;
+      padding-left: 2.5rem;
+      text-align: right;
+    }
+  
+    nav .showing {
+      max-height: 100rem;
+      overflow:auto;
+    }
+  
+    header {
+      height: 50px;
+    }
+  
+    header .logo {
+      width: 150px;
+    }
+  
+    header .logo img {
+      width: 100%;
+    }
+  
+    header .menu-toggle {
+      right: 10px;
+      top: 10px;
+      font-size: 30px;
+      display: block;
+      position: absolute;
+    }
+  
+    /*
+    header nav ul li ul li a:hover {
+      color: #9ab9e4;
+      transition: 0.2s;
+    }
+  
+    header nav ul li a:hover {
+      background-color: #000000;
+      transition: 0.2s;
+    }
+    */
+  
+    /*
+    header .logo {
+      margin-left: .5em;
+      padding-top: 3px;
+    }
+        
+    header .logo-text {
+      font-family: 'Candal', sans-serif;
+      font-size: 1.2em;
+    }  
+    */
+  
+    main {
+      position: relative;
+      top: 50px;
+    }
+  
+    main .content {
+      margin-top: 50px;
+    }
+  
+    main .content .main-content {
+      width: 100%;
+      margin-right: 0;
+    }
+    
+
+    main .content .main-content .post .btn {
+      display: none;
+    }
+  
+    main .content .sidebar {
+      display: none;
+    }
+  
+    footer {
+      margin: 50px 0 0 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  
+    footer .footer-section.about,
+    footer .footer-section.links,
+    footer .footer-section.contact-form {
+      width: 100%;
+    }
+  
+    footer .footer-section.about {
+      background: #000000;
+    }
+  
+    footer .footer-section.links {
+      background: #202020;
+    }
+  
+    footer .footer-section.contact-form {
+      background: #404040;
+    }
+  }
+    
+  /* ----------------- */
+  /* MEDIA QUERIES 992 */
+  /* ----------------- */
+  @media only screen and (max-width: 992px) {
+    main .content .main-content .main-content-title {
+      text-align: center;
+    }
+
+    main .content .main-content .post {
+      flex-direction: column;
+      align-items: center;
+    }
+        
+    main .content .main-content .post .post-image {
+      width: 100%;
+    }
+
+    main .content .main-content .post .post-info {
+      width: 100%;
+      align-items: center;
+    }
+  
+    footer .footer-section.copyright {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* ----------------- */
+  /* MEDIA QUERIES 768 */
+  /* ----------------- */
+  @media only screen and (max-width: 768px) {
+    html {
+      font-size: 22px;
+    }
+  
+    footer .footer-section.copyright {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* ----------------- */
+  /* MEDIA QUERIES 720 */
+  /* ----------------- */
+  @media only screen and (max-width: 720px) {
+    footer .footer-section.copyright {
+      font-size: 0.8rem;
+    }
+  }
+
+  /* ----------------- */
+  /* MEDIA QUERIES 576 */
+  /* ----------------- */
+  @media only screen and (max-width: 576px) {
+    footer .footer-section.copyright {
+      font-size: 0.7rem;
+    }
+  }

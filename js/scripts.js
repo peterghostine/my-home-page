@@ -32,7 +32,16 @@ $('.post-wrapper').slick({
   prevArrow: $('.prev'),
   responsive: [
     {
-      breakpoint: 1585,
+      breakpoint: 1565,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+    }
+    },
+    {
+      breakpoint: 1200,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -41,32 +50,39 @@ $('.post-wrapper').slick({
       }
     },
     {
-      breakpoint: 1495,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 1270,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 955,
+      breakpoint: 1175,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },   
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 785,
+      settings: {
+        slidesToShow: 1,
         slidesToScroll: 1
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 576,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1

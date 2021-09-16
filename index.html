@@ -19,7 +19,8 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/13954b8dca.js" crossorigin="anonymous"></script>
     <!-- Styling -->
-    <link rel='stylesheet' href='css/styles.css' />
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/mobile.css'>
   </head>
   <body>
     <header>
@@ -109,7 +110,7 @@
     </header>
     <main>
       <!-- Post Slider -->
-      <section class="post-slider">
+      <div class="post-slider">
         <h1 class="slider-title">Portfolio Projects</h1>
         <span class="fas fa-chevron-left arrows prev"></span>
         <span class="fas fa-chevron-right arrows next"></span>
@@ -170,7 +171,7 @@
               </span>
             </div>
           </div>
-          <section class="post">
+          <div class="post">
             <img src="images/uiux.png" alt="" class="post-image">
             <div class="post-info">
               <h4>
@@ -183,8 +184,8 @@
                 <span class="post-info-dateline">August 27, 2021 </span>
               </span>
             </div>
-          </section>
-          <section class="post">
+          </div>
+          <div class="post">
             <img src="images/uiux.png" alt="" class="post-image">
             <div class="post-info">
               <h4>
@@ -197,16 +198,16 @@
                 <span class="post-info-dateline">August 27, 2021 </span>
               </span>
             </div>
-          </section>
+          </div>
         </div>
-      </section>
+      </div>
       <!-- // Post Slider -->
       <!-- Content -->
-      <section class="content">
+      <div class="content">
         <!-- Contains 2 elements: main-content and side-bar -->
         <div class="main-content">
-          <h1>Recent Posts</h1>
-          <section class="post">
+          <h1 class="main-content-title">Recent Posts</h1>
+          <div class="post">
             <img src="images/htmlcssjs.png" alt="" class="post-image">
             <div class="post-info">
               <h3>
@@ -222,11 +223,11 @@
                   <span class="post-info-dateline">August 27, 2021</span>
                 </div>
               </div>
-              <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum repudiandae voluptates doloribus aperiam, at aliquam. </p>
-              <a class="read-more" href="single.html"> Continue Reading...</a>
+              <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum repudiandae voluptates doloribus aperiam, at aliquam. </p> 
             </div>
-          </section>
-          <section class="post">
+            <a class="read-more" href="single.html"> Continue Reading...</a>
+          </div>
+          <div class="post">
             <img src="images/markdown.png" alt="" class="post-image">
             <div class="post-info">
               <h3>
@@ -243,10 +244,10 @@
                 </div>
               </div>  
               <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum repudiandae voluptates doloribus aperiam, at aliquam. </p>
-              <a class="read-more" href="single.html"> Continue Reading...</a>
             </div>
-          </section>
-          <section class="post">
+            <a class="read-more" href="single.html"> Continue Reading...</a>
+          </div>
+          <div class="post">
             <img src="images/git-github.png" alt="" class="post-image">
             <div class="post-info">
               <h3>
@@ -263,10 +264,10 @@
                 </div>
               </div>  
               <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum repudiandae voluptates doloribus aperiam, at aliquam. </p>
-              <a class="read-more" href="single.html"> Continue Reading...</a>
             </div>
-          </section>
-          <section class="post">
+            <a class="read-more" href="single.html"> Continue Reading...</a>
+          </div>
+          <div class="post">
             <img src="images/typography.png" alt="" class="post-image">
             <div class="post-info">
               <h3>
@@ -283,10 +284,10 @@
                 </div>
               </div>  
               <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum repudiandae voluptates doloribus aperiam, at aliquam. </p>
-              <a class="read-more" href="single.html"> Continue Reading...</a>
             </div>
-          </section>
-          <section class="post">
+            <a class="read-more" href="single.html"> Continue Reading...</a>
+          </div>
+          <div class="post">
             <img src="images/uiux.png" alt="" class="post-image">
             <div class="post-info">
               <div class="post-info-title">
@@ -307,16 +308,16 @@
               <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum repudiandae voluptates doloribus aperiam, at aliquam. </p>
               <a class="read-more" href="single.html"> Continue Reading...</a>
             </div>
-          </section>
+          </div>
         </div>
-        <section class="sidebar">
-          <section class="section search">
+        <div class="sidebar">
+          <div class="section search">
             <h2 class="section-title">Search</h2>
             <form action="index.html" method="POST">
               <input type="text" name="search-item" class="text-input" placeholder="Search">
             </form>
-          </section>
-          <section class="section topics">
+          </div>
+          <div class="section topics">
             <h2 class="section-title">Topics</h2>
             <ul>
               <li>
@@ -338,9 +339,9 @@
                 <a href="#">UI/UX</a>
               </li>
             </ul>
-          </section>
-        </section>
-      </section>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <!-- ABOUT SECTION -->
