@@ -224,7 +224,7 @@
     }
     
     main .content .main-content .post .post-image {
-      max-width: 300px;
+      max-width: 100%;
       padding-right: 0;
     }
 
