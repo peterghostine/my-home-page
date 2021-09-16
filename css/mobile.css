@@ -68,8 +68,7 @@
     */
   
     nav {
-      width: 70%;
-      float: right;
+      width: 100%;
       overflow: auto;
     }
   
@@ -122,6 +121,15 @@
       top: 50px;
     }
   
+    main .post-slider .arrows {
+      font-size: 2rem;
+    }
+
+    main .post-slider .arrows:hover {
+      font-size: 2.25rem;
+      transition: 0.2s;
+    }
+
     main .content {
       margin-top: 50px;
     }
@@ -138,15 +146,6 @@
   
     main .content .sidebar {
       display: none;
-    }
-  
-    main .post-slider .arrows {
-      font-size: 2rem;
-    }
-
-    main .post-slider .arrows:hover {
-      font-size: 2.25rem;
-      transition: 0.2s;
     }
 
     footer {
@@ -210,6 +209,9 @@
       font-size: 18px;
     }
 
+    main .post-slider .arrows {
+      font-size: 1.5rem;
+    }
 
     main .content .main-content .post {
       display: flex;
@@ -235,10 +237,6 @@
       text-align: center;
     }
 
-    main .post-slider .arrows {
-      font-size: 1.5rem;
-    }
-
     footer .footer-section.copyright {
       font-size: 0.8rem;
     }
@@ -250,11 +248,5 @@
   @media only screen and (max-width: 576px) {
     footer .footer-section.copyright {
       font-size: 0.7rem;
-    }
-  }
-
-  @media only screen and (max-width: 576px) and (orientation: landscape) {
-    nav {
-      overflow: scroll;
     }
   }
