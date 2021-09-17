@@ -73,14 +73,14 @@
 
     nav {
       width: 100%;
-      z-index: 100;
       overflow: hidden;
+      max-height: 0;
+      z-index: 100;
     }
   
     nav > ul {
       background: #000000;
       width: 100%;
-      max-height: 0;
     }
   
     nav ul li a,
@@ -115,8 +115,9 @@
       text-align: right;
     }
   
-    nav .showing {
+    nav.showing {
       max-height: 100rem;
+      touch-action: pan-y;
     }
 
     main {

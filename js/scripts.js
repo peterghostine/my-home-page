@@ -1,17 +1,17 @@
-// Menu toggle //
+// Menu behavior
 
 $(document).ready(function() {
   $(".menu-toggle").click(function() {
-    $("nav > ul").toggleClass("showing"); 
+    $("nav").toggleClass("showing"); 
   });
 
   $("nav > ul").mouseleave(function() {
     if ($(".menu-toggle").is(":visible")) {
-      $("nav > ul").toggleClass("showing"); 
+      $("nav").toggleClass("showing"); 
     };
   });
 
-  $("nav > ul > li").click(function() {  
+  $("nav > ul > li").click(function() { 
     $("nav > ul > li:hover > ul").slideToggle();
   });
 
