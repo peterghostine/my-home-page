@@ -72,11 +72,13 @@
       overflow: hidden;
       max-height: 0;
       z-index: 100;
+      touch-action: pan-y;
     }
   
     nav > ul {
       background: #000000;
       width: 100%;
+      touch-action: pan-y;
     }
   
     nav ul li a,
@@ -113,7 +115,6 @@
   
     nav.showing {
       max-height: 100rem;
-      touch-action: pan-y;
     }
 
     main {
