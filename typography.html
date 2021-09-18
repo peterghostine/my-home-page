@@ -19,31 +19,11 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/13954b8dca.js" crossorigin="anonymous"></script>
     <!-- Styling -->
-    <link rel='stylesheet' href='css/styles.css' />
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/mobile.css'>
   </head>
   <body>
     <header>
-      <!-- Non-image logo section. Used to build logo to capture as image.
-<div class="logo"><div class="name"><h1 class="name-text"><div class="bracket">{
-</div><div class="blue">ghostine
-</div><div class="bracket">}
-</div></h1></div>><div class="tagline"><div class="tagline-dark-foreground">t
-</div><div class="tagline-dark-foreground">e
-</div><div class="tagline-dark-foreground">c
-</div><div class="tagline-dark-foreground">h
-</div><div class="tagline-dark-foreground">n
-</div><div class="tagline-dark-foreground">o
-</div><div class="tagline-dark-foreground">l
-</div><div class="tagline-dark-foreground">o
-</div><div class="tagline-dark-foreground">g
-</div><div class="tagline-dark-foreground">y
-</div><div class="tagline-dark-background">g
-</div><div class="tagline-dark-background">r
-</div><div class="tagline-dark-background">o
-</div><div class="tagline-dark-background">u
-</div><div class="tagline-dark-background">p
-</div></div></div>
--->
       <!-- Image logo -->
       <div class="logo">
         <img src="images/logo-large.png" alt="Ghostine Technology Group">
@@ -109,16 +89,17 @@
       <!-- Content -->
       <!-- Main content -->
       <div class="content">
-        <div class="main-content post">
-          <h1 class="post-title">
-            HTML/CSS/JavaScript
+        <div class="main-content">
+          <h1 class="article-title">
+            Typography
           </h1>
-          <article>
+          <article> 
+            <img src="images/typography.png" alt="" class="article-image">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit quod eius animi veniam. Corrupti quos in qui ad totam magni quisquam molestiae rem ratione!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae magnam, facilis illum esse sequi tenetur cupiditate qui sunt reiciendis quod ab cum quidem repellat deserunt! ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit quod eius animi veniam. Corrupti quos in qui ad totam magni quisquam molestiae rem ratione!
             </p>
             <p>  
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ipsum commodi exercitationem repellat expedita labore illo ut deserunt eveniet omnis, vitae autem at vero enim?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta illum veniam asperiores. Minus eos dignissimos perspiciatis, vel asperiores molestiae repellendus atque soluta earum a culpa. ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ipsum commodi exercitationem repellat expedita labore illo ut deserunt eveniet omnis, vitae autem at vero enim?
             </p>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium accusamus rerum nulla sint corporis debitis quae voluptas eum! Saepe nemo non quisquam dolorem dolores nesciunt consectetur ad nisi doloremque exercitationem amet eius praesentium dicta vitae voluptatibus aspernatur assumenda itaque, facilis, id optio. Hic similique saepe harum ab amet mollitia eveniet.  
@@ -132,7 +113,7 @@
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium accusamus rerum nulla sint corporis debitis quae voluptas eum! Saepe nemo non quisquam dolorem dolores nesciunt consectetur ad nisi doloremque exercitationem amet eius praesentium dicta vitae voluptatibus aspernatur assumenda itaque, facilis, id optio. Hic similique saepe harum ab amet mollitia eveniet.  
             </p>
-          </article>  
+          </article>
         </div>  
         <!-- Main content ends -->
         <div class="sidebar">
@@ -140,33 +121,36 @@
             <h2 class="section-title">Popular</h2>
             <ul>
               <li>
-                <a href="#">HTML/CSS/JavaScript</a>
+                <a href="bootstrap.html">Bootstrap</a>
               </li>
               <li>
-                <a href="#">Markdown</a>
+                <a href="electron.html">Electron</a>
               </li>
               <li>
-                <a href="#">Git/GitHub</a>
+                <a href="angular.html">Angular</a>
+              </li>
+              <li>
+                <a href="node.html">Node</a>
               </li>
             </ul>
           </div>  
           <div class="section topics">
-            <h2 class="section-title">Topics</h2>
+            <h2 class="section-title">Full-Stack Track</h2>
             <ul>
               <li>
-                <a href="#">HTML/CSS/JavaScript</a>
+                <a href="webdev.html">HTML/CSS/JavaScript</a>
               </li>
               <li>
-                <a href="#">Markdown</a>
+                <a href="markdown.html">Markdown</a>
               </li>
               <li>
-                <a href="#">Git/GitHub</a>
+                <a href="git.html">Git/GitHub</a>
               </li>
               <li>
-                <a href="#">Typography</a>
+                <a href="typography.html">Typography</a>
               </li>
               <li>
-                <a href="#">UI/UX</a>
+                <a href="uiux.html">UI/UX</a>
               </li>
             </ul>
           </div>
@@ -177,37 +161,32 @@
     <footer>
       <!-- ABOUT SECTION -->
       <div class="footer-section about">
-        <div class="logo">
-          <img class="footer-section-title" src="images/logo-large.png" alt="Ghostine Technology Group" width="279" height="92">
-        </div>
+        <h2 class="footer-section-title">ABOUT </h2>
+        <!--
+        <div class="logo"><img class="footer-section-title" src="images/logo-large.png" alt="Ghostine Technology Group" width="279" height="92"></div>
+        -->
         <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolore voluptatum omnis, doloremque amet dicta necessitatibus, iure debitis quaerat sapiente id temporibus. Reprehenderit, dolores vitae! </p>
         <div class="contact">
-          <span>
-            <i class="fas fa-phone"></i> &nbsp; 703-629-5470 </span>
-          <span>
-            <i class="fas fa-envelope"></i> &nbsp; peterghostine@gmail.com </span>
+          <div class="phone">
+            <span class="fas fa-phone"></span> 703-629-5470
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span> peterghostine@gmail.com
+          </div>
         </div>
         <div class="socials">
-          <span>
-            <a href="#">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </span>
-          <span>
-            <a href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </span>
-          <span>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </span>
-          <span>
-            <a href="#">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </span>
+          <a href="#">
+            <span class="fab fa-facebook"></span>
+          </a>
+          <a href="#">
+            <span class="fab fa-instagram"></span>
+          </a>
+          <a href="#">
+            <span class="fab fa-twitter"></span>
+          </a>
+          <a href="#">
+            <span class="fab fa-linkedin"></span>
+          </a>
         </div>
       </div>
       <!-- LINKS SECTION -->
@@ -237,13 +216,13 @@
           <button type="submit" class="btn btn-big">
             <span class="fas fa-envelope"></span> SEND </button>
           <!--
-            <i class="fas fa-envelope"></i>
+            <span class="fas fa-envelope"></span>
             -->
         </form>
       </div>
-      </div>
       <div class="footer-section copyright">
         <p>Copyright &copy 2021, Ghostine Technology Group, LLC. ALL RIGHTS RESERVED.</p>
+      </div>  
     </footer>
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

@@ -10,14 +10,14 @@ $(document).ready(function() {
       $("nav").toggleClass("showing"); 
     };
   });
-
+   
   $("nav > ul > li").click(function() { 
     $("nav > ul > li:hover > ul").slideToggle();
   });
 
   $("nav > ul > li").mouseleave(function() {
     $("nav > ul > li > ul").slideUp(); 
-  });
+  });   
 });
 
 
