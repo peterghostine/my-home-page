@@ -157,12 +157,15 @@ nav {
   justify-content: center;
   align-items: center;
   z-index: 100;
-  transition: 0.3s;
 }
 
 nav ul {
   /* First-level menu */
   list-style: none;
+}
+
+nav > ul {
+  transition: 0.3s;
 }
 
 nav > ul > li {
