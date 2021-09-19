@@ -243,6 +243,19 @@
       text-align: center;
     }
 
+    main .content .main-content article {
+      margin-right: 0;
+    }
+
+    main .content .main-content article .article-image {
+      padding-right: 0.75rem;
+      max-width: 150px;
+    }
+
+    main .content .main-content article p {
+      text-align: justify;
+    }
+
     footer .footer-section.copyright {
       font-size: 0.8rem;
     }

@@ -318,18 +318,18 @@ main .post-slider .post-wrapper .post .post-info {
   padding: 0 0 1.25rem 0.25rem;
 }
 
-main .post-slider .post-wrapper .post .post-info h4 {
+main .post-slider .post-wrapper .post .post-info .post-title {
   padding: 0.25rem 0;
 }
 
 /* Resize author and date below post title */
-main .post-slider .post-wrapper .post .post-info .post-info-sub {
+main .post-slider .post-wrapper .post .post-info .post-dateline {
   font-size: 0.8rem;
 }
 
 /* Apply font family to author and date, but not fa icon */
-main .post-slider .post-wrapper .post .post-info .post-info-sub .post-info-byline,
-main .post-slider .post-wrapper .post .post-info .post-info-sub .post-info-dateline {
+main .post-slider .post-wrapper .post .post-info .post-byline-dateline .post-byline,
+main .post-slider .post-wrapper .post .post-info .post-byline-dateline .post-dateline {
   font-family: "Share Tech", sans-serif;
 }
 
@@ -356,43 +356,9 @@ main .content .main-content .post {
   background-color: #ffffff;
   position: relative;
   margin: 1rem 0;
-  /*display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;*/
   overflow: hidden;
   border-radius: 5px;
 }
-
-/*
-main .content .main-content.post {
-  padding: 1rem 1rem 0 1rem;
-  display: flex;
-  flex-direction: column;
-}
-
-main .content .main-content.post .post-title {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-main .content .main-content.post article {
-  display: flex;
-  flex-direction: column;
-}
-
-main .content .main-content.post article p {
-  padding-bottom: 1rem;
-}
-*/
-
-/*
-  main  .content .main-content article::after {
-    content: '';
-    display: block;
-    clear: both;
-  }  
-  */
 
 main .content .main-content .post .post-image {
   padding-right: 0.5rem;
@@ -403,30 +369,29 @@ main .content .main-content .post .post-image {
 main .content .main-content .post .post-info {
   padding: 0 0.5rem;
   position: relative;
-  /*display: flex;
-  flex-direction: column;*/
 }
 
 main .content .main-content .post .post-info h3 {
   padding: 0.25rem 0 0 0;
 }
 
-/* Resize author and date below post title */
 main .content .main-content .post .post-info .post-info-sub {
   font-size: 0.8rem;
   padding-top: 0.25rem;
   display: flex;
+  border: 1px solid red;
 }
 
 main .content .main-content .post .post-info .post-info-sub .post-info-byline {
   padding-right: 1rem;
 }
 
-/* Apply font family to author and date, but not fa icon */
+/*
 main .content .main-content .post .post-info .post-info-sub .post-info-byline,
 main .content .main-content .post .post-info .post-info-sub .post-info-dateline {
   font-family: "Share Tech", sans-serif;
 }
+*/
 
 main .content .main-content .post .post-info p {
   padding-top: 0.5rem;
@@ -480,8 +445,16 @@ main .content .main-content .post .btn:hover {
 */
 
 main .content .main-content .article-title {
+  font-size: 3rem;
   padding-bottom: 2rem;
-  text-align: center;
+}
+
+main .content .main-content .byline-dateline {
+  padding-bottom: 2rem;
+}
+
+main .content .main-content article {
+  margin-right: 2rem;
 }
 
 main .content .main-content article .article-image {
@@ -492,7 +465,6 @@ main .content .main-content article .article-image {
 
 main .content .main-content article p {
   margin-bottom: 1rem;
-  margin-right: 2rem;
   line-height: 1.5;
 }
 
@@ -599,8 +571,8 @@ footer .footer-section.contact-form {
 }
 
 footer .footer-section.about p {
-  padding: 1rem 1rem 0 1rem;
-  text-align: center;
+  padding: 1rem 5rem 0 5rem;
+  text-align:center;
 }
 
 footer .footer-section.about .contact {
