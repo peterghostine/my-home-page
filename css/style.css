@@ -379,7 +379,6 @@ main .content .main-content .post .post-info .post-info-sub {
   font-size: 0.8rem;
   padding-top: 0.25rem;
   display: flex;
-  border: 1px solid red;
 }
 
 main .content .main-content .post .post-info .post-info-sub .post-info-byline {
@@ -415,26 +414,6 @@ main .content .main-content .post .read-more {
   font-size: 0.9rem;
   text-decoration-line: underline;
   text-align: right; 
-}
-
-/* Deprecated...
-main  .content .main-content article .btn {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background-color: transparent;
-  padding: 0.25rem;
-  margin-top: 1rem;
-  color: #000000;
-  font-size: 0.8rem;
-  border: 1px solid #000000;
-}
-*/
-
-main .content .main-content .post .btn:hover {
-  color: #ffffff;
-  background-color: #6d92c7;
-  transition: 0.2s;
 }
 
 /* -------------------------------------------------------------------
@@ -651,9 +630,10 @@ footer .footer-section.contact-form form button {
   font-size: 1.1rem;
   color: #ffffff;
   background-color: #6d92c7;
-  width: 100px;
+  width: 125px;
   height: 2rem;
   border: none;
+  border-radius: 20px;
 }
 
 footer .footer-section.contact-form form button:hover {

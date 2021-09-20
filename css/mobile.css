@@ -77,7 +77,7 @@
     nav > ul {
       background: #272727;
       width: 100%;
-      max-height: 0;
+      max-height: 100rem;
       display: none;
       overflow: hidden;
     }

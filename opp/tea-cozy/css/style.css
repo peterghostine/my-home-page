@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+    
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+p { 
+    font-size: 22px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 1; 
+} 
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+}
+
+body {
+    width: 70%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    height: 69px;
+    position: fixed;
+    width: 70%;
+    z-index: 100;
+    background-color: #000;
+    border-bottom: 1px solid seashell;
+
+}
+
+header .logo {
+    height: 100%;
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+header .menu-toggle {
+    /* Hiding mobile menu by default */
+    padding: 5px 10px;
+    display: none;
+    font-size: 30px;
+    border: 1px solid #fff5ee;
+    border-radius: 5px;
+
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav {
+    margin-right: 5rem;
+    height: 100%;
+    float: right;
+    display: inline-flex;
+    align-items: center;
+    background-color: #000;
+}
+
+header nav ul li {
+    padding: 0 1rem;
+    display: inline;
+    text-decoration: underline;
+}
+
+main {
+    position: relative;
+    top: 69px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section {
+    width: 100%;
+    margin-bottom: 3rem;
+    display: flex;
+}
+
+
+main section.hero {
+  background: url(../images/img-mission-background.png);
+  background-size: cover;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main section.hero .section-title {
+    min-height: 4rem;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main section .section-title h4 {
+    padding: 0.5rem 0;
+}    
+
+main section.tea-of-the-month {
+    display: flex;
+    flex-direction: column;
+}
+
+main section.tea-of-the-month .section-title {
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main section.tea-of-the-month .image-row {
+    display: inline-flex;   
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main section.tea-of-the-month .image-row figure img {
+    max-width: 300px;
+    padding: 1rem 1rem 0 1rem;
+}
+
+main section.tea-of-the-month .image-row figure figcaption {
+    text-align: center;
+}
+
+main section.locations {
+    background: url(../images/img-locations-background.png);
+    background-size: cover;
+    min-height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section.locations .section-title {
+    margin-top: 2rem;
+    padding: 0.2rem;
+    color: seashell;
+    background-color: rgb(199, 199, 199);
+}
+
+main section.locations .location-addresses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main section.locations .location-addresses .address {
+    margin: 2rem 1rem;
+    width: 250px;
+    height: 250px;
+    min-width: 200px;
+    min-height: 200px;
+    background-color: #000;
+    box-shadow: 1rem 1rem 1rem -1rem #fff5ee;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main section.locations .location-addresses .address p {
+    font-size: 0.9rem;
+}   
+
+footer {
+    margin-top: 69px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+footer .contact-info {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    text-align: center;
+    border-top: 1px solid #fff5ee;
+    border-bottom: 1px solid #fff5ee;
+}   
+
+footer .copyright {
+    width: 100%;
+    margin-top: 4rem;
+    padding: 1rem;
+}    
+
+
+/* ---------------------------------------------------
+                   MEDIA QUERIES
+------------------------------------------------------ */
+
+@media only screen and (max-width: 1050px) {
+    header {
+        position: relative;
+        width: 100%;
+    }
+    
+    header .logo {
+        display: flex;
+    }
+
+    header .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        z-index: 500;
+    }
+
+    header nav {
+      margin-right: 0;
+      width: 50%;
+      display: block;
+      height: auto;
+      max-height: 0;
+      overflow: hidden;
+    }
+
+    .showing {
+        display: block;
+        max-height: 10em;
+        border: 1px solid #414141;
+    }
+
+    header nav ul {
+        width: 100%;
+    }
+
+    header nav ul li {
+        display: block;
+        text-decoration: none;
+        background-color: #252525;
+        padding: 0.25rem;
+        border-bottom: 1px solid #414141;
+    }
+
+    footer .copyright {
+        text-align: center;
+    }  
+}
+
+@media only screen and (max-width: 576px) {
+   body {
+        width: 100%;
+    }
+}
