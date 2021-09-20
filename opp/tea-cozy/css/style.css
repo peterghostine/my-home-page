@@ -259,22 +259,29 @@ footer .copyright {
     }
 
     .showing {
-        display: block;
         max-height: 10em;
-        border: 1px solid #414141;
     }
 
     header nav ul {
         width: 100%;
+        border-top: 1px solid #414141;
     }
 
     header nav ul li {
         display: block;
         text-decoration: none;
-        background-color: #252525;
+        background-color: #111111;
         padding: 0.25rem;
         border-bottom: 1px solid #414141;
     }
+
+    main {
+        top: 0;
+    }
+ 
+    footer {
+        margin-top: 0;
+    } 
 
     footer .copyright {
         text-align: center;
