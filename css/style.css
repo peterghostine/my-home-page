@@ -31,7 +31,7 @@ a:hover {
   color: #6d92c7;
 }
 
-html {
+html, body {
   font-family: "Share Tech", sans-serif;
   font-size: 22px;
   background-color: #f8f8f8;
@@ -57,6 +57,9 @@ button {
   padding: 0.25rem;
 }
 
+/* ---------------------------------------------------------------------
+   HEADER RULESETS -----------------------------------------------------
+   --------------------------------------------------------------------- */   
 header {
   /* Using flex to properly align logo and nav elements */
   background: #000000;
@@ -73,8 +76,6 @@ header {
 header * {
   color: #ffffff;
 }
-
-/* LOGO */
 
 header .logo {
   /* Using flex to vertically align image inside logo div */
@@ -142,87 +143,52 @@ header .logo img {
   
   NON-IMAGE LOGO SPECS END HERE */
 
-/* BUTTON FOR RESPONSIVE MENU */
-
 header .menu-toggle {
-  /* Hiding mobile menu by default */
+  /* Hide mobile menu by default */
   display: none;
 }
 
 /* NAVIGATION BAR */
 
-nav {
-  /* Using flex to center the UL */
+header nav {
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 100;
 }
 
-nav ul {
-  /* First-level menu */
+header nav ul {
   list-style: none;
 }
 
-nav > ul {
+header nav > ul {
   transition: 0.3s;
 }
 
-nav > ul > li {
-  /* First-level menu selections */
+header nav > ul > li {
   float: left;
   position: relative;
 }
 
-nav > ul > li > a {
-  /* Hyperlinks of first-level menu selections */
+header nav > ul > li > a {
   display: block;
   padding: 1rem 1.5rem;
 }
 
-nav > ul > li > a:hover span {
-  /* When the cursor hovers over first-level menu selections */
+header nav > ul > li > a:hover span {
   color: #6d92c7;
   transition: 0.3s;
 }
 
-/*
-nav > ul > li > a > .fa-styling {
-  font-size: 1rem;
-}
-*/
-
-/*
-nav > ul > li > a:hover > .fa-styling {
-  color: #6d92c7;
-}
-
-nav > ul > li > a:hover > .fa-user {
-  color: #6d92c7;
-}
-*/
-
-nav ul li ul {
-  /* Second-level menu */
+header nav ul li ul {
   list-style: none;
   display: none;
   position: absolute;
   left: 0.5rem;
   width: 300px;
-  /*
-  border-top: 3px solid #000000;
-  border-bottom: 3px solid #000000;
-  */
 }
 
-/*
-nav ul li:hover ul {
-  /* Unhide second-level menu upon hover /
-  display: block;
-}
-*/
-
-nav ul li ul li a {
+header nav ul li ul li a {
   /* Hyperlinks of the second-level menu selections */
   font-size: 0.9rem;
   color: #000000;
@@ -232,14 +198,16 @@ nav ul li ul li a {
   border-bottom: 1px solid lightgray;
 }
 
-nav ul li ul li a:hover {
+header nav ul li ul li a:hover {
   /* Style second-level menu selection upon hover */
   color: #ffffff;
   background: #000000;
 
 }
 
-/* MAIN, POST-WRAPPER, POST SLIDER, POST */
+/* ---------------------------------------------------------------------
+   MAIN RULESETS -------------------------------------------------------
+   --------------------------------------------------------------------- */   
 
 main {
   background: url(../images/mining-rig.jpg);
@@ -261,10 +229,11 @@ main::before {
   height: 100%;
 }
 
+/* post slider */
+
 main .post-slider {
   position: relative;
-  margin: 3rem 0 0 0;
-  /* border: 3px solid yellow; */
+  margin-top: 3rem;
 }
 
 main .post-slider .slider-title {
@@ -294,8 +263,7 @@ main .post-slider .arrows:hover {
 
 main .post-slider .post-wrapper {
   width: 86%;
-  margin: 2rem auto;
-  /* padding-top: 0.5rem; */
+  margin: 2rem auto 0 auto;
   overflow: hidden;
 }
 
@@ -322,20 +290,14 @@ main .post-slider .post-wrapper .post .post-info .post-title {
   padding: 0.25rem 0;
 }
 
-/* Resize author and date below post title */
 main .post-slider .post-wrapper .post .post-info .post-dateline {
   font-size: 0.8rem;
 }
 
-/* Apply font family to author and date, but not fa icon */
 main .post-slider .post-wrapper .post .post-info .post-byline-dateline .post-byline,
 main .post-slider .post-wrapper .post .post-info .post-byline-dateline .post-dateline {
   font-family: "Share Tech", sans-serif;
 }
-
-/* -------------------------------------------------------------------------------
-----------------------------------------------------------------------------------
-*/
 
 /* CONTENT */
 
@@ -348,7 +310,7 @@ main .content {
 }
 
 main .content .main-content {
-  flex-basis: 65%;
+  flex-basis: 70%;
   margin-right: 2rem;
 }
 
@@ -356,7 +318,6 @@ main .content .main-content .post {
   background-color: #ffffff;
   position: relative;
   margin: 1rem 0;
-  overflow: hidden;
   border-radius: 5px;
 }
 
@@ -368,7 +329,6 @@ main .content .main-content .post .post-image {
 
 main .content .main-content .post .post-info {
   padding: 0 0.5rem;
-  position: relative;
 }
 
 main .content .main-content .post .post-info h3 {
@@ -385,16 +345,8 @@ main .content .main-content .post .post-info .post-info-sub .post-info-byline {
   padding-right: 1rem;
 }
 
-/*
-main .content .main-content .post .post-info .post-info-sub .post-info-byline,
-main .content .main-content .post .post-info .post-info-sub .post-info-dateline {
-  font-family: "Share Tech", sans-serif;
-}
-*/
-
 main .content .main-content .post .post-info p {
   padding-top: 0.5rem;
-  font-size: 1rem;
 }
 
 main .content .main-content .post .post-info p::after {
@@ -416,44 +368,64 @@ main .content .main-content .post .read-more {
   text-align: right; 
 }
 
-/* -------------------------------------------------------------------
+/* ARTICLES */   
 
-   -------------- This is the template for all articles --------------
+main .content .article-content {
+  margin-right: 2rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 5px;
+}
 
-   -------------------------------------------------------------------
-*/
-
-main .content .main-content .article-title {
+main .content .article-content .article-title {
   font-size: 3rem;
   padding-bottom: 2rem;
 }
 
-main .content .main-content .byline-dateline {
+main .content .article-content .byline-dateline {
   padding-bottom: 2rem;
 }
 
-main .content .main-content article {
-  margin-right: 2rem;
+main .content .article-content article {
+  position: relative;
+  margin: 0 2rem 2rem 0;
 }
 
-main .content .main-content article .article-image {
+main .content .article-content article .article-image {
   padding-right: 0.75rem;
   max-width: 300px;
   float: left;
 }
 
-main .content .main-content article p {
-  margin-bottom: 1rem;
+main .content .article-content article p {
+  padding-bottom: 1.5rem;
   line-height: 1.5;
 }
 
-/* -------------------------------------------------------------------
-
-   -------------------------------------------------------------------
-
-   -------------------------------------------------------------------
+/*
+main .content .main-content article::after {
+  content:'';
+  display: block;
+  height: 2rem;
+}
 */
 
+main .content .article-content article .read-more {
+  color: #6d92c7;
+  text-decoration-line: underline;
+  text-align: right; 
+}
+
+main .content .article-content .article-references h3 {
+  padding-bottom: 1rem;
+  text-decoration: underline;
+}  
+
+main .content .article-content .article-references ul {
+  margin-left: 1rem;
+  list-style: circle;
+  line-height: 1.5;
+}
 
 /* SIDEBAR */
 
@@ -476,7 +448,7 @@ main .content .sidebar .section.search {
 }
 
 main .content .sidebar .section.populars {
-  margin: 4.5rem 0 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
 main .content .sidebar .section .section-title {
@@ -512,7 +484,9 @@ main .content .sidebar .section.search .text-input {
   outline: none;
 }
 
-/* FOOTER */
+/* ---------------------------------------------------------------------
+   FOOTER --------------------------------------------------------------
+   ------------------------------------------------------------------ */   
 
 footer {
   width: 100%;
