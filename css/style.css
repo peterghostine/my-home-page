@@ -319,6 +319,10 @@ main .content .read-more {
   text-decoration-line: underline;
 }
 
+main .content .article-content .read-more {
+  left: 0;
+}  
+
 main .content .main-content,
 main .content .article-content {
   flex-basis: 70%;
