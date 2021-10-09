@@ -1,7 +1,6 @@
 /* Rev. B */
 
 /* Reference info 
-
 font-family: 'Oxygen', sans-serif;
 font-family: 'Oxygen Mono', monospace;
 font-family: 'Roboto', sans-serif;
@@ -9,10 +8,7 @@ font-family: 'Roboto Mono', monospace;
 font-family: 'Share Tech', sans-serif;
 font-family: 'Share Tech Mono', monospace;
 font-family: 'Lora', serif;
-
-
 color: #6d92c7; That's the blue used throughout the site (logo, etc). 
-
 */
 
 * {
@@ -150,37 +146,43 @@ header .menu-toggle {
 
 /* NAVIGATION BAR */
 
-header nav {
+nav {
+  /* Using flex to center the UL */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 100;
 }
 
-header nav ul {
+nav ul {
+  /* First-level menu */
   list-style: none;
 }
 
-header nav > ul {
+nav > ul {
   transition: 0.3s;
 }
 
-header nav > ul > li {
+nav > ul > li {
+  /* First-level menu selections */
   float: left;
   position: relative;
 }
 
-header nav > ul > li > a {
+nav > ul > li > a {
+  /* Hyperlinks of first-level menu selections */
   display: block;
   padding: 1rem 1.5rem;
 }
 
-header nav > ul > li > a:hover span {
+nav > ul > li > a:hover span {
+  /* When the cursor hovers over first-level menu selections */
   color: #6d92c7;
   transition: 0.3s;
 }
 
-header nav ul li ul {
+nav ul li ul {
+  /* Second-level menu */
   list-style: none;
   display: none;
   position: absolute;
@@ -188,9 +190,8 @@ header nav ul li ul {
   width: 300px;
 }
 
-header nav ul li ul li a {
+nav ul li ul li a {
   /* Hyperlinks of the second-level menu selections */
-  font-size: 0.9rem;
   color: #000000;
   background-color: #ffffff;
   display: block;
@@ -198,11 +199,10 @@ header nav ul li ul li a {
   border-bottom: 1px solid lightgray;
 }
 
-header nav ul li ul li a:hover {
+nav ul li ul li a:hover {
   /* Style second-level menu selection upon hover */
   color: #ffffff;
   background: #000000;
-
 }
 
 /* ---------------------------------------------------------------------
@@ -227,6 +227,16 @@ main::before {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+main .post-byline,
+main .post-dateline {
+  font-family: "Share Tech", sans-serif;
+  font-size: 0.8rem;
+}
+
+main .post-byline {
+  padding-right: 0.5rem;
 }
 
 /* post slider */
@@ -272,7 +282,7 @@ main .post-slider .post-wrapper .post {
   display: inline-block;
   margin: 0 0.5rem;
   border-radius: 5px;
-  box-shadow: 1rem 1rem 1rem -1rem #4d4d4d;
+  /* box-shadow: 1rem 1rem 1rem -1rem #4d4d4d; */
   overflow: hidden;
 }
 
@@ -290,15 +300,6 @@ main .post-slider .post-wrapper .post .post-info .post-title {
   padding: 0.25rem 0;
 }
 
-main .post-slider .post-wrapper .post .post-info .post-dateline {
-  font-size: 0.8rem;
-}
-
-main .post-slider .post-wrapper .post .post-info .post-byline-dateline .post-byline,
-main .post-slider .post-wrapper .post .post-info .post-byline-dateline .post-dateline {
-  font-family: "Share Tech", sans-serif;
-}
-
 /* CONTENT */
 
 main .content {
@@ -309,7 +310,17 @@ main .content {
   flex-wrap: nowrap;
 }
 
-main .content .main-content {
+main .content .read-more {
+  color: #6d92c7;
+  margin-bottom: 0.5rem;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  text-decoration-line: underline;
+}
+
+main .content .main-content,
+main .content .article-content {
   flex-basis: 70%;
   margin-right: 2rem;
 }
@@ -332,63 +343,45 @@ main .content .main-content .post .post-info {
 }
 
 main .content .main-content .post .post-info h3 {
-  padding: 0.25rem 0 0 0;
-}
-
-main .content .main-content .post .post-info .post-info-sub {
-  font-size: 0.8rem;
-  padding-top: 0.25rem;
-  display: flex;
-}
-
-main .content .main-content .post .post-info .post-info-sub .post-info-byline {
-  padding-right: 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 0 0.25rem 0;
 }
 
 main .content .main-content .post .post-info p {
-  padding-top: 0.5rem;
+  padding-top: 0.9rem;
 }
 
-main .content .main-content .post .post-info p::after {
+main .content .main-content .post .post-info::after {
   content:'';
   display: block;
-  height: 1.5rem;
-}
-
-main .content .main-content .post .read-more {
-  color: #6d92c7;
-  margin: 0 0 0.25rem 0;
-  padding-top: 1rem;
-  position: absolute;
-  bottom: 0;
-  right: 0.5rem;
-  width: 100%;
-  font-size: 0.9rem;
-  text-decoration-line: underline;
-  text-align: right; 
+  height: 3rem;
 }
 
 /* ARTICLES */   
 
 main .content .article-content {
-  margin-right: 2rem;
-  padding: 2rem;
+  margin-bottom: 1rem;
+  padding: 2rem 2rem 0 2rem;
   background: #fff;
   border-radius: 5px;
 }
 
 main .content .article-content .article-title {
   font-size: 3rem;
-  padding-bottom: 2rem;
-}
-
-main .content .article-content .byline-dateline {
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 main .content .article-content article {
   position: relative;
-  margin: 0 2rem 2rem 0;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+main .content .article-content .article-text::after,
+main .content .article-content .article-references:after {
+  content:'';
+  display: block;
+  height: 2rem;
 }
 
 main .content .article-content article .article-image {
@@ -400,20 +393,6 @@ main .content .article-content article .article-image {
 main .content .article-content article p {
   padding-bottom: 1.5rem;
   line-height: 1.5;
-}
-
-/*
-main .content .main-content article::after {
-  content:'';
-  display: block;
-  height: 2rem;
-}
-*/
-
-main .content .article-content article .read-more {
-  color: #6d92c7;
-  text-decoration-line: underline;
-  text-align: right; 
 }
 
 main .content .article-content .article-references h3 {
@@ -474,7 +453,6 @@ main .content .sidebar .section ul li a:hover {
 }
 
 main .content .sidebar .section.search .text-input {
-  font-family: "Share Tech", sans-serif;
   font-size: 1.2rem;
   margin: 0.2rem 0 0 0;
   width: 100%;
@@ -547,14 +525,6 @@ footer .footer-section.about .socials {
   flex-wrap: wrap;
 }
 
-/*
-footer .footer-section.about .socials i {
-  padding: 0.5rem;
-  border: 1px solid #fff;
-  border-radius: 10px;
-}
-*/
-
 footer .footer-section.about .socials span {
   padding: 0.3rem;
   margin: 0.25rem;
@@ -579,7 +549,7 @@ footer .footer-section.links ul li a:hover {
 }
 
 footer .footer-section.contact-form form {
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0 0 0;
   width: 80%;
   position: relative;
   display: flex;
@@ -625,7 +595,3 @@ footer .footer-section.copyright {
   justify-content: center;
   align-items: center;
 } 
-
-
-
-
