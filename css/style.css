@@ -243,7 +243,7 @@ main .post-byline {
 
 main .post-slider {
   position: relative;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 main .post-slider .slider-title {
@@ -273,7 +273,7 @@ main .post-slider .arrows:hover {
 
 main .post-slider .post-wrapper {
   width: 86%;
-  margin: 2rem auto 0 auto;
+  margin: 1rem auto 0 auto;
   overflow: hidden;
 }
 
@@ -319,12 +319,21 @@ main .content .read-more {
   text-decoration-line: underline;
 }
 
+main .post-wrapper .fa-user,
+main .post-wrapper .fa-calendar,
+main .content .fa-user,
+main .content .fa-calendar {
+  font-size: 16px;
+  padding-left: 0.1rem;
+}
+
 main .content .article-content .read-more {
   left: 0;
 }  
 
 main .content .main-content,
-main .content .article-content {
+main .content .article-content, 
+main .content .references {
   flex-basis: 70%;
   margin-right: 2rem;
 }
@@ -372,7 +381,7 @@ main .content .article-content {
 
 main .content .article-content .article-title {
   font-size: 3rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 main .content .article-content article {
@@ -382,7 +391,8 @@ main .content .article-content article {
 }
 
 main .content .article-content .article-text::after,
-main .content .article-content .article-references:after {
+main .content .article-content .article-references:after
+ {
   content:'';
   display: block;
   height: 2rem;
@@ -410,6 +420,58 @@ main .content .article-content .article-references ul {
   line-height: 1.5;
 }
 
+/* REFERENCES */   
+
+main .content .references {
+  margin-bottom: 1rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 5px;
+}
+
+main .content .references .table-of-references {
+  background: #d3d3d3;
+  border: 1px solid #000;
+  padding: 1rem;
+  width: 50%;
+}
+
+main .content .references .table-of-references a {
+  transition: all 0.2s;
+}
+
+main .content .references .table-of-references a:hover {
+  color: #000;
+  font-weight: bold;
+  padding-left: 0.2rem;
+}
+
+main .content .references .table-of-references h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+main .content .references .table-of-references ol {
+  line-height: 1.5;
+  margin-left: 1rem;
+}
+
+main .content .references .table-of-references ol li {
+  padding-left: 0.25rem;
+}
+
+main .content .references .reference-links {
+  margin-top: 2rem;
+}
+
+main .content .references .reference-links h3 {
+  padding-bottom: 1rem;
+}
+
+main .content .references .reference-links ul {
+  list-style: inside;
+}
+
 /* SIDEBAR */
 
 main .content .sidebar {
@@ -417,6 +479,12 @@ main .content .sidebar {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+}
+
+main .content .sidebar .fix-margin::after {
+  content:'';
+  display: block;
+  height: 3.3rem;
 }
 
 main .content .sidebar .section {
@@ -427,7 +495,7 @@ main .content .sidebar .section {
 }
 
 main .content .sidebar .section.search {
-  margin: 3.3rem 0 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
 main .content .sidebar .section.populars {
@@ -448,12 +516,11 @@ main .content .sidebar .section ul li a {
   padding: 0.5rem 0;
   display: block;
   border-bottom: 1px solid #d3d3d3;
-  transition: all 0.3s;
+  transition: padding 0.2s ease;
 }
 
 main .content .sidebar .section ul li a:hover {
   padding-left: 0.2rem;
-  transition: all 0.3s;
 }
 
 main .content .sidebar .section.search .text-input {
@@ -507,6 +574,7 @@ footer .footer-section.contact-form {
 
 footer .footer-section.about p {
   padding: 1rem 5rem 0 5rem;
+  line-height: 1.2rem;
   text-align:center;
 }
 
@@ -543,13 +611,16 @@ footer .footer-section.links ul {
   text-align: center;
 }
 
+footer .footer-section.links ul li {
+  padding-bottom: 0.5rem;
+}
+
 footer .footer-section.links ul li a {
-  transition: all 0.3s;
+  transition: padding 0.2s ease; 
 }
 
 footer .footer-section.links ul li a:hover {
-  padding-right: 0.2rem;
-  transition: all 0.3s;
+  padding-left: 0.2rem;
 }
 
 footer .footer-section.contact-form form {
