@@ -1,14 +1,6 @@
 // Menu behavior
-
 $(document).ready(function() {
-
-/*
-  $(".menu-toggle").click(function() {
-    $("nav > ul > li > ul").slideUp();
-    $("nav > ul").toggleClass("showing"); 
-  });
-*/
-
+  
   $(document).on('click', function(event) {
     if ($("nav > ul").is(":visible")) {
       if (!$(event.target).closest("nav > ul").length) {
@@ -32,6 +24,8 @@ $(document).ready(function() {
   });   
 });
 
+
+
 // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
@@ -39,40 +33,40 @@ var delta = 5;
 var navbarHeight = $('header').outerHeight();
 
 $(window).scroll(function(event){
-    didScroll = true;
+  didScroll = true;
 });
 
 setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
+  if (didScroll) {
+    hasScrolled();
+    didScroll = false;
+  }
 }, 250);
 
 function hasScrolled() {
-    var st = $(this).scrollTop();
+  var st = $(this).scrollTop();
     
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
+  // Make sure they scroll more than delta
+  if(Math.abs(lastScrollTop - st) <= delta)
+    return;
     
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
-        }
+  // If they scrolled down and are past the navbar, add class .nav-up.
+  // This is necessary so you never see what is "behind" the navbar.
+  if (st > lastScrollTop && st > navbarHeight){
+    // Scroll Down
+    $('header').removeClass('nav-down').addClass('nav-up');
+  } else {
+    // Scroll Up
+    if(st + $(window).height() < $(document).height()) {
+      $('header').removeClass('nav-up').addClass('nav-down');
     }
-    
-    lastScrollTop = st;
+  }
+  lastScrollTop = st;
 }
 
-// Carousel
 
+
+// Carousel
 $('.post-wrapper').slick({
   slidesToShow: 4,
   slidesToScroll: 1,

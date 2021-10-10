@@ -252,6 +252,7 @@ main .post-slider {
 
 main .post-slider .slider-title {
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 main .post-slider .arrows {
@@ -277,7 +278,7 @@ main .post-slider .arrows:hover {
 
 main .post-slider .post-wrapper {
   width: 86%;
-  margin: 1rem auto 0 auto;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -312,6 +313,8 @@ main .content {
   margin: 3rem auto;
   display: flex;
   flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
 }
 
 main .content .read-more {
@@ -342,10 +345,14 @@ main .content .references {
   margin-right: 2rem;
 }
 
+main .content .main-content .main-content-title {
+  padding-bottom: 1rem;
+}
+
 main .content .main-content .post {
   background-color: #ffffff;
   position: relative;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
   border-radius: 5px;
 }
 
@@ -384,7 +391,7 @@ main .content .article-content {
 }
 
 main .content .article-content .article-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding-bottom: 1rem;
 }
 
@@ -538,6 +545,19 @@ main .content .sidebar .section.search .text-input {
   outline: none;
 }
 
+/* Projects */
+
+main .project {
+  position: relative;
+  width: 85%;
+  margin: 3rem auto 4rem auto;
+}
+
+main .project .project-title {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
 /* ---------------------------------------------------------------------
    FOOTER --------------------------------------------------------------
    ------------------------------------------------------------------ */   
@@ -675,3 +695,13 @@ footer .footer-section.copyright {
   justify-content: center;
   align-items: center;
 } 
+
+/* CodeMirror */
+
+.CodeMirror {
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.CodeMirror-lines {
+  padding: 1rem 0; /* Vertical padding around content */
+}
