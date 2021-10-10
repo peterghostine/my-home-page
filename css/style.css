@@ -85,7 +85,7 @@ header .logo img {
   width: 100%;
 }
 
-header.nav-up {
+.nav-up {
   top: -100px;
 }
 
@@ -197,7 +197,7 @@ nav ul li ul {
 nav ul li ul li a {
   /* Hyperlinks of the second-level menu selections */
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   display: block;
   padding: 0.5rem 1.5rem;
   border-bottom: 1px solid lightgray;
@@ -282,7 +282,7 @@ main .post-slider .post-wrapper {
 }
 
 main .post-slider .post-wrapper .post {
-  background: #fff;
+  background: #ffffff;
   display: inline-block;
   margin: 0 0.5rem;
   border-radius: 5px;
@@ -474,7 +474,7 @@ main .content .references .reference-links h3 {
 }
 
 main .content .references .reference-links ul {
-  list-style: inside;
+  margin-left: 1rem;
 }
 
 /* SIDEBAR */

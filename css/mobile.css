@@ -109,7 +109,6 @@
   
     nav ul li ul li a {
       color: #000000;
-      background-color: #e4e4e4;
       padding-left: 2.5rem;
       text-align: right;
     }
@@ -147,6 +146,11 @@
     main .content .main-content .post .btn {
       display: none;
     }
+
+    main .content .references .table-of-references {
+      width: 100%;
+    }
+    
 
     main .content .sidebar .section.search,
     main .content .sidebar .section.populars,
