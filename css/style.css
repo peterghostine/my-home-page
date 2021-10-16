@@ -23,7 +23,8 @@ a {
   color: inherit;
 }
 
-a:hover {
+a:hover,
+a:hover span {
   color: #6d92c7;
 }
 
@@ -161,7 +162,6 @@ nav {
 nav > ul {
   /* First-level menu */
   list-style: none;
-  border: 1px solid red;
   transition: 0.3s;
 }
 
@@ -169,19 +169,12 @@ nav > ul > li {
   /* First-level menu selections */
   float: left;
   position: relative;
-  border: 1px solid orange;
 }
 
 nav > ul > li > a {
   /* Hyperlinks of first-level menu selections */
   display: block;
   padding: 1rem 1.5rem;
-}
-
-nav > ul > li > a:hover span {
-  /* When the cursor hovers over first-level menu selections */
-  color: #6d92c7;
-  transition: 0.3s;
 }
 
 nav ul li ul {
