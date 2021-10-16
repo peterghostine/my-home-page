@@ -31,7 +31,7 @@ a:hover span {
 html, body {
   font-family: "Share Tech", sans-serif;
   font-size: 22px;
-  background-color: #f8f8f8;
+  background: #f8f8f8;
   height: 100%;
 }
 
@@ -128,7 +128,7 @@ header .logo img {
       height: 40px;
       width: 27px;
       color: #000000;
-      background-color: #ffffff;
+      background: #ffffff;
       text-align: center;
       margin: 0 3px;
       font-size: 26px;
@@ -138,7 +138,7 @@ header .logo img {
   }
   
   header .tagline .tagline-dark-foreground {
-      background-color: #6d92c7;
+      background: #6d92c7;
       color: #ffffff;
   }
   
@@ -189,7 +189,7 @@ nav ul li ul {
 nav ul li ul li a {
   /* Hyperlinks of the second-level menu selections */
   color: #000000;
-  background-color: #f1f1f1;
+  background: #f1f1f1;
   display: block;
   padding: 0.5rem 1.5rem;
   border-bottom: 1px solid lightgray;
@@ -216,7 +216,7 @@ main {
 }
 
 main::before {
-  background-color: #9b9b9be6;
+  background: #9b9b9be6;
   position: absolute;
   content: "";
   top: 0;
@@ -342,7 +342,7 @@ main .content .main-content .main-content-title {
 }
 
 main .content .main-content .post {
-  background-color: #ffffff;
+  background: #ffffff;
   position: relative;
   margin-bottom: 1rem;
   border-radius: 5px;
@@ -492,7 +492,7 @@ main .content .sidebar .fix-margin::after {
 }
 
 main .content .sidebar .section {
-  background-color: #ffffff;
+  background: #ffffff;
   padding: 1rem;
   border-radius: 5px;
   min-width: 100%;
@@ -561,7 +561,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   color: #ffffff;
-  background-color: #000000;
+  background: #000000;
 }
 
 footer .footer-section {
@@ -665,7 +665,7 @@ footer .footer-section.contact-form form textarea {
 footer .footer-section.contact-form form button {
   font-size: 1.1rem;
   color: #ffffff;
-  background-color: #6d92c7;
+  background: #6d92c7;
   width: 125px;
   height: 2rem;
   border: none;
@@ -673,7 +673,7 @@ footer .footer-section.contact-form form button {
 }
 
 footer .footer-section.contact-form form button:hover {
-  background-color: #3c69a8;
+  background: #3c69a8;
 }
 
 footer .footer-section.copyright {

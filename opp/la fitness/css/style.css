@@ -162,7 +162,7 @@
   nav ul li ul li a {
     color: #000000;
     text-decoration: none;
-    background-color: #d3d3d3;
+    background: #d3d3d3;
     display: block;
     padding: 0.5rem 0.5rem;
     border-top: 1px solid #505050;
@@ -362,6 +362,12 @@
       color: #fff;
     }
   
+    nav > ul > li > a:hover,
+    nav > ul > li > a:hover span {
+      color: #000000;
+      background: #d3d3d3;
+    }
+
     nav ul li ul {
       position: static;
       display: none;
