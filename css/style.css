@@ -158,12 +158,10 @@ nav {
   z-index: 100;
 }
 
-nav ul {
+nav > ul {
   /* First-level menu */
   list-style: none;
-}
-
-nav > ul {
+  border: 1px solid red;
   transition: 0.3s;
 }
 
@@ -171,6 +169,7 @@ nav > ul > li {
   /* First-level menu selections */
   float: left;
   position: relative;
+  border: 1px solid orange;
 }
 
 nav > ul > li > a {

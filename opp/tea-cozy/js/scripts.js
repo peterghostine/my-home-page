@@ -1,6 +1,5 @@
 // Menu behavior
 
-/*
 $(document).ready(function() {  
     $(document).on('click', function(event) {
       if ($("nav > ul").is(":visible")) {
@@ -23,17 +22,5 @@ $(document).ready(function() {
     };
   });   
 });
-*/
 
-$(document).ready(function() {  
-  $(document).on('click', function(event) {
-    if ($("header nav").is(":visible")) {
-      if (!$(event.target).closest("header nav").length) {
-        $("header nav").toggleClass("showing");
-      };  
-    } else if (($(event.target).closest(".menu-toggle").length)) {
-        $("header > nav").toggleClass("showing"); 
-    };
-  });
-});
    

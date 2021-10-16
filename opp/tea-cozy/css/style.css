@@ -62,8 +62,8 @@ header .menu-toggle {
     padding: 5px 10px;
     display: none;
     font-size: 30px;
-    border: 1px solid #fff5ee;
-    border-radius: 5px;
+    border: 2px solid #fff5ee;
+    border-radius: 50px;
 
 }
 
@@ -254,17 +254,17 @@ footer .copyright {
       width: 50%;
       display: block;
       height: auto;
-      max-height: 0;
-      overflow: hidden;
     }
 
     .showing {
-        max-height: 10em;
+        display: block;
     }
 
     header nav ul {
         width: 100%;
         border-top: 1px solid #414141;
+        display: none;
+        overflow: hidden;
     }
 
     header nav ul li {
