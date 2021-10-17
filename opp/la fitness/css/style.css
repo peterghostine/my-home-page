@@ -59,17 +59,17 @@
   .useful-links ul {
     font-size: 0.8rem;
     display: flex;
-    align-items: end;
+    align-items: center;
     list-style: none;
   }
   
   .useful-links ul li {
     padding-left: 1rem;
-    display: inline-block;
   }
   
   .useful-links ul li a {
-    padding: 0.5rem 0;
+    display: inline-block;
+    padding: 0.5rem 0.25rem;
     color: #161863;
   }
   
@@ -185,32 +185,32 @@
   }
   
   .banners {
-    padding-top: 1rem;
+    margin: 2rem 0;
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
   }
-  
+
   .banner img {
     width: 100%;
   }
   
   .slides {
-    margin: 2rem auto;
+    margin: 2rem 0;
     width: 100%;
   }
   
-  .slides .slide {
+  .slide {
     width: 100%;
     background: #ffffff;
     display: inline-block;
     border-radius: 5px;
     overflow: hidden;
   }
-  
-  .slides img {
+
+  .slide img {
     width: 100%;
   }
   
@@ -287,10 +287,13 @@
   footer ul li {
     padding: 0 0.25rem;
     font-size: 0.8rem;
+    display: flex;
+    align-items: center;
   }
   
   footer ul li a {
-    padding: 0.5rem 0;
+    display: inline-block;
+    padding: 0.5rem 0.25rem;
     color: #001e80;
   }
   
