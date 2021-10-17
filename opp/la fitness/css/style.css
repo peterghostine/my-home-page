@@ -44,6 +44,7 @@
   }
   
   .upper {
+    height: 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -56,28 +57,24 @@
     height: 100%;
   }
   
-  .upper {
-    height: 70px;
-  }
-  
-  .upper-nav ul {
+  .useful-links ul {
     font-size: 0.8rem;
     display: flex;
     align-items: end;
     list-style: none;
   }
   
-  .upper-nav ul li {
+  .useful-links ul li {
     padding-left: 1rem;
     display: inline-block;
   }
   
-  .upper-nav ul li a {
+  .useful-links ul li a {
     padding: 0.5rem 0;
     color: #161863;
   }
   
-  .upper-nav ul li a:hover {
+  .useful-links ul li a:hover {
     background: #febd11;
   }
   
@@ -188,7 +185,7 @@
     text-align: center;
   }
   
-  .banner-block {
+  .banners {
     padding-top: 1rem;
     width: 100%;
     display: flex;
@@ -201,12 +198,12 @@
     width: 100%;
   }
   
-  .slide-wrapper {
+  .slides {
     margin: 2rem auto;
     width: 100%;
   }
   
-  .slide-wrapper .slide {
+  .slides .slide {
     width: 100%;
     background: #ffffff;
     display: inline-block;
@@ -214,7 +211,7 @@
     overflow: hidden;
   }
   
-  .slide-wrapper img {
+  .slides img {
     width: 100%;
   }
   
@@ -333,7 +330,7 @@
       z-index: 500;
     }
   
-    .upper-nav {
+    .useful-links {
       display: none;
     }
   
@@ -353,19 +350,12 @@
     }
   
     nav > ul > li {
-      display: block;
       background: #505050;
       border-bottom: 1px solid #7a7a7a;
     }
   
     nav > ul > li > a {
       color: #fff;
-    }
-  
-    nav > ul > li > a:hover,
-    nav > ul > li > a:hover span {
-      color: #000000;
-      background: #d3d3d3;
     }
 
     nav ul li ul {
@@ -396,7 +386,7 @@
   /* MEDIA QUERIES 800 */
   /* ----------------- */
   @media only screen and (max-width: 1039px) {
-    .banner-block {
+    .banners {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;

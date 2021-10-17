@@ -65,7 +65,7 @@ $(document).ready(function() {
   
   // Carousel
   $(document).ready(function() {
-    $('.slide-wrapper').slick({
+    $('.slides').slick({
       dots: true,
       slidesToShow: 1,
       slidesToScroll: 1,
