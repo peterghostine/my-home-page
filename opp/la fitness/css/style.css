@@ -29,7 +29,7 @@
   
   body {
     height: 100%;
-    width: 992px;
+    width: 970px;
   }
   
   .menu-toggle {
@@ -46,7 +46,6 @@
   .upper {
     height: 70px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -114,7 +113,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 5px;
     z-index: 10;
     background-color: #505050;
   }
@@ -134,7 +133,7 @@
   }
   
   nav > ul > li > a {
-    padding: 0.6rem 0.5rem 0.4rem 0.5rem;
+    padding: 0.8rem 0.5rem 0.6rem 0.5rem;
     color: #fff;
     text-decoration: none;
     display: block;
@@ -335,7 +334,7 @@
     }
   
     nav {
-      width: 50%;
+      width: 90%;
       position: absolute;
       top: 55px;
       right: 5%;
@@ -344,6 +343,7 @@
     }
   
     nav > ul {
+      font-size: 1.1rem;
       flex-direction: column;
       align-items: stretch;
       display: none;
