@@ -1,0 +1,38 @@
+/* ----------------- */
+/* MEDIA QUERIES 576 */
+/* ----------------- */
+@media only screen and (max-width: 992px) {
+    #disney-description {
+        flex-basis: 55%;
+    }
+
+    #disney-description #description-2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #savings #savings-image,
+    #disney-deal #disney-image { 
+        display: none;
+    }
+
+    #savings-description,  
+    #disney-description {
+        text-align: center;
+        align-items: center;
+        flex-basis: 90%;
+    }
+    
+    #rewards {
+        padding: 2rem 8vw;
+    }
+
+    #rewards ul li {
+        font-size: 1.2rem;
+    }
+
+    #footnotes p {
+        padding: 0 8vw;
+    }
+}

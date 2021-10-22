@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+  }
+  
+  html,
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #000;
+  }
+  
+  header {
+    height: 100px;
+  }
+  
+  header #banner {
+    padding: 0.75rem 0;
+    background: #0f4c5c;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #banner span {
+    padding-right: 2rem;
+    font-weight: bold;
+  }
+  
+  header nav {
+  }
+  
+  header nav .logo {
+  }
+  
+  header nav ul {
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 511px 112px 136px 250px 193px 414px 525px 476px 1397px 414px 693px;
+    grid-template-areas:
+      "find"
+      "find-your-trip"
+      "recent-searches"
+      "pricebreakers"
+      "help-24-7"
+      "signup-save"
+      "hotel-flight-deals"
+      "savings"
+      "city-deals"
+      "disney"
+      "rewards";
+  }
+  
+  #find {
+    color: white;
+    grid-area: find;
+    background: url(https://images.ctfassets.net/sdx4pteldsvw/1BCUgM5lfV6ytyUnL6az80/dbf567487cd96d1c0019ef67bb9b91db/winding-road-with-fall-foliage.jpg);
+    background-size: cover;
+  }
+  
+  #find-your-trip {
+    grid-area: find-your-trip;
+    background: #f4f6f8;
+  }
+  
+  #recent-searches {
+    grid-area: recent-searches;
+    background: #f4f6f8;
+  }
+  
+  #pricebreakers {
+    grid-area: pricebreakers;
+    background: #fff;
+  }
+  
+  #help-24-7 {
+    grid-area: help-24-7;
+    background: #f4f6f8;
+    border-top: 1px solid #c0cad5;
+    border-bottom: 1px solid #c0cad5;
+  }
+  
+  #signup-save {
+    grid-area: signup-save;
+    background: #f4f6f8;
+  }
+  
+  #hotel-flight-deals {
+    grid-area: hotel-flight-deals;
+    background: #fff;
+  }
+  
+  #savings {
+    grid-area: savings;
+    background: #f4f6f8;
+    border-top: 2px solid #c0cad5;
+    border-bottom: 2px solid #c0cad5;
+  }
+  
+  #email-coupons {
+    /* */
+  }
+  
+  #cities {
+    grid-area: city-deals;
+    margin: auto;
+  }
+  
+  #cities #title {
+    font-size: 1.7rem;
+    background: #fff;
+  }
+  
+  #cities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 16px;
+    grid-template-areas:
+      "city1 city1 city2"
+      "city3 city4 city5"
+      "city6 city7 city7"
+      "city8 city9 city10";
+    align-items: center;   
+  }
+  
+  .city-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  #city1 {
+    grid-area: city1;
+  }
+  
+  #city2 {
+    grid-area: city2;
+  }
+  
+  #city3 {
+    grid-area: city3;
+  }
+  
+  #city4 {
+    grid-area: city4;
+  }
+  
+  #city5 {
+    grid-area: city5;
+  }
+  
+  #city6 {
+    grid-area: city6;
+  }
+  
+  #city7 {
+    grid-area: city7;
+  }
+  
+  #city8 {
+    grid-area: city8;
+  }
+  
+  #city9 {
+    grid-area: city9;
+  }
+  
+  #city10 {
+    grid-area: city10;
+  }
+  
+  #savings,
+  #disney-deal {
+    background: #f4f6f8;
+    display: flex;
+    justify-items: space-around;
+    align-items: center;
+    border-top: 1px solid #c0cad5;
+    border-bottom: 1px solid #c0cad5;
+  }
+
+  #savings-wrapper,
+  #disney-wrapper {
+    grid-area: disney;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0 2vw;
+  }
+  
+  #savings-description,
+  #disney-description {
+    display: flex;
+    flex-basis: 40%;
+    flex-shrink: 1;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  #description-1 {
+    color: #596b7d;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding-top: 1rem;
+  }
+  
+  #description-2 {
+    color: #001833;
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-weight: 700;
+    padding-top: 1rem;
+  }
+  
+  #description-3 {
+    color: #596b7d;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 3rem 0 2rem 0;
+  }
+  
+  #send-link,
+  #learn-more {
+    background: #0068ef;
+    font-weight: 700;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 2px;
+  }
+  
+  #savings-image,
+  #disney-image {  
+    flex-basis: content;
+    flex-shrink: 6;
+    margin-left: 5vw;
+  }
+
+  #disney-image img { 
+    width: 100%;  
+    max-width: 480px;
+    display: block;
+  }
+
+  #savings img { 
+    max-width: 300px;
+  }
+
+  #rewards {
+    grid-area: rewards;
+    padding: 4rem 2vw;
+    background: #fff;
+    border-bottom: 1px solid #c0cad5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #rewards #title {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  
+  #rewards ul li {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #596b7d;
+    list-style-position: inside;
+    text-align: center;
+  }
+  
+  #rewards ul li:not(:last-child) {
+    padding-bottom: 1rem;
+  }
+  
+  #rewards #learn-more {
+    background: #0068ef;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 0.75rem 5rem;
+    border-radius: 2px;
+  }
+  
+  footer {
+    background: #f4f6f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #footer-nav {
+    width: 100%;
+    padding: 3rem 10vw;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid red;
+  }
+  
+  #footer-nav ul {
+    font-size: 1.1rem;
+    font-weight: 500;
+    list-style: none;
+  }
+  
+  #footer-nav li:not(:last-child) {
+    padding-bottom: 1rem;
+  }
+  
+  #footer-nav .title {
+    padding-bottom: 2rem;
+  }
+  
+  #footnotes {
+    padding: 3rem 0;
+    border: 1px solid red;
+  }
+  
+  #footnotes p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #596b7d;
+    padding: 0 20vw;
+    text-align: center;
+    background: #f7f7f7;
+  }
+  
+  #footnotes p:not(:last-child) {
+    padding-bottom: 1rem;
+  }
+
+  #booking-holdings {
+    width: 100%;
+    background: #001832;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #booking-holdings p {
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    padding: 3rem 0;
+  }
+  
+  #companies {
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #companies img {
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+  
