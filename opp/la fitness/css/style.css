@@ -274,11 +274,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
   }
   
   .card {
-    margin-bottom: 1rem;
+    margin: 0 0.25rem 0.5rem 0.25rem;
     height: 185px;
     width: 183px;
     border: 1px solid #919191;
@@ -416,16 +415,12 @@
       display: flex;
       justify-content: space-between;
     }
-  
-    .cardset {
-      justify-content: space-between;
-    }
   }
   
-  /* ----------------- */
-  /* MEDIA QUERIES 800 */
-  /* ----------------- */
-  @media only screen and (max-width: 1039px) {
+  /* ------------------ */
+  /* MEDIA QUERIES 1028 */
+  /* ------------------ */
+  @media only screen and (max-width: 1028px) {
     .banners {
       flex-direction: column;
       justify-content: space-between;
@@ -436,4 +431,13 @@
       margin-bottom: 0.5rem;
     }
   }
-  
+
+    /* ----------------- */
+  /* MEDIA QUERIES 426 */
+  /* ----------------- */
+  @media only screen and (max-width: 426px) {
+    .cardset {
+      flex-direction: column;
+      align-content: center;
+    }
+  }
