@@ -25,11 +25,16 @@
     }
     
     #rewards {
-        padding: 2rem 8vw;
+        padding: 2rem 2vw;
     }
 
     #rewards ul li {
         font-size: 1.2rem;
+
+    }
+
+    #rewards ul li:not(:last-child) {
+        padding-bottom: 0.5rem;
     }
 
     #footnotes p {

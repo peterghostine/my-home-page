@@ -197,11 +197,21 @@
     width: 100%;
   }
   
+  .slides-outer {
+    position: relative;
+  }
+
   .slides {
     margin: 2rem 0;
     width: 100%;
   }
   
+  .slides-outer::after {
+    content:'';
+    display: block;
+    height: 10px;
+  }
+
   .slide {
     width: 100%;
     background: #ffffff;
@@ -213,7 +223,30 @@
   .slide img {
     width: 100%;
   }
+
+  .arrows {
+    position: absolute;
+    bottom: 8px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #7c7c7c;
+    cursor: pointer;
+
+  }
+
+  .prev {
+    left: 35%;
+  }
   
+  .next {
+    right: 35%;
+  }
+  
+  .arrows:hover {
+    color: #000;
+    transition: 0.2s;
+  }
+ 
   .slick-prev:before,
   .slick-next:before {
     color: #505050;
@@ -232,8 +265,12 @@
     opacity: 1;
   }
   
+  .slick-dots {
+    bottom: -30px;
+  }
+
   .cardset {
-    margin: 3rem 0 1rem 0;
+    margin: 2rem 0 1rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -393,6 +430,10 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+    }
+
+    .banners img:not(:last-child) {
+      margin-bottom: 0.5rem;
     }
   }
   
