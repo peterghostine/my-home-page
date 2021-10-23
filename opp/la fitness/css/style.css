@@ -209,7 +209,7 @@
   .slides-outer::after {
     content:'';
     display: block;
-    height: 10px;
+    height: 5px;
   }
 
   .slide {
@@ -226,7 +226,7 @@
 
   .arrows {
     position: absolute;
-    bottom: 8px;
+    bottom: 0;
     font-size: 1.3rem;
     text-align: center;
     color: #7c7c7c;
@@ -235,11 +235,11 @@
   }
 
   .prev {
-    left: 35%;
+    left: 25%;
   }
   
   .next {
-    right: 35%;
+    right: 25%;
   }
   
   .arrows:hover {
@@ -266,7 +266,7 @@
   }
   
   .slick-dots {
-    bottom: -30px;
+    bottom: -33px;
   }
 
   .cardset {
