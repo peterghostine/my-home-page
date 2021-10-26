@@ -1,0 +1,350 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+html,
+body {
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 16px;
+  line-height: 1.2rem;
+  height: 100%;
+  color: #fff;
+  background: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* header includes logo and nav bar. */
+header {
+  height: 120px;  
+  background: linear-gradient(#4859ff, #000);
+  background: -webkit-linear-gradient(#4859ff, #000);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#logo {
+  height: 100%;
+  padding: 5px 20px 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+#logo img {
+  height: 100%;
+}
+
+.menu-toggle {
+  font-size: 35px;
+  padding: 5px 5px;
+  display: none;
+}
+
+/* nav is set to Flex to vertically align UL inside. */
+nav {
+  margin-right: 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+nav > ul {
+  list-style: none;
+  transition: 0.3s;
+}
+
+/* Elements are floated to fidplay menu items horizontally. */
+nav > ul > li {
+  margin: 0 2rem;
+  float: left;
+  position: relative;
+}
+
+/* Let 'a' element top/bottom padding determine li height. */ 
+nav > ul > li > a {
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  display: block;
+}
+
+/* Only underline first-level menu items on hover. */
+nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+/* Position second-level UL relative to parent li element. */
+nav ul li ul {
+  list-style: none;
+  display: none;
+  position: absolute;
+  left: 0rem;
+  width: 300px;
+}
+
+nav ul li ul li:not(:last-child) {
+  border-bottom: 1px solid #6a79ff;
+}
+
+/* Same vertical padding for second-level elements, but also add some left/right. */
+nav ul li ul li a {
+  padding: 1rem;
+  color: #fff;
+  background: #4859ff;
+  display: block;
+}
+
+nav ul li ul li a:hover {
+  color: #000;
+  background: #fffb01;
+}
+
+main {
+  background: #000;
+  position: relative;
+  min-height: 100%;
+}
+
+/* Home is the main element's id on the home page only. 
+   Vertical margins are reduced on small devices. See
+   media queries */
+#home #content {
+  margin: 5rem auto;
+  position: relative;
+}
+
+/* Deprecated in favor of 'blur'. See below.
+
+main::before {
+  background: hsla(0, 0%, 0%, 0.5);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+*/
+
+/* This pseudo element applies to the front page only. it cover the entire main area for 
+   the purpose of showing a blurred background image without affecting the contents of main. */
+#home::before {
+  background-image: url(../images/tpt3.jpg);
+  background-size: cover;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+/* This is the figure element containing the event image. It takes up approx. half of
+   the page width, on large devices. See media queries for small-device handling. */
+#event-img {
+  margin: auto;
+  width: 40%;
+}
+
+/* The actual images takes up 100% of the figure container. */
+#event-img img {
+  width: 100%;
+}
+
+/* Replaced by above image.
+#home h1{
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+}
+
+#home span {
+  padding-bottom: 1rem;
+  display: block;
+}
+
+#home h1 #tour-sponsor {
+  font-size: 9rem;
+  color: #e7c253;
+}
+
+#home h1 #dungeon {
+  font-size: 4rem;
+  color: #2238ff;
+}
+
+#home h1 #event {
+  padding-top: 1rem;
+  font-size: 5rem;
+  color: #ffff00;
+  line-height: 1.2;
+}
+*/
+
+/* These are the buttons below the event image on the home page. */
+#buttons {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* #buttons child elements: the main event flyer, the barbox flyer, and the ladies flyer. */
+.button {
+  /* font-family: 'Fredoka One', cursive; */ 
+  font-family: 'Rampart One', cursive; 
+  flex-basis: 25%;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+/* Button decoration. */ 
+.button:hover {
+  box-shadow: 0px 0px 20px 15px #303030;
+}
+
+#event-btn {
+  background: #4859ff;
+}
+
+#event-btn:hover {
+  background: #2036ff;
+}
+
+#barbox-btn {
+  background: #ff0000;
+}
+
+#barbox-btn:hover {
+  background: #a50000;
+}
+
+#ladies-btn {
+  background: #e459e4;
+}
+
+#ladies-btn:hover {
+  background: #d413d4;
+}
+
+/* Applies to all flyers. Margin is identical to #home #content. */
+.flyer {
+  width: 90%;
+  margin: 5rem auto;
+  border-radius: 15px;
+}
+
+/* The actual flyer image. */
+.flyer img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
+/* Main event flyer. */
+.event-flyer img {
+  box-shadow: 0px 0px 15px 10px #4859ff;
+}
+
+/* Ladies tournament flyer. */
+#ladies-flyer img {
+  box-shadow: 0px 0px 15px 10px #e459e4;
+}
+
+/* Barbox tournament flyer. */
+#barbox-flyer img {
+  box-shadow: 0px 0px 15px 10px #ff0000;
+}
+
+/* Apply the same gradient effect as the header, only in reverse. */
+footer {
+  padding-top: 3rem;
+  background: linear-gradient(#000, #4859ff);
+  background: -webkit-linear-gradient(#000, #4859ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* This identifier is associated with the sponsors' h2 element */
+#sponsors-title {
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* These are the footer's ul elements. */
+#sponsors ul,
+#useful-links ul,
+#socials ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.sponsor {
+  width: 120px;
+  padding: 2px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+.sponsor img {
+  width: 100%;
+  display: block;
+}
+
+#sponsors li,
+#useful-links li {
+  margin: 1rem 1rem 0 1rem;
+}
+
+#useful-links a:hover {
+  text-decoration: underline;
+}
+
+#socials ul {
+  display: flex;
+  align-items: center;
+}
+
+#socials ul li {
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  padding: 0.5rem 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.social img {
+  display: block;
+}
+
+#copyright p {
+  padding: 2rem 0 1rem 0;
+  font-size: 0.9rem;
+  text-align: center;
+}

@@ -192,6 +192,9 @@ nav ul li ul li a {
   background: #f1f1f1;
   display: block;
   padding: 0.5rem 1.5rem;
+}
+
+nav ul li ul li:not(:last-child) {
   border-bottom: 1px solid lightgray;
 }
 
@@ -216,7 +219,7 @@ main {
 }
 
 main::before {
-  background: #9b9b9be6;
+  background: hsla(0, 0%, 47%, 0.8); /*hsla(0, 0%, 61%, 0.902);*/
   position: absolute;
   content: "";
   top: 0;
@@ -265,7 +268,8 @@ main .post-slider .next {
 
 main .post-slider .arrows:hover {
   font-size: 3rem;
-  transition: 0.2s;
+  
+   0.2s;
 }
 
 main .post-slider .post-wrapper {
@@ -315,6 +319,9 @@ main .content .read-more {
   position: absolute;
   bottom: 0.5rem;
   left: 0.5rem;
+}
+
+main .content .read-more:hover {
   text-decoration-line: underline;
 }
 
@@ -423,6 +430,11 @@ main .content .article-content .article-references ul {
   line-height: 1.5;
 }
 
+main .content .article-content .article-references a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
 /* REFERENCES */   
 
 main .content .references {
@@ -474,6 +486,11 @@ main .content .references .reference-links h3 {
 
 main .content .references .reference-links ul {
   margin-left: 1rem;
+}
+
+main .content .references .reference-links ul li a:hover {
+  color: #000;
+  text-decoration: underline;
 }
 
 /* SIDEBAR */

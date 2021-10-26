@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <script src="https://kit.fontawesome.com/4132dc5838.js" crossorigin="anonymous"></script>
     <title>Priceline</title>
   </head>
   <body>
@@ -38,7 +39,13 @@
             <h2 id="description-2">Exclusive Tonight Only Deals. Only in the App.</h2>
             <p id="description-3">Discover hotel, flight and rental car deals exclusively in the app. 
                                   Download today to stay connected with important trip details — anytime, anywhere.</p>
-            <div id="send-link"> Send Link </div>
+            <form action="index.html" method="POST">
+              <input type="tel" name="phone" placeholder="Enter your phone number">
+              <button type="submit" id="send-link">
+                <span class="fas fa-mobile-alt"></span>
+                <span>Send Link</span>
+              </button>
+            </form>
           </div>
           <figure id="savings-image">
             <img src="images/Priceline-App-devices.png" alt="smartphones with Priceline app">
@@ -74,7 +81,7 @@
           </figure>
         </div>
       </div>
-      <div id="disney-deal">
+      <div id="disney">
         <div id="disney-wrapper">
           <div id="disney-description">
             <p id="description-1">WALT DISNEY WORLD RESORT VACATIONS</p>

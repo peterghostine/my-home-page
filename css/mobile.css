@@ -8,8 +8,6 @@
     font-size: 22px;
   }
 
-
-
   main .content .main-content .post .post-image {
     max-width: 260px;
   }
@@ -20,12 +18,9 @@
 /* ------------------ */
 @media only screen and (max-width: 1120px) {
    header {
+    height: 50px;
     display: block;
     position: relative;
-  }
-
-  header {
-    height: 50px;
   }
 
   header .logo {
@@ -43,30 +38,6 @@
     display: block;
     position: absolute;
   }
-
-  /*
-  header nav ul li ul li a:hover {
-    color: #9ab9e4;
-    transition: 0.2s;
-  }
-
-  header nav ul li a:hover {
-    background-color: #000000;
-    transition: 0.2s;
-  }
-  */
-
-  /*
-  header .logo {
-    margin-left: .5em;
-    padding-top: 3px;
-  }
-      
-  header .logo-text {
-    font-family: 'Candal', sans-serif;
-    font-size: 1.2em;
-  }  
-  */
 
   nav {
     width: 100%;
@@ -103,16 +74,14 @@
     width: 100%;  
   }
 
-  /*
-  nav ul li a {
+ nav ul li ul li a {
+    color: #000;
     text-align: right;
   }
-  */
 
-nav ul li ul li a {
-    color: #000000;
-    /* padding-left: 2.5rem; */
-    text-align: right;
+  nav ul li ul li a:hover {
+    color: #fff;
+    background: #272727;
   }
 
   .showing {

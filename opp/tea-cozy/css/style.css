@@ -47,7 +47,6 @@ header {
     z-index: 100;
     background-color: #000;
     border-bottom: 1px solid seashell;
-
 }
 
 header .logo {
@@ -62,9 +61,6 @@ header .menu-toggle {
     padding: 5px 10px;
     display: none;
     font-size: 30px;
-    border: 2px solid #fff5ee;
-    border-radius: 50px;
-
 }
 
 header .logo img {
@@ -102,7 +98,6 @@ main section {
     margin-bottom: 3rem;
     display: flex;
 }
-
 
 main section.hero {
   background: url(../images/img-mission-background.png);
@@ -246,7 +241,6 @@ footer .copyright {
         position: absolute;
         right: 15px;
         top: 10px;
-        z-index: 500;
     }
 
     header nav {

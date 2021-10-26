@@ -1,29 +1,84 @@
 /* ----------------- */
-/* MEDIA QUERIES 576 */
+/* MEDIA QUERIES 992 */
 /* ----------------- */
 @media only screen and (max-width: 992px) {
+    #send-link {
+        padding: 0.75rem 3vw;
+    }
+
     #disney-description {
-        flex-basis: 55%;
+        flex-basis: 50%;
+    }
+
+    #disney-image,
+    #savings-image {
+        margin-left: 2vw;
+    }
+
+    #disney-image img {
+        width: 100%;
     }
 
     #disney-description #description-2 {
         font-size: 1.7rem;
     }
+
+
 }
 
-@media only screen and (max-width: 750px) {
-    #savings #savings-image,
-    #disney-deal #disney-image { 
+/* ----------------- */
+/* MEDIA QUERIES 840 */
+/* ----------------- */
+@media only screen and (max-width: 840px) {
+    #cities-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 16px;
+        grid-template-areas:
+          "city1 city2"
+          "city3 city4"
+          "city5 city6"
+          "city7 city8"
+          "city9 city10";  
+        align-items: center; 
+      }
+
+    #city1 img,
+    #city7 img {
+        position: absolute;
+        clip: rect(0px, 416px, 301px, 0px);
+    }
+
+    #disney-wrapper,
+    #savings-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    #savings-image img { 
         display: none;
     }
 
-    #savings-description,  
-    #disney-description {
+    #disney-image img { 
+        height: 100px;
+    }
+  
+    #disney-description,
+    #savings-description {
+        padding-top: 1.5rem;
         text-align: center;
         align-items: center;
         flex-basis: 90%;
     }
-    
+
+    #description-2 {
+        padding-top: 1.5rem;
+    }
+
+    #description-3 {
+        padding-top: 1.5rem;
+        font-size: 1.2rem;
+    }
+
     #rewards {
         padding: 2rem 2vw;
     }
@@ -33,11 +88,17 @@
 
     }
 
-    #rewards ul li:not(:last-child) {
-        padding-bottom: 0.5rem;
-    }
-
     #footnotes p {
         padding: 0 8vw;
     }
 }
+
+@media only screen and (max-width: 390px) {
+    #savings input {
+        width: 70%;
+    }
+
+    #send-link {
+        margin-top: 2rem;
+    }
+}    
