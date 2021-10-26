@@ -286,6 +286,7 @@ footer {
 #sponsors-title {
   font-size: 2rem;
   line-height: 1.5;
+  letter-spacing: 3px;
   text-align: center;
   text-decoration: underline;
 }
