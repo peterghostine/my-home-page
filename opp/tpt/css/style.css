@@ -207,18 +207,18 @@ main::before {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
 }
 
 /* #buttons child elements: the main event flyer, the barbox flyer, and the ladies flyer. */
 .button {
   /* font-family: 'Fredoka One', cursive; */ 
   font-family: 'Rampart One', cursive; 
-  flex-basis: 23%;
-  padding: 2rem;
+  font-size: 1.6vw;
+  line-height: 1;
+  padding: 1rem;
   border-radius: 5px;
   text-align: center;
-  font-size: 1.6vw;
+  flex-basis: 23%;
   border: 1px solid white;
 }
 
