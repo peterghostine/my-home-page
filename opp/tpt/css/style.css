@@ -142,7 +142,7 @@ main::before {
 */
 
 /* This pseudo element applies to the front page only. it cover the entire main area for 
-   the purpose of showing a blurred background image without affecting the contents of main. 
+   the purpose of showing a blurred background image without affecting the contents of main. */
 #home::before {
   background-image: url(../images/tpt3.jpg);
   background-size: cover;
@@ -155,7 +155,6 @@ main::before {
   filter: blur(3px);
   -webkit-filter: blur(3px);
 }
-*/
 
 /* This is the figure element containing the event image. It takes up approx. half of
    the page width, on large devices. See media queries for small-device handling. */
@@ -293,6 +292,7 @@ footer {
 /* This identifier is associated with the sponsors' h2 element */
 #sponsors-title {
   font-size: 2rem;
+  padding: 0 1rem;
   line-height: 1.5;
   letter-spacing: 3px;
   text-align: center;
@@ -308,7 +308,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 2rem;
+  padding: 2rem;
 }
 
 .sponsor {
@@ -325,30 +325,24 @@ footer {
 
 #sponsors li,
 #useful-links li {
-  margin: 1rem 1rem 0 1rem;
+  padding: 0.5rem 1rem;
 }
 
 #useful-links a:hover {
   text-decoration: underline;
 }
 
-#socials ul {
-  display: flex;
-  align-items: center;
-}
-
-#socials ul li {
-  display: flex;
-  align-items: center;
-}
-
 .social {
   padding: 0.5rem 0;
+  margin: auto;
+  min-width: 200px;
+  width: 90%;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
 
 .social img {
+  width: 100%;
   display: block;
 }
 
