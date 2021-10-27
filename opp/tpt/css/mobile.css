@@ -66,8 +66,8 @@
     margin: 0;
   }
 
-  nav > ul > li { /* :not(:last-child) */
-    border-bottom: 1px solid red; /* #6a79ff; */
+  nav > ul > li > a { /* :not(:last-child) */
+    border-bottom: 1px solid rgb(247, 0, 255); /* #6a79ff; */
   }
 
   nav > ul > li > .menu-wide {
@@ -90,8 +90,7 @@
     width: 100%;
   }
  
-  nav ul li ul li { /* :not(:last-child) */
-    border-bottom: none;
+  nav ul li ul li a { /* :not(:last-child) */
     border-bottom: 1px solid #ececec;
   }
 

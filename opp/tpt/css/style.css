@@ -97,16 +97,16 @@ nav ul li ul {
   width: 300px;
 }
 
-nav ul li ul li { /* :not(:last-child) */
-  border-bottom: 1px solid #6a79ff;
-}
-
 /* Same vertical padding for second-level elements, but also add some left/right. */
 nav ul li ul li a {
   padding: 1rem;
   color: #fff;
   background: #4859ff;
   display: block;
+}
+
+nav ul li ul li a { /* :not(:last-child) */
+  border-bottom: 1px solid #6a79ff;
 }
 
 nav ul li ul li a:hover {
