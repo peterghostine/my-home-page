@@ -49,7 +49,7 @@
             <a class="menu-wide" href="index.html">HOME</a>
           </li>
           <li>
-            <a class="menu-wide" href="#">ABOUT US</a>
+            <a class="menu-wide" href="about.html">ABOUT US</a>
           </li>
           <li>
             <a class="menu-wide" href="#">
@@ -74,7 +74,7 @@
             <a class="menu-wide" href="auction.html">AUCTION</a>
           </li>
           <li>
-            <a class="menu-wide" href="#">VENUE</a>
+            <a class="menu-wide" href="venue.html">VENUE</a>
           </li>
           <li>
             <a class="menu-wide" href="#sponsors-title">SPONSORS</a>
@@ -83,8 +83,14 @@
       </nav>
     </header>
     <main>
+      <!-- The modal image container -->
+      <div id="modal-container" class="modal">
+        <span id="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+      </div>          
       <figure id="ladies-flyer" class="flyer">  
-        <img src="images/auction-ladies.jpg" alt="">
+        <img class="image" src="images/auction-ladies.jpg" alt="">
       </figure>
     </main>
     <footer role="contentinfo">
@@ -279,5 +285,6 @@
     <!-- Slick Carousel -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/modal-img.js"></script>
   </body>
 </html>

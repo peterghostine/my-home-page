@@ -95,7 +95,8 @@
   }
 
   #home #content,
-  .flyer {
+  .flyer,
+  #venue-images {
     margin: 2rem auto;
   }
 

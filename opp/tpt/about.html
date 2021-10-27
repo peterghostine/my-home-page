@@ -6,30 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Rampart+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/4132dc5838.js"
-      crossorigin="anonymous"
-    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Rampart+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4132dc5838.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mobile.css" />
     <title>The People's Tournament</title>
@@ -49,7 +31,7 @@
             <a class="menu-wide" href="index.html">HOME</a>
           </li>
           <li>
-            <a class="menu-wide" href="#">ABOUT US</a>
+            <a class="menu-wide" href="about.html">ABOUT US</a>
           </li>
           <li>
             <a class="menu-wide" href="#">
@@ -74,7 +56,7 @@
             <a class="menu-wide" href="auction.html">AUCTION</a>
           </li>
           <li>
-            <a class="menu-wide" href="#">VENUE</a>
+            <a class="menu-wide" href="venue.html">VENUE</a>
           </li>
           <li>
             <a class="menu-wide" href="#sponsors-title">SPONSORS</a>
@@ -83,6 +65,63 @@
       </nav>
     </header>
     <main>
+      <!-- The modal image container -->
+      <div id="modal-container" class="modal">
+        <span id="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+      </div> 
+      <div id="content">
+        <div id="venue">
+          <h1>The Dunnski Family</h1>
+          <p>
+            <!--
+            312 North Entrance Rd. <br> Sanford, FL 32771 <br>
+            <i class="fas fa-phone"></i> 
+            (407) 449-7665 <br>
+            <i class="far fa-clock"></i> 
+            Everyday 11am to 2am <br>
+            <i class="fas fa-map-marker-alt"></i> 
+            <a href="http://www.racksbilliards.com" target=_blank>www.racksbilliards.com</a> <br>
+            -->
+            <i class="fas fa-envelope"></i> 
+            <a href="mailto:dunnskidungeon@gmail.com" target=_blank>dunnskidungeon@gmail.com</a> <br>
+            <i class="fab fa-facebook-f"></i>
+            <a href="http://www.facebook.com/thepeoplestournament" target=_blank>@thepeoplestournament</a>
+          </p>
+        </div>
+        <div class="image-collection">
+          <figure>
+            <img class="image" src="images/family/family1.jpg" alt="">
+          </figure>
+          <figure>
+            <img class="image" src="images/family/family2.jpg" alt="">
+          </figure>
+          <figure>
+            <img class="image" src="images/family/family3.jpg" alt="">
+          </figure>
+          <figure>
+            <img class="image" src="images/family/family4.jpg" alt="">
+          </figure>
+          <figure>
+            <img class="image" src="images/family/family5.jpg" alt="">
+          </figure>
+          <figure>
+            <img class="image" src="images/family/family6.jpg" alt="">
+          </figure>
+          <figure>
+            <img class="image" src="images/family/family7.jpg" alt="">
+          </figure>
+          <figure>
+            <img class="image" src="images/family/family8.jpg" alt="">
+          </figure>
+          <figure>
+            <img class="image" src="images/family/family9.jpg" alt="">
+          </figure>
+          <figure>
+            <img class="image" src="images/family/family10.jpg" alt="">
+        </div>
+      </div>
     </main>
     <footer role="contentinfo">
       <div role="navigation" id="sponsors">
@@ -90,139 +129,87 @@
         <ul role="presentation">
           <li>
             <figure class="sponsor">
-              <img
-                src="images/sponsors/mezz-2.png"
-                alt="Mezz logo"
-              />
+              <img src="images/sponsors/mezz-2.png" alt="Mezz logo" />
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <img
-                src="images/sponsors/clinkers.jpg"
-                alt="Clinkers logo"
-              />
+              <img src="images/sponsors/clinkers.jpg" alt="Clinkers logo" />
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <img
-                src="images/sponsors/bonesandme.jpg"
-                alt="Bones and Me logo"
-              />
+              <img src="images/sponsors/bonesandme.jpg" alt="Bones and Me logo" />
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <img
-                src="images/sponsors/racks-billiards.jpg"
-                alt="Racks Billiards"
-              />
+              <img src="images/sponsors/racks-billiards.jpg" alt="Racks Billiards" />
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <img
-                src="images/sponsors/zantip.png"
-                alt="Zan tip logo"
-              />
+              <img src="images/sponsors/zantip.png" alt="Zan tip logo" />
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <img
-                src="images/sponsors/pool-player-podcast.png"
-                alt="Pool Player Podcast logo"
-              />
+              <img src="images/sponsors/pool-player-podcast.png" alt="Pool Player Podcast logo" />
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <img
-                src="images/sponsors/jamison-daniels.jpg"
-                alt="Jamison Daniels logo"
-              />
+              <img src="images/sponsors/jamison-daniels.jpg" alt="Jamison Daniels logo" />
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <img
-                src="images/sponsors/turtle-rack.jpg"
-                alt="The Turtle Rack logo"
-              />
+              <img src="images/sponsors/turtle-rack.jpg" alt="The Turtle Rack logo" />
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <img
-                src="images/sponsors/booth-brothers.png"
-                alt="The Booth Brothers logo"
-              />
+              <img src="images/sponsors/booth-brothers.png" alt="The Booth Brothers logo" />
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <img
-                src="images/sponsors/1801-photography.jpg"
-                alt="1801 Photography logo"
-              />
+              <img src="images/sponsors/1801-photography.jpg" alt="1801 Photography logo" />
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <img
-                src="images/sponsors/1pkt.png"
-                alt="One Pocket logo"
-              />
-            </figure>
-          </li>
-
-          <li>
-            <figure class="sponsor">
-              <img
-                src="images/sponsors/taom.jpg"
-                alt="Taom logo"
-              />
+              <img src="images/sponsors/1pkt.png" alt="One Pocket logo" />
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <img
-                src="images/sponsors/molina-mike.png"
-                alt="Molina Mike logo"
-              />
+              <img src="images/sponsors/taom.jpg" alt="Taom logo" />
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <img
-                src="images/sponsors/omega-billiards.png"
-                alt="Omega Billiards logo"
-              />
+              <img src="images/sponsors/molina-mike.png" alt="Molina Mike logo" />
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <img
-                src="images/sponsors/franco.jpg"
-                alt="Franco logo"
-              />
+              <img src="images/sponsors/omega-billiards.png" alt="Omega Billiards logo" />
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <img
-                src="images/sponsors/acme.png"
-                alt="ACME logo"
-              />
+              <img src="images/sponsors/franco.jpg" alt="Franco logo" />
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <img
-                src="images/sponsors/brutal-game-gear.png"
-                alt="Brutal Game Gear logo"
-              />
+              <img src="images/sponsors/acme.png" alt="ACME logo" />
+            </figure>
+          </li>
+          <li>
+            <figure class="sponsor">
+              <img src="images/sponsors/brutal-game-gear.png" alt="Brutal Game Gear logo" />
             </figure>
           </li>
         </ul>
@@ -253,16 +240,10 @@
       <div role="navigation" id="socials">
         <ul role="presentation">
           <li id="facebook">
-            <a
-              href="https://www.facebook.com/thepeoplestournament"
-              target="_blank"
-            >
+            <a href="https://www.facebook.com/thepeoplestournament" target="_blank">
               <figure class="social">
-                <img
-                  src="images/fb-lg.png"
-                  alt="The People's Tournament on Facebook"
-                />
-              </figure>  
+                <img src="images/fb-lg.png" alt="The People's Tournament on Facebook" />
+              </figure>
             </a>
           </li>
         </ul>
@@ -276,5 +257,6 @@
     <!-- Slick Carousel -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/modal-img.js"></script>
   </body>
 </html>

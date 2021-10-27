@@ -124,7 +124,7 @@ main {
 /* Home is the main element's id on the home page only. 
    Vertical margins are reduced on small devices. See
    media queries */
-#home #content {
+#content {
   margin: 3rem auto;
   position: relative;
 }
@@ -226,6 +226,7 @@ main::before {
 /* Button decoration. */ 
 .button:hover {
   box-shadow: 0px 0px 20px 15px #303030;
+  cursor: pointer;
 }
 
 #event-btn {
@@ -253,11 +254,11 @@ main::before {
 }
 
 #auction-btn {
-  background: green;
+  background: #008000;
 }
 
 #auction-btn:hover {
-  background: rgb(5, 66, 5);
+  background: #054205;
 }
 
 /* The modal image popup (background) */
@@ -273,15 +274,21 @@ main::before {
   overflow: auto; /* Enable scroll if needed */
   background-color: #000; /* Fallback color */
   background-color: #000000e6; /* Black w/ opacity */
+  border: 3px solid green;
+}
+
+.modal img {
+  margin: auto;
+  display: block;
 }
 
 /* The Close Button */
 #close {
   position: absolute;
   top: 20px;
-  right: 30px;
+  right: 20px;
   color: #ff0000;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
 }
@@ -293,11 +300,16 @@ main::before {
   cursor: pointer;
 }
 
-/* Applies to all flyers. Margin is identical to #home #content. */
+/* Applies to all flyer pages and the venu page. 
+This is similar to #home #content. */
 .flyer {
   width: 90%;
   margin: 5rem auto;
   border-radius: 15px;
+}
+
+.flyer:hover {
+  cursor: pointer;
 }
 
 /* The actual flyer image. */
@@ -320,6 +332,47 @@ main::before {
 /* Barbox tournament flyer. */
 #barbox-flyer img {
   box-shadow: 0px 0px 15px 10px #ff0000;
+}
+
+#venue {
+  padding: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+#venue h1 {
+  font-size: 3rem;
+}
+.image-collection {
+  width: 90%;
+  padding: 2rem;
+  margin: auto;
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.image-collection figure {
+  margin: 2rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 30%;
+  box-shadow: 0px 0px 20px 15px #303030;
+}
+
+.image-collection figure:hover {
+  cursor: pointer;
+}
+
+.image-collection img {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
 }
 
 /* Apply the same gradient effect as the header, only in reverse. */
