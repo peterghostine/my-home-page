@@ -1,7 +1,7 @@
 /* ---------------------------------------------------
                    MEDIA QUERIES
 ------------------------------------------------------ */
-
+/*
 @media only screen and (max-width: 1440px) {
   .button {
     font-size: 2rem;
@@ -19,6 +19,7 @@
     font-size: 1.6rem;
   }
 }
+*/
 
 @media only screen and (max-width: 1125px) {
   header {
@@ -58,16 +59,8 @@
     overflow: hidden;
   }
 
-  nav ul li {
-    width: 100%;
-  }
-
   nav > ul > li {
     margin: 0;
-  }
-
-  nav > ul > li > a { /* :not(:last-child) */
-    border-bottom: 1px solid rgb(247, 0, 255); /* #6a79ff; */
   }
 
   nav > ul > li > .menu-wide {
@@ -76,12 +69,28 @@
     align-content: flex-start;
   }
 
+  nav > ul > li > a {
+    background: #4859ff;
+  }
+
+  nav > ul > li:not(:last-child) > a {
+    border-bottom: 1px solid #6a79ff;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
   nav ul li a {
     padding: 1rem;
   }
   
-  nav > ul > li > a {
-    background: #4859ff;
+  nav ul li a:hover {
+    /* Style second-level menu selection upon hover */
+    color: #000;
+    background: #fffb01;
+    border-bottom: #fffb01;
+    text-decoration: none;
   }
 
   nav ul li ul {
@@ -89,24 +98,20 @@
     display: none;
     width: 100%;
   }
- 
-  nav ul li ul li a { /* :not(:last-child) */
-    border-bottom: 1px solid #ececec;
-  }
-
-  nav ul li a:hover,
-  nav ul li ul li a:hover {
-    /* Style second-level menu selection upon hover */
-    color: #000;
-    background: #fffb01;
-    text-decoration: none;
-  }
 
   nav ul li ul li a {
     text-align: right;
     color: #000;
     background: #fff;
   }
+  
+
+
+  nav ul li ul li:not(:last-child) > a {
+    border-bottom: 1px solid #ececec;
+  }
+
+
 
   .showing {
     display: block;
