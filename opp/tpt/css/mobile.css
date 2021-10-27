@@ -53,7 +53,6 @@
   }
 
   nav > ul {
-    background: #4859ff;
     width: 100%;
     display: none;
     overflow: hidden;
@@ -67,7 +66,7 @@
     margin: 0;
   }
 
-  nav > ul > li:not(:last-child) {
+  nav > ul > li { /* :not(:last-child) */
     border-bottom: 1px solid #6a79ff;
   }
 
@@ -80,14 +79,18 @@
   nav ul li a {
     padding: 1rem;
   }
-
+  
+  nav > ul > li > a {
+    background: #4859ff;
+  }
+  
   nav ul li ul {
     position: static;
     display: none;
     width: 100%;
   }
  
-  nav ul li ul li:not(:last-child) {
+  nav ul li ul li { /* :not(:last-child) */
     border-bottom: none;
     border-bottom: 1px solid #ececec;
   }
