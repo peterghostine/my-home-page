@@ -86,9 +86,10 @@
     display: none;
     width: 100%;
   }
-
-  nav ul li ul li {
-    border-bottom: 1px solid #ebebeb;
+ 
+  nav ul li ul li:not(:last-child) {
+    border-bottom: none;
+    border-bottom: 1px solid #ececec;
   }
 
   nav ul li a:hover,
