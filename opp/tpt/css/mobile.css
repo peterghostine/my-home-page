@@ -67,7 +67,7 @@
   }
 
   nav > ul > li { /* :not(:last-child) */
-    border-bottom: 1px solid #6a79ff;
+    border-bottom: 1px solid red; /* #6a79ff; */
   }
 
   nav > ul > li > .menu-wide {
@@ -83,7 +83,7 @@
   nav > ul > li > a {
     background: #4859ff;
   }
-  
+
   nav ul li ul {
     position: static;
     display: none;
