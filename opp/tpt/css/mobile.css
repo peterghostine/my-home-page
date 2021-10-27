@@ -87,7 +87,7 @@
     width: 100%;
   }
 
-  nav ul li ul li:not(:last-child) {
+  nav ul li ul li {
     border-bottom: 1px solid #ebebeb;
   }
 
