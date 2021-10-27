@@ -135,7 +135,7 @@ main::before {
 */
 
 /* This pseudo element applies to the front page only. it cover the entire main area for 
-   the purpose of showing a blurred background image without affecting the contents of main. */
+   the purpose of showing a blurred background image without affecting the contents of main. 
 #home::before {
   background-image: url(../images/tpt3.jpg);
   background-size: cover;
@@ -148,6 +148,7 @@ main::before {
   filter: blur(3px);
   -webkit-filter: blur(3px);
 }
+*/
 
 /* This is the figure element containing the event image. It takes up approx. half of
    the page width, on large devices. See media queries for small-device handling. */
