@@ -116,8 +116,8 @@ main {
 
 /* content wrapper for the main section of most pages. */
 .content {
+  padding: 5vw;
   min-height: 100%;
-  margin: 3rem auto;
   position: relative;
 }
 
@@ -150,8 +150,7 @@ main {
 
 /* These are the buttons below the event image on the home page. */
 #buttons {
-  padding: 2rem 0;
-  width: 90%;
+  padding: 4vw 0;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -248,11 +247,9 @@ main {
   cursor: pointer;
 }
 
-/* Applies to all flyer pages and the venu page. 
+/* Applies to all flyer pages and the venue page. 
 This is similar to #home #content. */
 .flyer {
-  width: 90%;
-  margin: 5rem auto;
   border-radius: 15px;
 }
 
@@ -283,7 +280,7 @@ This is similar to #home #content. */
 }
 
 .info {
-  padding: 1rem;
+  padding-bottom: 1rem;
   letter-spacing: 1px;
   line-height: 1.4;
   text-align: center;
@@ -294,7 +291,6 @@ This is similar to #home #content. */
 }
 
 .image-collection {
-  width: 90%;
   padding: 2rem;
   margin: auto;
   background: #fff;
@@ -324,29 +320,28 @@ This is similar to #home #content. */
   display: block;
 }
 
-.product {
+.product-wrapper {
   margin: 3rem auto;
-  width: 90%;
   background: #fff;
   border-radius: 5px;
 }
 
-#hat {
+.product-wrapper {
   text-align: center;
   color: #000;
   display: flex;
   align-items: center;
 }
 
-#hat figure {
+.product-wrapper figure {
   flex-basis: 30%;
 }
 
-#hat figure:hover {
+.product-wrapper figure:hover {
   cursor: pointer;
 }
 
-#hat img {
+.product-wrapper img {
   width: 100%;
   display: block;
   border-top-left-radius: 5px;
@@ -354,6 +349,7 @@ This is similar to #home #content. */
 }
 
 #product-description {
+  padding: 2vw 4vw;
   flex-basis: 70%; 
 }
 
@@ -362,19 +358,46 @@ This is similar to #home #content. */
   padding-bottom: 2rem;
 }
 
+#product-links {
+  list-style: none;
+  line-height: 1.5;
+}
+
+#product-links {
+  margin: auto;
+  padding: 1vw;
+  background: rgba(0, 0, 0, 0.5);
+  top: 120px;
+  position:sticky;
+  z-index: 500;
+  list-style: none;
+  line-height: 1.6;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+#product-links a {
+  font-size: 1.4rem;
+  color: #fffb01;
+  text-decoration: underline;
+}
+
+#product-links a:hover {
+  color: #ff0000;
+}
+
 iframe {
   width: 100%;
   min-height: 1500px;
   margin: auto;
   border: none;
   display: block;
-  overflow: hidden;
+  overflow: scroll;
   border-radius: 5px;
 }
 
 .embedsocial-album {
   margin: auto;
-  width: 90%;
   background: #fff;
   border-radius: 5px;
 }
@@ -437,7 +460,6 @@ footer {
   padding: 0.5rem 0;
   margin: auto;
   min-width: 200px;
-  width: 90%;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
@@ -448,7 +470,7 @@ footer {
 }
 
 #copyright p {
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
   font-size: 0.9rem;
   text-align: center;
 }
