@@ -83,7 +83,7 @@
     color: #000;
     background: #fff;
   }
-  
+
   nav ul li ul li:not(:last-child) > a {
     border-bottom: 1px solid #ececec;
   }
@@ -97,10 +97,19 @@
     min-height: unset;
   }
 
-  #home #content,
+  #home .content,
   .flyer,
   #venue-images {
     margin: 2rem auto;
+  }
+
+  #hat {
+    flex-direction: column;
+  }
+
+  #hat img {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
   }
 
   #event-img {
@@ -115,7 +124,7 @@
     font-size: 2rem;
   }
 
-  #info h1 {
+  .info h1 {
     font-size: 2rem;
   }
 

@@ -7,10 +7,10 @@
 
 html,
 body {
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: "Balsamiq Sans", cursive;
   font-size: 16px;
   line-height: 1.2rem;
-  min-height: 100%;
+  height: 100%;
   color: #fff;
   background: #000;
 }
@@ -22,7 +22,7 @@ a {
 
 /* header includes logo and nav bar. */
 header {
-  height: 120px;  
+  height: 120px;
   background: linear-gradient(#4859ff, #000);
   background: -webkit-linear-gradient(#4859ff, #000);
   display: flex;
@@ -69,7 +69,7 @@ nav > ul > li {
   position: relative;
 }
 
-/* Let 'a' element top/bottom padding determine li height. */ 
+/* Let 'a' element top/bottom padding determine li height. */
 nav > ul > li > a {
   font-size: 1.1rem;
   font-weight: 400;
@@ -115,7 +115,8 @@ main {
 }
 
 /* content wrapper for the main section of most pages. */
-#content {
+.content {
+  min-height: 100%;
   margin: 3rem auto;
   position: relative;
 }
@@ -157,9 +158,9 @@ main {
 }
 
 /* #buttons child elements: the main event flyer, the barbox flyer, and the ladies flyer. */
-.button { 
+.button {
   /* font-family: 'Rampart One', cursive; */
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", cursive;
   font-size: 1.6vw;
   line-height: 1;
   padding: 1rem;
@@ -169,7 +170,7 @@ main {
   border: 1px solid white;
 }
 
-/* Button decoration. */ 
+/* Button decoration. */
 .button:hover {
   box-shadow: 0px 0px 20px 15px #303030;
   cursor: pointer;
@@ -216,7 +217,7 @@ main {
   left: 0;
   top: 0;
   width: 100%; /* Full width */
-  height: 100%;  /* Full height */
+  height: 100%; /* Full height */
   /*overflow: auto; Enable scroll if needed */
   background-color: #000; /* Fallback color */
   background-color: #000000e6; /* Black w/ opacity */
@@ -281,14 +282,14 @@ This is similar to #home #content. */
   box-shadow: 0px 0px 15px 10px #ff0000;
 }
 
-#info {
+.info {
   padding: 1rem;
   letter-spacing: 1px;
   line-height: 1.4;
   text-align: center;
 }
 
-#info h1 {
+.info h1 {
   font-size: 3rem;
 }
 
@@ -321,6 +322,61 @@ This is similar to #home #content. */
   width: 100%;
   border-radius: 5px;
   display: block;
+}
+
+.product {
+  margin: 3rem auto;
+  width: 90%;
+  background: #fff;
+  border-radius: 5px;
+}
+
+#hat {
+  text-align: center;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+#hat figure {
+  flex-basis: 30%;
+}
+
+#hat figure:hover {
+  cursor: pointer;
+}
+
+#hat img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#product-description {
+  flex-basis: 70%; 
+}
+
+#product-description h1,
+#product-description p {
+  padding-bottom: 2rem;
+}
+
+iframe {
+  width: 100%;
+  min-height: 1500px;
+  margin: auto;
+  border: none;
+  display: block;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.embedsocial-album {
+  margin: auto;
+  width: 90%;
+  background: #fff;
+  border-radius: 5px;
 }
 
 /* Apply the same gradient effect as the header, only in reverse. */
