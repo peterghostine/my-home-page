@@ -7,7 +7,8 @@ let modalImg = document.getElementById("modal-img");
 Array.prototype.forEach.call(Images, (item) => {
     item.addEventListener('click', () => {
         modalImg.src = item.src;
-        modal.style.display = "block";
+        modal.style.display = "flex";
+        modal.style.alignItems = "center";
     });    
 });
 

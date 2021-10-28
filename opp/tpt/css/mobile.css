@@ -65,11 +65,10 @@
     padding: 1rem;
   }
 
-  nav ul li a:hover {
-    /* Style second-level menu selection upon hover */
+  nav > ul > li > a:hover {
     color: #000;
     background: #fffb01;
-    border-bottom: #fffb01;
+    border-bottom: 1px solid #fffb01;
     text-decoration: none;
   }
 
@@ -94,14 +93,14 @@
     max-height: 100rem;
   }
 
+  main {
+    min-height: unset;
+  }
+
   #home #content,
   .flyer,
   #venue-images {
     margin: 2rem auto;
-  }
-
-  main {
-    min-height: unset;
   }
 
   #event-img {
@@ -113,6 +112,10 @@
   }
   .button {
     margin: 0.5rem 0;
+    font-size: 2rem;
+  }
+
+  #info h1 {
     font-size: 2rem;
   }
 
