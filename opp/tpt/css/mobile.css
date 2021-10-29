@@ -106,6 +106,14 @@
     border-bottom-left-radius: 0px;
   }
 
+  #product-links {
+    top: 75px;
+  }
+
+  #product-links a {
+    font-size: 1.2rem;
+  }
+
   #event-img {
     width: 80%;
   }
@@ -120,6 +128,10 @@
 
   .info h1 {
     font-size: 2rem;
+  }
+
+  .image-collection figure {
+    flex-basis: 100%;
   }
 
   footer {

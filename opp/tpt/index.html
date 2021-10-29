@@ -6,30 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Rampart+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/4132dc5838.js"
-      crossorigin="anonymous"
-    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Rampart+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4132dc5838.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mobile.css" />
     <title>The People's Tournament</title>
@@ -49,18 +31,19 @@
             <a class="menu-wide" href="index.html">HOME</a>
           </li>
           <li>
+            <a class="menu-wide" href="about.html">ABOUT</a>
+          </li>
+          <li>
             <a class="menu-wide" href="#">
               <span>FLYERS</span>
-              <span class="fa fa-chevron-down fa-styling"></span>
+              <i class="fa fa-chevron-down fa-styling"></i>
             </a>
             <ul>
               <li>
                 <a class="menu-wide" href="flyer.html">THE EVENT</a>
               </li>
               <li>
-                <a class="menu-wide" href="barbox.html"
-                  >BARBOX 9-BALL BONANZA</a
-                >
+                <a class="menu-wide" href="barbox.html">BARBOX 9-BALL BONANZA </a>
               </li>
               <li>
                 <a class="menu-wide" href="ladies.html">LADIES 9-BALL</a>
@@ -82,58 +65,30 @@
           <li>
             <a class="menu-wide" href="photos.html">PHOTOS</a>
           </li>
-          <li>
-            <a class="menu-wide" href="about.html">ABOUT US</a>
-          </li>
         </ul>
       </nav>
     </header>
     <main id="home">
       <!--
-      <h1>
-        <span id="tour-sponsor">Mezz Cues</span>
-          <span>&</span>
-          <span id="dungeon">Dunnski Dungeon</span>
-          <span>Present</span>
-          <span id="event">THE <br> PEOPLE'S <br> TOURNAMENT</span>
-      </h1>
-      <div id="buttons">
-        <div id="event-btn" class="button">
-        <a href="flyer.html">EVENT FLYER</a>
-        </div>
-        <div id="barbox-btn" class="button">
-        <a href="barbox.html" class="">BARBOX 9-BALL </a>
-        </div>
-        <div id="ladies-btn" class="button">
-        <a href="ladies.html">LADIES 9-BALL </a>
-        </div>
-      </div>
+      <h1><span id="tour-sponsor">Mezz Cues</span><span>&</span><span id="dungeon">Dunnski Dungeon</span><span>Present</span><span id="event">THE <br> PEOPLE'S <br> TOURNAMENT</span></h1><div id="buttons"><div id="event-btn" class="button"><a href="flyer.html">EVENT FLYER</a></div><div id="barbox-btn" class="button"><a href="barbox.html" class="">BARBOX 9-BALL </a></div><div id="ladies-btn" class="button"><a href="ladies.html">LADIES 9-BALL </a></div></div>
       -->
       <div class="content">
         <figure id="event-img">
           <a class="image-link" href="images/event-img.png">
             <img src="images/event-img.png" alt="" />
           </a>
-        <!-- The modal image container -->
-        <div id="modal-container" class="modal">
-          <span id="close">&times;</span>
-          <img class="modal-content" id="modal-img">
-          <div id="caption"></div>
-        </div>  
+          <!-- The modal image container -->
+          <div id="modal-container" class="modal">
+            <span id="close">&times;</span>
+            <img class="modal-content" id="modal-img">
+            <div id="caption"></div>
+          </div>
         </figure>
         <div id="buttons">
-          <div id="event-btn" class="button">
-            EVENT FLYER
-          </div>
-          <div id="barbox-btn" class="button">
-            BARBOX 9-BALL
-          </div>
-          <div id="ladies-btn" class="button">
-            LADIES 9-BALL
-          </div>
-          <div id="auction-btn" class="button">
-            LADIE$ AUCTION
-          </div>
+          <div id="event-btn" class="button"> EVENT FLYER </div>
+          <div id="barbox-btn" class="button"> BARBOX 9-BALL </div>
+          <div id="ladies-btn" class="button"> LADIES 9-BALL </div>
+          <div id="auction-btn" class="button"> LADIE$ AUCTION </div>
         </div>
       </div>
     </main>
@@ -144,172 +99,120 @@
           <li>
             <figure class="sponsor">
               <a href="http://mezzcue.com/en" target=_blank>
-                <img
-                  src="images/sponsors/mezz-2.png"
-                  alt="Mezz logo"
-                />
-              </a>  
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="http://facebook.com/drinkandclink" target=_blank>
-                <img
-                  src="images/sponsors/clinkers.jpg"
-                  alt="Clinkers logo"
-                />
-              </a>  
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="http://bonesandme.com" target=_blank>
-                <img
-                  src="images/sponsors/bonesandme.jpg"
-                  alt="Bones and Me logo"
-                />
-              </a>  
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="http://racksbilliards.com" target=_blank>
-                <img
-                  src="images/sponsors/racks-billiards.jpg"
-                  alt="Racks Billiards"
-                />
-              </a>  
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="http://mezzcue.com/en" target=_blank>
-                <img
-                  src="images/sponsors/zantip.png"
-                  alt="Zan tip logo"
-                />
-              </a>  
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="http://facebook.com/poolplayerpodcast" target=_blank>
-                <img
-                  src="images/sponsors/pool-player-podcast.png"
-                  alt="Pool Player Podcast logo"
-                />
-              </a>  
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="https://www.facebook.com/jrd023" target=_blank>              
-                <img
-                  src="images/sponsors/jamison-daniels.jpg"
-                  alt="Jamison Daniels logo"
-                />
-              </a>  
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="http://mezzcue.com/en" target=_blank>
-                <img
-                  src="images/sponsors/turtle-rack.jpg"
-                  alt="The Turtle Rack logo"
-                />
-              </a>  
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="https://www.facebook.com/theboothbrothersshow" target=_blank>      
-                <img
-                  src="images/sponsors/booth-brothers.png"
-                  alt="The Booth Brothers logo"
-                />
-              </a>  
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="https://www.facebook.com/ryan.acosta.3557" target=_blank>   
-                <img
-                  src="images/sponsors/1801-photography.jpg"
-                  alt="1801 Photography logo"
-                />
+                <img src="images/sponsors/mezz-2.png" alt="Mezz logo" />
               </a>
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <a href="https://1pkt.com/" target=_blank>            
-                <img
-                  src="images/sponsors/1pkt.png"
-                  alt="One Pocket logo"
-                />
-              </a>  
-            </figure>
-          </li>
-
-          <li>
-            <figure class="sponsor">
-              <a href="http://taombilliards.com" target=_blank>                
-                <img
-                  src="images/sponsors/taom.jpg"
-                  alt="Taom logo"
-                />
-              </a>  
+              <a href="http://facebook.com/drinkandclink" target=_blank>
+                <img src="images/sponsors/clinkers.jpg" alt="Clinkers logo" />
+              </a>
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <a href="https://www.facebook.com/molina.mike.3" target=_blank>                 
-                <img
-                  src="images/sponsors/molina-mike.png"
-                  alt="Molina Mike logo"
-                />
-              </a>  
+              <a href="http://bonesandme.com" target=_blank>
+                <img src="images/sponsors/bonesandme.jpg" alt="Bones and Me logo" />
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="sponsor">
+              <a href="http://racksbilliards.com" target=_blank>
+                <img src="images/sponsors/racks-billiards.jpg" alt="Racks Billiards" />
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="sponsor">
+              <a href="http://mezzcue.com/en" target=_blank>
+                <img src="images/sponsors/zantip.png" alt="Zan tip logo" />
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="sponsor">
+              <a href="http://facebook.com/poolplayerpodcast" target=_blank>
+                <img src="images/sponsors/pool-player-podcast.png" alt="Pool Player Podcast logo" />
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="sponsor">
+              <a href="https://www.facebook.com/jrd023" target=_blank>
+                <img src="images/sponsors/jamison-daniels.jpg" alt="Jamison Daniels logo" />
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="sponsor">
+              <a href="http://mezzcue.com/en" target=_blank>
+                <img src="images/sponsors/turtle-rack.jpg" alt="The Turtle Rack logo" />
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="sponsor">
+              <a href="https://www.facebook.com/theboothbrothersshow" target=_blank>
+                <img src="images/sponsors/booth-brothers.png" alt="The Booth Brothers logo" />
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="sponsor">
+              <a href="https://www.facebook.com/ryan.acosta.3557" target=_blank>
+                <img src="images/sponsors/1801-photography.jpg" alt="1801 Photography logo" />
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="sponsor">
+              <a href="https://1pkt.com/" target=_blank>
+                <img src="images/sponsors/1pkt.png" alt="One Pocket logo" />
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="sponsor">
+              <a href="http://taombilliards.com" target=_blank>
+                <img src="images/sponsors/taom.jpg" alt="Taom logo" />
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="sponsor">
+              <a href="https://www.facebook.com/molina.mike.3" target=_blank>
+                <img src="images/sponsors/molina-mike.png" alt="Molina Mike logo" />
+              </a>
             </figure>
           </li>
           <li>
             <figure class="sponsor">
               <a href="http://omegabilliards.com" target=_blank>
-                <img
-                  src="images/sponsors/omega-billiards.png"
-                  alt="Omega Billiards logo"
-                />
-              </a>  
+                <img src="images/sponsors/omega-billiards.png" alt="Omega Billiards logo" />
+              </a>
             </figure>
           </li>
           <li>
             <figure class="sponsor">
               <a href="https://www.facebook.com/FrancoCues/" target=_blank>
-                <img
-                  src="images/sponsors/franco.jpg"
-                  alt="Franco logo"
-                />
-              </a>  
+                <img src="images/sponsors/franco.jpg" alt="Franco logo" />
+              </a>
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <a href="https://www.omegabilliards.com/Acme_Cases_s/606.htm" target=_blank>              
-                <img
-                  src="images/sponsors/acme.png"
-                  alt="ACME logo"
-                />
-              </a>  
+              <a href="https://www.omegabilliards.com/Acme_Cases_s/606.htm" target=_blank>
+                <img src="images/sponsors/acme.png" alt="ACME logo" />
+              </a>
             </figure>
           </li>
           <li>
             <figure class="sponsor">
-              <a href="https://www.brutalusa.com/" target=_blank>                             
-                <img
-                  src="images/sponsors/brutal-game-gear.png"
-                  alt="Brutal Game Gear logo"
-                />
-              </a>  
+              <a href="https://www.brutalusa.com/" target=_blank>
+                <img src="images/sponsors/brutal-game-gear.png" alt="Brutal Game Gear logo" />
+              </a>
             </figure>
           </li>
         </ul>
@@ -340,16 +243,10 @@
       <div role="navigation" id="socials">
         <ul role="presentation">
           <li id="facebook">
-            <a
-              href="https://www.facebook.com/thepeoplestournament"
-              target="_blank"
-            >
+            <a href="https://www.facebook.com/thepeoplestournament" target="_blank">
               <figure class="social">
-                <img
-                  src="images/fb-lg.png"
-                  alt="The People's Tournament on Facebook"
-                />
-              </figure>  
+                <img src="images/fb-lg.png" alt="The People's Tournament on Facebook" />
+              </figure>
             </a>
           </li>
         </ul>

@@ -280,7 +280,7 @@ This is similar to #home #content. */
 }
 
 .info {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   letter-spacing: 1px;
   line-height: 1.4;
   text-align: center;
@@ -288,6 +288,10 @@ This is similar to #home #content. */
 
 .info h1 {
   font-size: 3rem;
+}
+
+.intro p {
+  padding-bottom: 2rem;
 }
 
 .image-collection {
@@ -322,13 +326,10 @@ This is similar to #home #content. */
 
 .product-wrapper {
   margin: 3rem auto;
-  background: #fff;
-  border-radius: 5px;
-}
-
-.product-wrapper {
   text-align: center;
+  border-radius: 5px;
   color: #000;
+  background: #fff;
   display: flex;
   align-items: center;
 }
@@ -359,17 +360,11 @@ This is similar to #home #content. */
 }
 
 #product-links {
-  list-style: none;
-  line-height: 1.5;
-}
-
-#product-links {
   margin: auto;
   padding: 1vw;
   background: rgba(0, 0, 0, 0.5);
   top: 120px;
   position:sticky;
-  z-index: 500;
   list-style: none;
   line-height: 1.6;
   border-radius: 5px;
