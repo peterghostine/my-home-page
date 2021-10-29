@@ -129,6 +129,9 @@
   .info h1 {
     font-size: 2rem;
   }
+  .intro p {
+    text-align: justify;
+  }
 
   .image-collection figure {
     flex-basis: 100%;
