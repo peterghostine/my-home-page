@@ -20,6 +20,10 @@ a {
   color: inherit;
 }
 
+figure:hover {
+  cursor: pointer;
+}
+
 /* header includes logo and nav bar. */
 header {
   height: 120px;
@@ -91,7 +95,6 @@ nav ul li ul {
   width: 300px;
 }
 
-/* Same vertical padding for second-level elements, but also add some left/right. */
 nav ul li ul li a {
   padding: 1rem;
   color: #fff;
@@ -253,10 +256,6 @@ This is similar to #home #content. */
   border-radius: 15px;
 }
 
-.flyer:hover {
-  cursor: pointer;
-}
-
 /* The actual flyer image. */
 .flyer img {
   width: 100%;
@@ -302,20 +301,15 @@ This is similar to #home #content. */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: flex-start;
   align-items: flex-start;
 }
 
 .image-collection figure {
-  margin: 1rem 0;
+  margin: 2rem 0;
   padding: 0.3rem;
   border-radius: 5px;
   flex-basis: 30%;
   box-shadow: 0px 0px 20px 15px #303030;
-}
-
-.image-collection figure:hover {
-  cursor: pointer;
 }
 
 .image-collection img {
@@ -338,10 +332,6 @@ This is similar to #home #content. */
   flex-basis: 30%;
 }
 
-.product-wrapper figure:hover {
-  cursor: pointer;
-}
-
 .product-wrapper img {
   width: 100%;
   display: block;
@@ -362,7 +352,7 @@ This is similar to #home #content. */
 #product-links {
   margin: auto;
   padding: 1vw;
-  background: rgba(0, 0, 0, 0.5);
+  background: #00000080;
   top: 120px;
   position:sticky;
   list-style: none;

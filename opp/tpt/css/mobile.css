@@ -97,23 +97,6 @@
     min-height: unset;
   }
 
-  .product-wrapper {
-    flex-direction: column;
-  }
-
-  #hat img {
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 0px;
-  }
-
-  #product-links {
-    top: 75px;
-  }
-
-  #product-links a {
-    font-size: 1.2rem;
-  }
-
   #event-img {
     width: 80%;
   }
@@ -124,6 +107,23 @@
   .button {
     margin: 0.5rem 0;
     font-size: 2rem;
+  }
+  
+  .product-wrapper {
+    flex-direction: column;
+  }
+
+  #hat img {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+  }
+
+  #product-links {
+    top: 0;
+  }
+
+  #product-links a {
+    font-size: 1.2rem;
   }
 
   .info h1 {
