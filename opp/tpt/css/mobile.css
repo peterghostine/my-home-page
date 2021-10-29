@@ -106,7 +106,7 @@
   }
   .button {
     margin: 0.5rem 0;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   
   .product-wrapper {
@@ -123,7 +123,7 @@
   }
 
   #product-links a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .info h1 {
