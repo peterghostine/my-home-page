@@ -2,10 +2,13 @@
                    MEDIA QUERIES
 ------------------------------------------------------ */
 @media only screen and (max-width: 1470px) {
+  body {
+    padding-top: 75px;
+  }
+
   header {
     height: 75px;
     display: block;
-    position: relative;
   }
 
   header #logo {
@@ -88,6 +91,10 @@
     border-bottom: 1px solid #ececec;
   }
 
+  .nav-up {
+    top: -75px;
+  }
+
   .showing {
     display: block;
     max-height: 100rem;
@@ -119,7 +126,7 @@
   }
 
   #product-links {
-    top: 0;
+    top: 75px;
   }
 
   #product-links a {
