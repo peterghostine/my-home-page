@@ -390,11 +390,11 @@
   
     nav > ul > li {
       background: #505050;
-      border-bottom: 1px solid #7a7a7a;
     }
   
     nav > ul > li > a {
       color: #fff;
+      border-bottom: 1px solid #7a7a7a;
     }
 
     nav ul li ul {
