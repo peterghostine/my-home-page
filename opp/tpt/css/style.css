@@ -137,6 +137,10 @@ main {
   position: relative;
 }
 
+.sharethis-inline-share-buttons {
+  padding: 3vw;
+}
+
 /* This pseudo element applies to the front page only. It covers the entire main area for 
    the purpose of showing a blurred background image without affecting the contents of main. */
 #home::before {
@@ -166,7 +170,7 @@ main {
 
 /* These are the buttons below the event image on the home page. */
 #buttons {
-  padding: 3vw 0;
+  padding: 3vw 0 0 0;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -235,7 +239,7 @@ main {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed /*
   background-color: #000; /* Fallback color */
-  background-color: #000000e6; /* Black w/ opacity */
+  background-color: #000000e6; /* Black + opacity */
 }
 
 /* The actual image. */
@@ -278,17 +282,17 @@ This is similar to #home #content. */
 
 /* Main event flyer. */
 .event-flyer img {
-  box-shadow: 0px 0px 15px 10px #4859ff;
+  box-shadow: 0px 0px 1vw 0.5vw #4859ff;
 }
 
 /* Ladies tournament flyer. */
 #ladies-flyer img {
-  box-shadow: 0px 0px 15px 10px #e459e4;
+  box-shadow: 0px 0px 1vw 0.5vw #e459e4;
 }
 
 /* Barbox tournament flyer. */
 #barbox-flyer img {
-  box-shadow: 0px 0px 15px 10px #ff0000;
+  box-shadow: 0px 0px 1vw 0.5vw #ff0000;
 }
 
 .info {
@@ -353,7 +357,7 @@ This is similar to #home #content. */
 }
 
 #product-description {
-  padding: 2vw 4vw;
+  padding: 2rem;
   flex-basis: 70%; 
 }
 
@@ -364,7 +368,7 @@ This is similar to #home #content. */
 
 #product-links {
   margin: auto;
-  padding: 1vw;
+  padding: 1rem;
   background: #00000080;
   top: 120px;
   position:sticky;

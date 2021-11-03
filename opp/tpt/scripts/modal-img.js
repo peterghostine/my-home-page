@@ -1,8 +1,8 @@
-const Images = document.getElementsByClassName("image");
+const images = document.getElementsByClassName("image");
 const modal = document.getElementById("modal-container");
 let modalImg = document.getElementById("modal-img");
 
-Array.prototype.forEach.call(Images, (item) => {
+Array.prototype.forEach.call(images, (item) => {
 	item.addEventListener('click', () => {
 		modalImg.src = item.src;
 		modal.style.display = "flex";
