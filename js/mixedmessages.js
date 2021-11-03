@@ -1,5 +1,5 @@
     // Mixed Messages project code
-    const mixedMessages = `    // Yogi Berra quotes. Specify an arbitrary number of quotes inside a string. Add/remove quotes as needed.
+    const mixedMessages = `// Yogi Berra quotes. Specify an arbitrary number of quotes inside a string. Add/remove quotes as needed.
     const arrYB = ["Always go to other people's funerals, otherwise they won't come to yours.",
                    "If you don't know where you are going, you'll end up someplace else.",
                    "You can observe a lot just by watching.",
