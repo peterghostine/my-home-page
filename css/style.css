@@ -591,7 +591,7 @@ footer .footer-section {
 
 footer .footer-section .footer-section-title {
   color: #ffffff;
-  text-decoration-line: underline;
+  text-decoration: none;
 }
 
 footer .footer-section.about {
