@@ -1,266 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Rampart+One&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/4132dc5838.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mobile.css" />
-    <title>The People's Tournament</title>
-  </head>
-  <body>
-    <header>
-      <figure id="logo">
-        <img src="images/tpt-logo.png" alt="The People's Tournament" />
-      </figure>
-      <div class="menu-toggle">
-        <span class="fa fa-bars"></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Rampart+One&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/4132dc5838.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+  <title>The People's Tournament</title>
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+    <!-- The modal image container -->
+    <div id="modal-container" class="modal">
+      <span id="close">&times;</span>
+      <img class="modal-content" id="modal-img">
+      <div id="caption"></div>
+    </div>
+    <div class="content">
+      <div class='embedsocial-album' data-ref="7e9614ecf314078a3f3e90b518e53784109fa71c"><a class="feed-powered-by-es"
+          href="https://embedsocial.com/facebook-albums/" target="_blank" title="Powered by EmbedSocial">Powered by
+          EmbedSocial<span>→</span></a></div>
+      <script>
+        (function (d, s, id) {
+          var js;
+          if (d.getElementById(id)) {
+            return;
+          }
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://embedsocial.com/embedscript/ei.js";
+          d.getElementsByTagName("head")[0].appendChild(js);
+        }(document, "script", "EmbedSocialScript"));
+      </script>
+      <div id="loading">
+        Loading...
       </div>
-      <!-- Navigation menu -->
-      <nav role="navigation">
-        <ul role="presentation">
-          <li>
-            <a class="menu-wide" href="index.html">HOME</a>
-          </li>
-          <li>
-            <a class="menu-wide" href="about.html">ABOUT</a>
-          </li>
-          <li>
-            <a class="menu-wide" href="#">
-              <span>FLYERS</span>
-              <i class="fa fa-chevron-down fa-styling"></i>
-            </a>
-            <ul role="presentation">
-              <li>
-                <a class="menu-wide" href="flyer.html">THE EVENT</a>
-              </li>
-              <li>
-                <a class="menu-wide" href="barbox.html">BARBOX 9-BALL BONANZA </a>
-              </li>
-              <li>
-                <a class="menu-wide" href="ladies.html">LADIES 9-BALL</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a class="menu-wide" href="auction.html">AUCTION</a>
-          </li>
-          <li>
-            <a class="menu-wide" href="venue.html">VENUE</a>
-          </li>
-          <li>
-            <a class="menu-wide" href="#sponsors-title">SPONSORS</a>
-          </li>
-          <li>
-            <a class="menu-wide" href="products.html">SHOP DUNGEON</a>
-          </li>
-          <li>
-            <a class="menu-wide" href="photos.html">PHOTOS</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!-- The modal image container -->
-      <div id="modal-container" class="modal">
-        <span id="close">&times;</span>
-        <img class="modal-content" id="modal-img">
-        <div id="caption"></div>
-      </div> 
-      <div class="content">
-        <div class='embedsocial-album' data-ref="7e9614ecf314078a3f3e90b518e53784109fa71c"><a class="feed-powered-by-es" href="https://embedsocial.com/facebook-albums/" target="_blank" title="Powered by EmbedSocial">Powered by EmbedSocial<span>→</span></a></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/ei.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialScript"));</script>
-        <div id="loading">
-          Loading...
-          </div>
-        </div>
-    </main>
-    <footer role="contentinfo">
-      <div role="navigation" id="sponsors">
-        <h2 id="sponsors-title">OUR AWESOME SPONSORS!</h2>
-        <ul role="presentation">
-          <li>
-            <figure class="sponsor">
-              <a href="http://mezzcue.com/en" target=_blank>
-                <img src="images/sponsors/mezz-2.png" alt="Mezz logo" />
-              </a>
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="http://facebook.com/drinkandclink" target=_blank>
-                <img src="images/sponsors/clinkers.jpg" alt="Clinkers logo" />
-              </a>
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="http://bonesandme.com" target=_blank>
-                <img src="images/sponsors/bonesandme.jpg" alt="Bones and Me logo" />
-              </a>
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="http://racksbilliards.com" target=_blank>
-                <img src="images/sponsors/racks-billiards.jpg" alt="Racks Billiards" />
-              </a>
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="http://mezzcue.com/en" target=_blank>
-                <img src="images/sponsors/zantip.png" alt="Zan tip logo" />
-              </a>
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="http://facebook.com/poolplayerpodcast" target=_blank>
-                <img src="images/sponsors/pool-player-podcast.png" alt="Pool Player Podcast logo" />
-              </a>
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="https://www.facebook.com/jrd023" target=_blank>
-                <img src="images/sponsors/jamison-daniels.jpg" alt="Jamison Daniels logo" />
-              </a>
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="http://mezzcue.com/en" target=_blank>
-                <img src="images/sponsors/turtle-rack.jpg" alt="The Turtle Rack logo" />
-              </a>
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="https://www.facebook.com/theboothbrothersshow" target=_blank>
-                <img src="images/sponsors/booth-brothers.png" alt="The Booth Brothers logo" />
-              </a>
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="https://www.facebook.com/ryan.acosta.3557" target=_blank>
-                <img src="images/sponsors/1801-photography.jpg" alt="1801 Photography logo" />
-              </a>
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="https://1pkt.com/" target=_blank>
-                <img src="images/sponsors/1pkt.png" alt="One Pocket logo" />
-              </a>
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="http://taombilliards.com" target=_blank>
-                <img src="images/sponsors/taom.jpg" alt="Taom logo" />
-              </a>
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="https://www.facebook.com/molina.mike.3" target=_blank>
-                <img src="images/sponsors/molina-mike.png" alt="Molina Mike logo" />
-              </a>
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="http://omegabilliards.com" target=_blank>
-                <img src="images/sponsors/omega-billiards.png" alt="Omega Billiards logo" />
-              </a>
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="https://www.facebook.com/FrancoCues/" target=_blank>
-                <img src="images/sponsors/franco.jpg" alt="Franco logo" />
-              </a>
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="https://www.omegabilliards.com/Acme_Cases_s/606.htm" target=_blank>
-                <img src="images/sponsors/acme.png" alt="ACME logo" />
-              </a>
-            </figure>
-          </li>
-          <li>
-            <figure class="sponsor">
-              <a href="https://www.brutalusa.com/" target=_blank>
-                <img src="images/sponsors/brutal-game-gear.png" alt="Brutal Game Gear logo" />
-              </a>
-            </figure>
-          </li>
-        </ul>
-      </div>
-      <div role="navigation" id="useful-links">
-        <ul role="presentation">
-          <li>
-            <a href="index.html">HOME</a>
-          </li>
-          <li>|</li>
-          <li>
-            <a href="about.html">ABOUT</a>
-          </li>
-          <li>|</li>
-          <li>
-            <a href="barbox.html">BARBOX 9-BALL</a>
-          </li>
-          <li>|</li>
-          <li>
-            <a href="ladies.html">LADIES 9-BALL</a>
-          </li>
-          <li>|</li>
-          <li>
-            <a href="auction.html">AUCTION</a>
-          </li>
-          <li>|</li>
-          <li>
-            <a href="venue.html">VENUE</a>
-          </li>
-          <li>|</li>
-          <li>
-            <a href="products.html">SHOP DUNGEON</a>
-          </li>
-          <li>|</li>
-          <li>
-            <a href="photos.html">PHOTOS</a>
-          </li>
-        </ul>
-      </div>
-      <div role="navigation" id="socials">
-        <ul role="presentation">
-          <li id="facebook">
-            <a href="https://www.facebook.com/thepeoplestournament" target="_blank">
-              <figure class="social">
-                <img src="images/fb-lg.png" alt="The People's Tournament on Facebook" />
-              </figure>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div id="copyright">
-        <p>&copy2021, The People's Tournament, All Rights Reserved.</p>
-      </div>
-    </footer>
-    <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="scripts/header.js"></script>
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/modal-img.js"></script>
-  </body>
+    </div>
+  </main>
+  <footer role="contentinfo">
+  </footer>
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="scripts/header.js"></script>
+  <script src="scripts/footer.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/modal-img.js"></script>
+</body>
+
 </html>

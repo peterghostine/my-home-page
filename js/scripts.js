@@ -65,13 +65,13 @@ function hasScrolled() {
 }
 
 
-
 // Carousel
-$('.post-wrapper').slick({
+$('.slides').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 5000,
+  dots: true,
   nextArrow: $('.next'),
   prevArrow: $('.prev'),
   responsive: [
@@ -81,7 +81,6 @@ $('.post-wrapper').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
-        dots: false
     }
     },
     {
@@ -90,7 +89,6 @@ $('.post-wrapper').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
-        dots: false
       }
     },
     {
@@ -99,7 +97,6 @@ $('.post-wrapper').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
-        dots: false
       }
     },   
     {
@@ -108,7 +105,6 @@ $('.post-wrapper').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
-        dots: false
       }
     },
     {
@@ -137,4 +133,3 @@ $('.post-wrapper').slick({
     // instead of a settings object
   ]
 });
-	

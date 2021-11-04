@@ -1,5 +1,3 @@
-/* Rev. B */
-
 /* Reference info 
 font-family: 'Oxygen', sans-serif;
 font-family: 'Oxygen Mono', monospace;
@@ -16,6 +14,7 @@ color: #6d92c7; That's the blue used throughout the site (logo, etc).
   margin: 0;
   padding: 0;
   border-collapse: collapse;
+  font-family: "Share Tech", sans-serif;
 }
 
 a {
@@ -31,6 +30,7 @@ a:hover span {
 html, body {
   font-family: "Share Tech", sans-serif;
   font-size: 22px;
+  color: #000;
   background: #f8f8f8;
   height: 100%;
 }
@@ -42,13 +42,11 @@ h4,
 h5,
 h6 {
   font-family: "Share Tech Mono", monospace;
-  color: #000000;
 }
 
 input,
 textarea,
 button {
-  font-family: "Share Tech", sans-serif;
   font-size: 1rem;
   outline: none;
   padding: 0.25rem;
@@ -59,7 +57,7 @@ button {
    --------------------------------------------------------------------- */   
 header {
   /* Using flex to properly align logo and nav elements */
-  background: #000000;
+  background: #000;
   position: fixed;
   display: flex;
   flex-wrap: wrap;
@@ -71,7 +69,7 @@ header {
 }
 
 header * {
-  color: #ffffff;
+  color: #fff;
 }
 
 header .logo {
@@ -90,7 +88,7 @@ header .logo img {
   top: -100px;
 }
 
-/* THIS SECTION COVERS THE NON-IMAGE LOGO SPECS. I USED IT TO BUILD TEXT LOGO TO CAPTURE AS IMAGE
+/* THIS SECTION IS FOR THE NON-IMAGE LOGO SPECS. I USED IT TO BUILD TEXT LOGO TO CAPTURE AS IMAGE
   
   header .logo {
       width: 600px;
@@ -147,6 +145,7 @@ header .logo img {
 header .menu-toggle {
   /* Hide mobile menu by default */
   display: none;
+  cursor: pointer;
 }
 
 /* NAVIGATION BAR */
@@ -169,6 +168,10 @@ nav > ul > li {
   /* First-level menu selections */
   float: left;
   position: relative;
+}
+
+nav > ul > li > ul > .future-service {
+  display: none;
 }
 
 nav > ul > li > a {
@@ -200,7 +203,7 @@ nav ul li ul li:not(:last-child) {
 
 nav ul li ul li a:hover {
   /* Style second-level menu selection upon hover */
-  color: #ffffff;
+  color: #fff;
   background: #000000;
 }
 
@@ -219,7 +222,7 @@ main {
 }
 
 main::before {
-  background: hsla(0, 0%, 47%, 0.8); /*hsla(0, 0%, 61%, 0.902);*/
+  background: #545454cc;
   position: absolute;
   content: "";
   top: 0;
@@ -230,7 +233,6 @@ main::before {
 
 main .post-byline,
 main .post-dateline {
-  font-family: "Share Tech", sans-serif;
   font-size: 0.8rem;
 }
 
@@ -240,65 +242,65 @@ main .post-byline {
 
 /* post slider */
 
-main .post-slider {
+main .content-upper {
   position: relative;
   margin-top: 4rem;
 }
 
-main .post-slider .slider-title {
+main .content-upper .slides-title {
+  font-size: 2rem;
+  color: #fff;
   text-align: center;
   padding-bottom: 1rem;
 }
 
-main .post-slider .arrows {
-  font-size: 2.5rem;
-  color: #ffffff;
+main .content-upper .arrows {
+  font-size: 1.5rem;
+  color: #fff;
   position: absolute;
-  top: 50%;
+  bottom: -55px;
   cursor: pointer;
 }
 
-main .post-slider .prev {
-  left: 2%;
+main .content-upper .prev {
+  left: 25%;
 }
 
-main .post-slider .next {
-  right: 2%;
+main .content-upper .next {
+  right: 25%;
 }
 
-main .post-slider .arrows:hover {
-  font-size: 3rem;
-  
-   0.2s;
+main .content-upper .arrows:hover {
+  color: #6d92c7;
+  transition: 0.2s;
 }
 
-main .post-slider .post-wrapper {
+main .content-upper .slides {
   width: 86%;
   margin: 0 auto;
-  overflow: hidden;
 }
 
-main .post-slider .post-wrapper .post {
+main .content-upper .slides .post {
   background: #ffffff;
   display: inline-block;
   margin: 0 0.5rem;
   border-radius: 5px;
-  /* box-shadow: 1rem 1rem 1rem -1rem #4d4d4d; */
   overflow: hidden;
 }
 
-main .post-slider .post-wrapper .post .post-image {
+main .content-upper .slides .post .post-image {
   max-width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;;
 }
 
-main .post-slider .post-wrapper .post .post-info {
+main .content-upper .slides .post .post-info {
   padding: 0 0 1.25rem 0.25rem;
 }
 
-main .post-slider .post-wrapper .post .post-info .post-title {
-  padding: 0.25rem 0;
+main .content-upper .slides .post .post-info .post-title {
+  font-size: 1rem;
+  padding: 0.5rem 0 0.2rem 0;
 }
 
 /* CONTENT */
@@ -306,7 +308,7 @@ main .post-slider .post-wrapper .post .post-info .post-title {
 main .content {
   position: relative;
   width: 85%;
-  margin: 3rem auto;
+  margin: 5rem auto;
   display: flex;
   flex-wrap: nowrap;
   align-content: center;
@@ -316,65 +318,65 @@ main .content {
 main .content .read-more {
   color: #6d92c7;
   margin-bottom: 0.5rem;
+  padding: 0.1rem;
   position: absolute;
   bottom: 0.5rem;
   left: 0.5rem;
+  border: 1px solid;
 }
 
-main .content .read-more:hover {
-  text-decoration-line: underline;
-}
-
-main .post-wrapper .fa-user,
-main .post-wrapper .fa-calendar,
+main .slides .fa-user,
+main .slides .fa-calendar,
 main .content .fa-user,
 main .content .fa-calendar {
   font-size: 16px;
   padding-left: 0.1rem;
 }
 
-main .content .article-content .read-more {
+main .content .article-wrapper .read-more {
   left: 0;
 }  
 
-main .content .main-content,
-main .content .article-content, 
+main .content .content-lower,
+main .content .article-wrapper, 
 main .content .references {
   flex-basis: 70%;
   margin-right: 2rem;
 }
 
-main .content .main-content .main-content-title {
+main .content .content-lower .content-lower-title {
+  font-size: 2rem;
+  color: #fff;
   padding-bottom: 1rem;
 }
 
-main .content .main-content .post {
+main .content .content-lower .post {
   background: #ffffff;
   position: relative;
   margin-bottom: 1rem;
   border-radius: 5px;
 }
 
-main .content .main-content .post .post-image {
+main .content .content-lower .post .post-image {
   padding-right: 0.5rem;
   max-width: 260px;
   float: left;
 }
 
-main .content .main-content .post .post-info {
+main .content .content-lower .post .post-info {
   padding: 0 0.5rem;
 }
 
-main .content .main-content .post .post-info h3 {
+main .content .content-lower .post .post-info h3 {
   font-size: 1.5rem;
   padding: 0.5rem 0 0.25rem 0;
 }
 
-main .content .main-content .post .post-info p {
+main .content .content-lower .post .post-info p {
   padding-top: 0.9rem;
 }
 
-main .content .main-content .post .post-info::after {
+main .content .content-lower .post .post-info::after {
   content:'';
   display: block;
   height: 3rem;
@@ -382,55 +384,55 @@ main .content .main-content .post .post-info::after {
 
 /* ARTICLES */   
 
-main .content .article-content {
+main .content .article-wrapper {
   margin-bottom: 1rem;
   padding: 2rem 2rem 0 2rem;
   background: #fff;
   border-radius: 5px;
 }
 
-main .content .article-content .article-title {
+main .content .article-wrapper .article-title {
   font-size: 2.5rem;
   padding-bottom: 1rem;
 }
 
-main .content .article-content article {
+main .content .article-wrapper article {
   position: relative;
   margin-bottom: 2rem;
   padding-top: 2rem;
 }
 
-main .content .article-content .article-text::after,
-main .content .article-content .article-references:after
+main .content .article-wrapper .article-text::after,
+main .content .article-wrapper .article-references:after
  {
   content:'';
   display: block;
   height: 2rem;
 }
 
-main .content .article-content article .article-image {
+main .content .article-wrapper article .article-image {
   padding-right: 0.75rem;
   max-width: 300px;
   float: left;
 }
 
-main .content .article-content article p {
+main .content .article-wrapper article p {
   padding-bottom: 1.5rem;
   line-height: 1.5;
 }
 
-main .content .article-content .article-references h3 {
+main .content .article-wrapper .article-references h3 {
   padding-bottom: 1rem;
   text-decoration: underline;
 }  
 
-main .content .article-content .article-references ul {
+main .content .article-wrapper .article-references ul {
   margin-left: 1rem;
   list-style: circle;
   line-height: 1.5;
 }
 
-main .content .article-content .article-references a:hover {
+main .content .article-wrapper .article-references a:hover {
   color: #000;
   text-decoration: underline;
 }
@@ -505,46 +507,44 @@ main .content .sidebar {
 main .content .sidebar .fix-margin::after {
   content:'';
   display: block;
-  height: 3.3rem;
+  height: 72px;
 }
 
-main .content .sidebar .section {
+main .content .sidebar .sidebar-section {
+  margin: 0 0 1rem 0;
   background: #ffffff;
   padding: 1rem;
   border-radius: 5px;
   min-width: 100%;
 }
 
-main .content .sidebar .section.search {
-  margin: 0 0 1rem 0;
-}
-
 main .content .sidebar .section.populars {
   margin: 0 0 1rem 0;
 }
 
-main .content .sidebar .section .section-title {
+main .content .sidebar .sidebar-section .sidebar-section-title {
+  font-size: 1.5rem;
   padding: 0 0.5rem 1rem 0;
 }
 
-main .content .sidebar .section ul {
+main .content .sidebar .sidebar-section ul {
   list-style: none;
   margin: 0;
   border-top: 1px solid #d3d3d3;
 }
 
-main .content .sidebar .section ul li a {
+main .content .sidebar .sidebar-section ul li a {
   padding: 0.5rem 0;
   display: block;
   border-bottom: 1px solid #d3d3d3;
   transition: padding 0.2s ease;
 }
 
-main .content .sidebar .section ul li a:hover {
+main .content .sidebar .sidebar-section ul li a:hover {
   padding-left: 0.2rem;
 }
 
-main .content .sidebar .section.search .text-input {
+main .content .sidebar .sidebar-section .text-input {
   font-size: 1.2rem;
   margin: 0.2rem 0 0 0;
   width: 100%;
