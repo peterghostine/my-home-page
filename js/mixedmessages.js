@@ -71,7 +71,7 @@
         const obj = {};
         obj.quote = arrYB[Math.floor(Math.random() * arrYB.length)];
         obj.adage = arrAdages[Math.floor(Math.random() * arrAdages.length)];
-        obj.powerball = pickNumbers(5, 69) + ' ' + pickNumbers(1, 26);
+        obj.powerball = pickNumbers(5, 69).sort().concat(pickNumbers(1, 26));
         obj.mixedMessage = function() {
             console.log("Today's Yogi Berra quote: " + '"' + this.quote + '"');
             console.log("Today's wisdom: " + '"' + this.adage + '"');

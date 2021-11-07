@@ -28,7 +28,6 @@ a:hover span {
 }
 
 html, body {
-  font-family: "Share Tech", sans-serif;
   font-size: 22px;
   color: #000;
   background: #f8f8f8;
@@ -198,13 +197,13 @@ nav ul li ul li a {
 }
 
 nav ul li ul li:not(:last-child) {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #d3d3d3;
 }
 
 nav ul li ul li a:hover {
   /* Style second-level menu selection upon hover */
   color: #fff;
-  background: #000000;
+  background: #000;
 }
 
 /* ---------------------------------------------------------------------
@@ -212,7 +211,8 @@ nav ul li ul li a:hover {
    --------------------------------------------------------------------- */   
 
 main {
-  background: url(../images/mining-rig.jpg);
+  /* background: url(../images/mining-rig.jpg); */
+  background: #6d92c7;
   background-size: cover;
   position: relative;
   top: 100px;
@@ -222,7 +222,9 @@ main {
 }
 
 main::before {
-  background: #545454cc;
+  background: linear-gradient(#6d92c7, #bdd4f3dd);
+  background: -webkit-linear-gradient(#6d92c7, #6d92c7);
+  /* background: #ffffffcc; */
   position: absolute;
   content: "";
   top: 0;
@@ -243,40 +245,36 @@ main .post-byline {
 /* post slider */
 
 main .content-upper {
+  width: 86%;
   position: relative;
-  margin-top: 4rem;
+  margin: 4rem auto 0.65rem auto;
 }
 
 main .content-upper .slides-title {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #fff;
   text-align: center;
   padding-bottom: 1rem;
 }
 
 main .content-upper .arrows {
-  font-size: 1.5rem;
+  margin: auto;
+  width: 90%;
+  font-size: 1.rem;
   color: #fff;
-  position: absolute;
-  bottom: -55px;
+  position: relative;
+  bottom: -17px;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
 }
 
-main .content-upper .prev {
-  left: 25%;
-}
-
-main .content-upper .next {
-  right: 25%;
-}
-
-main .content-upper .arrows:hover {
-  color: #6d92c7;
+main .content-upper .arrow:hover {
+  color: #000000;
   transition: 0.2s;
 }
 
 main .content-upper .slides {
-  width: 86%;
   margin: 0 auto;
 }
 
@@ -305,17 +303,17 @@ main .content-upper .slides .post .post-info .post-title {
 
 /* CONTENT */
 
-main .content {
+main .content-lower {
   position: relative;
   width: 85%;
-  margin: 5rem auto;
+  margin: 4rem auto 6rem auto;
   display: flex;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
 }
 
-main .content .read-more {
+main .content-lower .read-more {
   color: #6d92c7;
   margin-bottom: 0.5rem;
   padding: 0.1rem;
@@ -337,46 +335,50 @@ main .content .article-wrapper .read-more {
   left: 0;
 }  
 
-main .content .content-lower,
+main .content-lower .services,
 main .content .article-wrapper, 
 main .content .references {
   flex-basis: 70%;
   margin-right: 2rem;
 }
 
-main .content .content-lower .content-lower-title {
-  font-size: 2rem;
+main .content-lower .services .services-title {
+  font-size: 2.2rem;
   color: #fff;
   padding-bottom: 1rem;
 }
 
-main .content .content-lower .post {
+main .content-lower .services .post {
   background: #ffffff;
   position: relative;
-  margin-bottom: 1rem;
   border-radius: 5px;
 }
 
-main .content .content-lower .post .post-image {
+main .content-lower .services .post:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+main .content-lower .services .post .post-image {
   padding-right: 0.5rem;
   max-width: 260px;
   float: left;
+  border-top-left-radius: 5px;
 }
 
-main .content .content-lower .post .post-info {
+main .content-lower .services .post .post-info {
   padding: 0 0.5rem;
 }
 
-main .content .content-lower .post .post-info h3 {
+main .content-lower .services .post .post-info h3 {
   font-size: 1.5rem;
   padding: 0.5rem 0 0.25rem 0;
 }
 
-main .content .content-lower .post .post-info p {
+main .content-lower .services .post .post-info p {
   padding-top: 0.9rem;
 }
 
-main .content .content-lower .post .post-info::after {
+main .content-lower .services .post .post-info::after {
   content:'';
   display: block;
   height: 3rem;
@@ -392,7 +394,7 @@ main .content .article-wrapper {
 }
 
 main .content .article-wrapper .article-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding-bottom: 1rem;
 }
 
@@ -497,54 +499,55 @@ main .content .references .reference-links ul li a:hover {
 
 /* SIDEBAR */
 
-main .content .sidebar {
+main .content-lower .sidebar {
+  color: #fff;
   flex-basis: 30%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
 }
 
-main .content .sidebar .fix-margin::after {
+main .content-lower .sidebar .fix-margin::after {
   content:'';
   display: block;
-  height: 72px;
+  height: 78px;
 }
 
-main .content .sidebar .sidebar-section {
+main .content-lower .sidebar .sidebar-section {
   margin: 0 0 1rem 0;
-  background: #ffffff;
+  background: #6d92c7;
   padding: 1rem;
   border-radius: 5px;
   min-width: 100%;
 }
 
-main .content .sidebar .section.populars {
+main .content-lower .sidebar .section.populars {
   margin: 0 0 1rem 0;
 }
 
-main .content .sidebar .sidebar-section .sidebar-section-title {
+main .content-lower .sidebar .sidebar-section .sidebar-section-title {
   font-size: 1.5rem;
   padding: 0 0.5rem 1rem 0;
 }
 
-main .content .sidebar .sidebar-section ul {
+main .content-lower .sidebar .sidebar-section ul {
   list-style: none;
   margin: 0;
-  border-top: 1px solid #d3d3d3;
+  border-top: 1px solid #fff;
 }
 
-main .content .sidebar .sidebar-section ul li a {
+main .content-lower .sidebar .sidebar-section ul li a {
   padding: 0.5rem 0;
   display: block;
   border-bottom: 1px solid #d3d3d3;
   transition: padding 0.2s ease;
 }
 
-main .content .sidebar .sidebar-section ul li a:hover {
+main .content-lower .sidebar .sidebar-section ul li a:hover {
   padding-left: 0.2rem;
 }
 
-main .content .sidebar .sidebar-section .text-input {
+main .content-lower .sidebar .sidebar-section .text-input {
   font-size: 1.2rem;
   margin: 0.2rem 0 0 0;
   width: 100%;
