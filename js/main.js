@@ -1,9 +1,8 @@
 // Menu behavior
 $(document).ready(function () {
-
   $(document).on('click', function (event) {
     if ($("nav > ul").is(":visible") &&
-       ($(".menu-toggle").is(":visible"))) {
+      ($(".menu-toggle").is(":visible"))) {
       if (!$(event.target).closest("nav > ul").length) {
         $("nav > ul > li > ul").slideUp();
         $("nav > ul").toggleClass("showing");
@@ -12,12 +11,9 @@ $(document).ready(function () {
       $("nav > ul").toggleClass("showing");
     };
   });
-
   $("nav > ul > li").click(function () {
     $("nav > ul > li:hover > ul").slideToggle();
   });
-
-
   $("nav > ul > li").mouseleave(function () {
     if ($(".menu-toggle").is(":hidden")) {
       $("nav > ul > li > ul").slideUp();

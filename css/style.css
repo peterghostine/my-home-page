@@ -302,7 +302,7 @@ main {
 
 .experience,
 .technology {
-display: flex;
+  display: flex;
 }
 
 .technology img {
@@ -568,19 +568,19 @@ footer {
   text-decoration: none;
 }
 
-.about {
+#about {
   flex-basis: 38%;
 }
 
-.links {
+#links {
   flex-basis: 24%;
 }
 
-.reachout {
+#reachout {
   flex-basis: 38%;
 }
 
-.about p {
+#about p {
   line-height: 1.2rem;
   text-align: center;
   padding: 1rem 3rem;
@@ -621,21 +621,21 @@ footer {
   background: #3c69a8;
 }
 
-.links ul {
+#links ul {
   list-style: none;
   text-align: center;
   padding-top: 1rem;
 }
 
-.links li {
+#links li {
   padding-bottom: 0.5rem;
 }
 
-.links li a {
+#links li a {
   transition: padding 0.2s ease;
 }
 
-.links li a:hover {
+#links li a:hover {
   padding-left: 0.2rem;
 }
 

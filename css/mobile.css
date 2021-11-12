@@ -159,21 +159,21 @@
     flex-wrap: nowrap;
   }
 
-  .about,
-  .links,
-  .reachout {
+  #about,
+  #links,
+  #reachout {
     flex-basis: 100%;
   }
 
-  .about p {
+  #about p {
     padding: 1rem;
   }
 
-  .about {
+  #about {
     background: #000;
   }
 
-  .links {
+  #links {
     background: #202020;
   }
 
@@ -248,7 +248,7 @@
 
   .technology {
     flex-direction: column;
-    padding: 0;
+    padding: 0 0 1rem 0;
   }
 
   .technology figure {
