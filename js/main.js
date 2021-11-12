@@ -1,69 +1,29 @@
 // Menu behavior
-$(document).ready(function() {
-  
-  $(document).on('click', function(event) {
-    if ($("nav > ul").is(":visible")) {
+$(document).ready(function () {
+
+  $(document).on('click', function (event) {
+    if ($("nav > ul").is(":visible") &&
+       ($(".menu-toggle").is(":visible"))) {
       if (!$(event.target).closest("nav > ul").length) {
         $("nav > ul > li > ul").slideUp();
         $("nav > ul").toggleClass("showing");
-      };  
+      };
     } else if (($(event.target).closest(".menu-toggle").length)) {
-        $("nav > ul").toggleClass("showing"); 
+      $("nav > ul").toggleClass("showing");
     };
   });
 
-  $("nav > ul > li").click(function() { 
+  $("nav > ul > li").click(function () {
     $("nav > ul > li:hover > ul").slideToggle();
   });
-  
 
-  $("nav > ul > li").mouseleave(function() {
+
+  $("nav > ul > li").mouseleave(function () {
     if ($(".menu-toggle").is(":hidden")) {
-      $("nav > ul > li > ul").slideUp(); 
+      $("nav > ul > li > ul").slideUp();
     };
-  });   
+  });
 });
-
-
-
-// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
-
-$(window).scroll(function(event){
-  didScroll = true;
-});
-
-setInterval(function() {
-  if (didScroll) {
-    hasScrolled();
-    didScroll = false;
-  }
-}, 250);
-
-function hasScrolled() {
-  var st = $(this).scrollTop();
-    
-  // Make sure they scroll more than delta
-  if(Math.abs(lastScrollTop - st) <= delta)
-    return;
-    
-  // If they scrolled down and are past the navbar, add class .nav-up.
-  // This is necessary so you never see what is "behind" the navbar.
-  if (st > lastScrollTop && st > navbarHeight){
-    // Scroll Down
-    $('header').removeClass('nav-down').addClass('nav-up');
-  } else {
-    // Scroll Up
-    if(st + $(window).height() < $(document).height()) {
-      $('header').removeClass('nav-up').addClass('nav-down');
-    }
-  }
-  lastScrollTop = st;
-}
-
 
 // Carousel
 $('.slides').slick({
@@ -74,14 +34,13 @@ $('.slides').slick({
   dots: true,
   nextArrow: $('.next'),
   prevArrow: $('.prev'),
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 1565,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
-    }
+      }
     },
     {
       breakpoint: 1200,
@@ -98,7 +57,7 @@ $('.slides').slick({
         slidesToScroll: 1,
         infinite: true,
       }
-    },   
+    },
     {
       breakpoint: 992,
       settings: {
@@ -128,8 +87,36 @@ $('.slides').slick({
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+    /* You can unslick at a given breakpoint now by adding:
+       settings: "unslick" instead of a settings object. */
   ]
 });
+
+/* Email form submission */
+var form = document.getElementById("contact-form");
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("status");
+  status.innerHTML = "";
+  status.classList.remove("success");
+  status.classList.remove("error");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.error) {
+      status.classList.add("error");
+      status.innerHTML = "Error";
+    } else {
+      status.classList.add("success");
+      status.innerHTML = "Success!";
+      form.reset()
+    }
+  });
+}
+form.addEventListener("submit", handleSubmit);

@@ -1,37 +1,39 @@
-
-
-/* ----------------- */
-/* MEDIA QUERIES 1495 */
-/* ----------------- */
-@media only screen and (max-width: 1495px) {
-  html {
-    font-size: 22px;
+/*
+ ------------------- 
+ MEDIA QUERIES 1495 
+ ------------------- */ 
+ @media only screen and (max-width: 1300px) {
+  .content-lower {
+    margin-bottom: 3rem;
+    flex-direction: column;
   }
 
-  main .content .content-lower .post .post-image {
-    max-width: 260px;
+  .services {
+    flex-basis: 100%;
+    margin-right: 0;
   }
 }
 
+
+
+
 /* ------------------ */
-/* MEDIA QUERIES 1120 */
+/* MEDIA QUERIES 992 */
 /* ------------------ */
-@media only screen and (max-width: 1120px) {
-   header {
+@media only screen and (max-width: 992px) {
+  header {
     height: 50px;
-    display: block;
-    position: relative;
   }
 
-  header .logo {
+  .logo {
     width: 150px;
   }
 
-  header .logo img {
+  .logo img {
     width: 100%;
   }
 
-  header .menu-toggle {
+  .menu-toggle {
     right: 10px;
     top: 10px;
     font-size: 30px;
@@ -45,20 +47,28 @@
     z-index: 100;
   }
 
-  nav > ul {
-    background: #272727;
+  nav>ul {
+    background: #000;
     width: 100%;
     max-height: 100rem;
     display: none;
     overflow: hidden;
   }
 
-  nav ul li a,
-  nav ul li ul li a {
+  nav ul li a {
+    padding: 0.5rem;
     display: block;
   }
 
-  nav > ul > li > .menu-wide {
+  nav>ul>li:not(:last-child) a {
+    border-bottom: 1px solid #292929;
+  }
+
+  nav>ul>li:first-child a {
+    border-top: 1px solid #292929;
+  }
+
+  nav>ul>li>.menu-wide {
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
@@ -71,10 +81,10 @@
   nav ul li ul {
     position: static;
     display: none;
-    width: 100%;  
+    width: 100%;
   }
 
- nav ul li ul li a {
+  nav ul li ul li a {
     color: #000;
     text-align: right;
   }
@@ -91,84 +101,87 @@
 
   main {
     position: relative;
-    top: 0;
+    top: 50px;
   }
 
-  main .content-upper .prev {
-    left: 15%;
-  }
-  
-  main .content-upper .next {
-    right: 15%;
+  #hero {
+    background-position: center;
+    margin-left: 0;
+    justify-content: center;
   }
 
-  main .content-lower {
-    margin: 5rem auto;
+  #hero-content h1 {
+    background: #282f38c0;
+    display: flex;
     flex-direction: column;
+    border-radius: 50px;
   }
 
-  main .content-lower .services,
-  main .content-lower .article-wrapper {
-    flex-basis: 100%;
-    margin-right: 0;
+  .content-upper {
+    margin: 2rem auto;
   }
 
-  main .content-lower .services .post .btn {
-    display: none;
+  .content-list {
+    font-size: 0.8rem;
+    top: 50px;
+    justify-content: center;
   }
 
-  main .content-lower .references .table-of-references {
+  .content-list a {
+    padding: 0.2rem;
+  }
+
+  .list-down {
+    top: 50px;
+  }
+
+  .sidebar {
+    margin-top: 2rem;
+  }
+
+  .service img {
     width: 100%;
-  }
-  
-
-  main .content-lower .sidebar .section.search,
-  main .content-lower .sidebar .section.populars,
-  main .content-lower .sidebar .section.topics
-   {
-     text-align: center;
+    padding: 0;
+    margin-bottom: 1rem;
   }
 
-  main .content-lower .sidebar .section.search {
-    margin-top: 0;
-  }
-
-  main .content-lower .sidebar .section .section-title {
-    padding: 0 0 1rem 0;
+  .service h3,
+  .service p {
+    text-align: center;
+    padding: 0 1rem;
   }
 
   footer {
-    margin-top: 0;
+    margin-top: 50px;
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
   }
 
-  footer .footer-section.about,
-  footer .footer-section.links,
-  footer .footer-section.contact-form {
-    width: 100%;
+  .about,
+  .links,
+  .reachout {
+    flex-basis: 100%;
   }
 
-  footer .footer-section.about {
-    background: #000000;
+  .about p {
+    padding: 1rem;
   }
 
-  footer .footer-section.links {
+  .about {
+    background: #000;
+  }
+
+  .links {
     background: #202020;
   }
 
-  footer .footer-section.contact-form {
+  .reachout {
     background: #404040;
   }
-}
-  
-/* ----------------- */
-/* MEDIA QUERIES 992 */
-/* ----------------- */
-@media only screen and (max-width: 992px) {
-  footer .footer-section.copyright {
+
+  .copyright {
     font-size: 0.9rem;
   }
 }
@@ -181,48 +194,37 @@
     font-size: 22px;
   }
 
-  footer .footer-section.copyright {
+  .copyright {
     font-size: 0.9rem;
   }
-}
 
-/* ----------------- */
-/* MEDIA QUERIES 720 */
-/* ----------------- */
-@media only screen and (max-width: 720px) {
-  main {
-    background: none;
+  .upper-title,
+  .lower-title {
+    font-size: 1.5rem;
   }
 
-  main .content-upper .arrows {
+  .arrow {
     display: none;
   }
 
-  main .content-upper .prev {
-    left: 5%;
-  }
-  
-  main .content-upper .next {
-    right: 5%;
-  }
-
-  main .content-lower .services .services-title {
+  .lower-title {
     text-align: center;
   }
 
-  main .content-lower .services .post {
+  .services .post {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
   }
-  
-  main .content-lower .services .post .post-image {
+
+  .services .post-image {
     max-width: 100%;
     padding-right: 0;
+    border-top-right-radius: 5px;
   }
 
-  main .content-lower .services .post .post-info {
+  .services .post-info {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -231,11 +233,7 @@
     text-align: center;
   }
 
-  main .content-lower .services .post .read-more {
-    text-align: center;
-  }
-
-  footer .footer-section.copyright {
+  .copyright {
     font-size: 0.8rem;
   }
 }
@@ -244,7 +242,45 @@
 /* MEDIA QUERIES 576 */
 /* ----------------- */
 @media only screen and (max-width: 576px) {
-  footer .footer-section.copyright {
+  .copyright {
     font-size: 0.7rem;
+  }
+
+  .technology {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .technology figure {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .technology img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .technology h3,
+  .technology p {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .experience figure {
+    display: none;
+  }
+
+  .experience p,
+  .experience li,
+  .technology p,
+  .reference-links li a {
+    font-size: 0.9rem;
+  }
+
+  .reference-links {
+    margin-top: 1rem;
+    padding: 1rem;
   }
 }
