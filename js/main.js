@@ -83,12 +83,10 @@ $('.slides').slick({
         slidesToScroll: 1
       }
     }
-    /* You can unslick at a given breakpoint now by adding:
-       settings: "unslick" instead of a settings object. */
   ]
 });
 
-/* Email form submission */
+// Email form submission
 var form = document.getElementById("contact-form");
 
 async function handleSubmit(event) {
@@ -114,10 +112,11 @@ async function handleSubmit(event) {
       form.reset()
     }
   });
-}
+};
 form.addEventListener("submit", handleSubmit);
 
-function doSomething(e) {
+// The code below shows the project description on the Portfolio page when "?" is clicked.
+function showDescription(e) {
 
   var target = e.target;
   var description = modal.getElementsByClassName("modal-content")[0];
@@ -125,17 +124,17 @@ function doSomething(e) {
   modal.style.display = "flex";
   modal.style.justifyContent = "center";
   modal.style.alignContent = "center";
-}
+};
 
 // Modal popup for portfolio projects
-const modal = document.getElementById("modal-container");  
+const modal = document.getElementById("modal-container");
 const slides = document.getElementById("slides");
-slides.addEventListener('click', doSomething, false);
+slides.addEventListener('click', showDescription, false);
 
-	// Get the <span> element that closes the modal.
-	var close = document.getElementById("close");
+// Get the <span> element that closes the modal.
+var close = document.getElementById("close");
 
-	// When the user clicks on <span> (x), close the modal.
-	close.onclick = function() {
-		modal.style.display = "none";
-	}
+// When the user clicks on <span> (x), close the modal.
+close.onclick = function () {
+  modal.style.display = "none";
+};

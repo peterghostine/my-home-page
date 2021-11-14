@@ -145,6 +145,11 @@
   #experience .card figure {
     display: none;
   }
+
+  .reviews {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
   
   footer {
     margin-top: 50px;
