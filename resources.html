@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Rev. B -->
 <html lang="en">
 
 <head>
@@ -10,11 +9,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!--
-    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
-    -->
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@400;700&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -31,28 +26,6 @@
 
 <body>
   <header>
-    <!-- Non-image logo section. Used to build logo to capture as image. 
-<div class="logo"><div class="name"><h1 class="name-text"><div class="bracket">{
-</div><div class="blue">ghostine
-</div><div class="bracket">}
-</div></h1></div>><div class="tagline"><div class="tagline-dark-foreground">t
-</div><div class="tagline-dark-foreground">e
-</div><div class="tagline-dark-foreground">c
-</div><div class="tagline-dark-foreground">h
-</div><div class="tagline-dark-foreground">n
-</div><div class="tagline-dark-foreground">o
-</div><div class="tagline-dark-foreground">l
-</div><div class="tagline-dark-foreground">o
-</div><div class="tagline-dark-foreground">g
-</div><div class="tagline-dark-foreground">y
-</div><div class="tagline-dark-background">g
-</div><div class="tagline-dark-background">r
-</div><div class="tagline-dark-background">o
-</div><div class="tagline-dark-background">u
-</div><div class="tagline-dark-background">p
-</div></div></div>
--->
-    <!-- Image logo -->
     <div class="logo">
       <img src="images/logo-large.png" alt="Ghostine Technology Group">
     </div>
@@ -62,228 +35,209 @@
     </div>
     <!-- Navigation menu -->
     <nav>
-      <ul>
+      <ul role="presentation">
         <li>
           <a class="menu-wide" href="index.html">HOME</a>
+        </li>
+        <li>
+          <a class="menu-wide" href="services.html">SERVICES</a>
+        </li>
+        <li>
+          <a class="menu-wide" href="portfolio.html">PORTFOLIO</a>
+        </li>
+        <li>
+          <a class="menu-wide" href="resources.html">RESOURCES</a>
         </li>
         <li>
           <a class="menu-wide" href="about.html">ABOUT</a>
         </li>
         <li>
-          <a class="menu-wide" href="#">
-            <span>SERVICES</span>
-            <span class="fa fa-chevron-down fa-styling"></span>
-          </a>
-          <ul>
-            <li>
-              <a class="menu-wide" href="#">WEB DEVELOPMENT</a>
-            </li>
-            <li>
-              <a class="menu-wide" href="#">WOOCOMMERCE DEVELOPMENT</a>
-            </li>
-            <!--
-            <li>
-              <a class="menu-wide" href="#">BLOCKCHAIN</a>
-            </li>
-            <li>
-              <a class="menu-wide" href="#">DEEP LEARNING</a>
-            </li>
-            -->
-          </ul>
+          <a class="menu-wide" href="#reachout">CONTACT</a>
         </li>
-        <li>
-          <a class="menu-wide" href="./resources.html">RESOURCES</a>
-        </li>
-        <!--
-        <li>
-          <a class="menu-wide" href="#">
-            <span>PETER GHOSTINE</span>
-            <span class="fa fa-user"></span>
-          </a>
-          <ul>
-            <li>
-              <a class="menu-wide" href="#">DASHBOARD</a>
-            </li>
-            <li>
-              <a class="logout menu-wide" href="#">LOGOUT</a>
-            </li>
-          </ul>
-        </li>
-        -->
       </ul>
     </nav>
   </header>
-  <main>
-    <div class="content-upper references">
-      <section class="content-list">
-         <a href="#html">HTML</a>
-         <a href="#css">CSS</a>
-         <a href="#javascript">JavaScript</a>
-         <a href="#uiux">UI/UX</a>
-         <a href="#typography">Typography</a>
-         <a href="#accessibility">Accessibility</a>
-         <a href="#responsive-design">Responsive Design</a>
-         <a href="#git">Git/GitHub</a>
-         <a href="#markdown">Markdown</a>
-         <a href="#other">Learning/Other</a>
-      </section>
-      <div class="top-section">
-        <section class="reference-links">
-          <h3 id="html">HTML</h3>
-          <ul>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target=_blank>HTML Elements
-                Reference</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target=_blank>HTML Attributes
-                Reference</a></li>
-            <li><a href="https://www.hexcolortool.com/" target=_blank>HTML Color Codes</li></a>
-            <li><a href="https://validator.w3.org/#validate_by_uri+with_options" target=_blank>W3C Markup Validation
-                Service</a></li>
-            <li><a href="https://gsnedders.html5.org/outliner/" target=_blank>HTML 5 Outliner</a></li>
-            <li><a href="https://css-tricks.com/semantic-class-names/" target=_blank>What Makes for a Semantic Class
-                Name?</a></li>
-            <li><a href="https://www.thoughtco.com/html5-section-element-3467994" target=_blank>When to Use the HTML5
-                'section' Element</a></li>
-          </ul>
-        </section>
-      </div>
-      <section class="reference-links">
-        <h3 id="css">CSS</h3>
-        <ul>
-          <li><a href="https://mozilladevelopers.github.io/playground/css-grid" target=_blank>Introduction to CSS Grid
-              Layout</a></li>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target=_blank>CSS: Cascading Style Sheets</li>
-          </a>
-          <li><a href="https://codebeautify.org/css-beautify-minify" target=_blank>CSS Beautifier</a></li>
-          <li><a href="https://jigsaw.w3.org/css-validator/" target=_blank>W3 CSS Validation Service</a></li>
-          <li><a href="https://css-tricks.com/" target=_blank>CSS Tricks</a></li>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target=_blank>CSS Grid
-              Layout</a></li>
-          <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target=_blank>A Complete Guide to
-              Grid</a></li>
-          <li><a href="https://css-tricks.com/things-ive-learned-css-grid-layout/" target=_blank>Things I’ve Learned
-              About CSS Grid Layout</a></li>
-          <li><a href="https://designshack.net/articles/css/mastering-mouse-enter-and-exit-events-with-css-transitions/#:~:text=To%20sum%20up%2C%20there%20are%20three%20basic%20ways,to%20link%20the%20transition%20to%20a%20hover%20selector.
+  <main id="resources">
+    <div id="content-wrapper">
+      <div class="content references width-100p padding-right-10vw padding-left-10vw">
+        <h1 class="content-title text-center">Resources</h1>
+        <nav class="content-list">
+          <a href="#html">HTML</a>
+          <a href="#css">CSS</a>
+          <a href="#javascript">JavaScript</a>
+          <a href="#uiux">UI/UX</a>
+          <a href="#typography">Typography</a>
+          <a href="#accessibility">A11y</a>
+          <a href="#responsive-design">Responsive</a>
+          <a href="#git">Git/GitHub</a>
+          <a href="#markdown">Markdown</a>
+          <a href="#other">Learning/Other</a>
+        </nav>
+        <div class="cards">
+          <section class="card">
+            <h3 id="html">HTML</h3>
+            <ul role="presentation">
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target=_blank>HTML Elements
+                  Reference</a></li>
+              <li><a href="https://www.hexcolortool.com/" target=_blank>HTML Color Codes</li></a>
+              <li><a href="https://validator.w3.org/#validate_by_uri+with_options" target=_blank>W3C Markup Validation
+                  Service</a></li>
+              <li><a href="https://gsnedders.html5.org/outliner/" target=_blank>HTML 5 Outliner</a></li>
+              <li><a href="https://css-tricks.com/semantic-class-names/" target=_blank>What Makes for a Semantic Class
+                  Name?</a></li>
+              <li><a href="https://www.thoughtco.com/html5-section-element-3467994" target=_blank>When to Use the HTML5
+                  'section' Element</a></li>
+            </ul>
+          </section>
+          <section class="card">
+            <h3 id="css">CSS</h3>
+            <ul role="presentation">
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target=_blank>CSS: Cascading Style Sheets
+              </li>
+              </a>
+              <li><a href="https://jigsaw.w3.org/css-validator/" target=_blank>W3 CSS Validation Service</a></li>
+              <li><a href="https://css-tricks.com/" target=_blank>CSS Tricks</a></li>
+              <li><a href="https://mozilladevelopers.github.io/playground/css-grid" target=_blank>Introduction to CSS
+                  Grid
+                  Layout</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target=_blank>CSS Grid
+                  Layout</a></li>
+              <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target=_blank>A Complete Guide to
+                  Grid</a></li>
+              <li><a href="https://css-tricks.com/things-ive-learned-css-grid-layout/" target=_blank>Things I’ve Learned
+                  About CSS Grid Layout</a></li>
+              <li><a href="https://designshack.net/articles/css/mastering-mouse-enter-and-exit-events-with-css-transitions/#:~:text=To%20sum%20up%2C%20there%20are%20three%20basic%20ways,to%20link%20the%20transition%20to%20a%20hover%20selector.
                 " target=_blank>Mastering Mouse Enter and Exit Events With CSS Transitions</a></li>
-          <li><a href="https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c"
-              target=_blank>Hide header on scroll down, show on scroll up</a></li>
-        </ul>
-      </section>
-      <section class="reference-links">
-        <h3 id="javascript">JavaScript</h3>
-        <ul>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference" target=_blank>JavaScript
-              reference</a></li>
-        </ul>
-      </section>
-      <section class="reference-links">
-        <h3 id="uiux">UI/UX</h3>
-        <ul>
-          <li><a href="https://webdesign.tutsplus.com/articles/a-beginners-guide-to-wireframing--webdesign-7399"
-              target=_blank>A Beginner’s Guide to Wireframing</a></li>
-          <li><a href="https://careerfoundry.com/en/blog/ux-design/how-to-create-your-first-wireframe/"
-              target=_blank>The Definitive Guide: How To Make Your First Wireframe</a></li>
-          <li><a
-              href="https://webdesign.tutsplus.com/tutorials/20-must-have-wireframe-templates-and-ui-kits-for-your-design-library--cms-31568"
-              target=_blank>25+ Must-Have Wireframe Templates and UI Kits for Your Design Library</a></li>
-        </ul>
-      </section>
-      <section class="reference-links">
-        <h3 id="typography">Typography</h3>
-        <ul>
-          <li><a
-              href="https://www.bing.com/search?q=understanding+em+vs+rem&cvid=53544a812160415a86ed25befb9d9017&aqs=edge..69i57.6957j0j1&pglt=43&FORM=ANNTA1&PC=U531"
-              target=_blank>Comprehensive Guide: When to Use Em vs. Rem/a></li>
-        </ul>
-      </section>
-      <section class="reference-links">
-        <h3 id="accessibility">Accessibility</h3>
-        <ul>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" target=_blank>Accessibility</a></li>
-          <li><a href="https://www.boia.org/blog/what-is-a11y" target=_blank>What is a11y?</a></li>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target=_blank>ARIA</li></a>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques"
-              target=_blank>Using ARIA: Roles, states, and properties</a></li>
-          <li><a href="https://www.w3.org/TR/html-aria" target=_blank>ARIA in HTML</a></li>
-          <li><a href="https://en.wikipedia.org/wiki/Web_Accessibility_Initiative" target=_blank>Web Accessibility
-              Initiative (WAI)</a></li>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles" target=_blank>WAI-ARIA
-              Roles</a></li>
-          <li><a href="https://www.toptal.com/designers/colorfilter" target=_blank>Colorblind Web Page Filter</a></li>
-          <li><a href="https://webaim.org/resources/contrastchecker/" target=_blank>Contrast Checker</a></li>
-          <li><a href="https://www.boia.org/blog/make-your-digital-media-more-accessible-by-providing-options"
-              target=_blank>Make Your Digital Media More Accessible By Providing Options</a></li>
-          <li><a href="https://www.boia.org/blog/what-are-h-tags-how-headings-affect-user-experience" target=_blank>What
-              Are H Tags? How Headings Affect User Experience</a></li>
-          <li><a href="https://www.boia.org/blog/web-design-mistakes-that-impact-light-sensitive-users"
-              target=_blank>Web Design Mistakes That Impact Light-Sensitive Users</a></li>
-          <li><a href="https://medium.com/alistapart/writing-html-with-accessibility-in-mind-a62026493412"
-              target=_blank>Writing HTML with Accessibility in Mind</a></li>
-        </ul>
-      </section>
-      <section class="reference-links">
-        <h3 id="responsive-design">Responsive Design</h3>
-        <ul>
-          <li><a href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/"
-              target=_blank>Responsive Web Design - What It Is and How To Use It</a></li>
-          <li><a href="https://alistapart.com/article/responsive-web-design/" target=_blank>Responsive Web Design</li>
-          </a>
-          <li><a href="https://www.taniarascia.com/you-dont-need-a-framework/" target=_blank>Understanding the
-              Fundamentals of Responsive Design</a></li>
-          <li><a href="https://www.quirksmode.org/blog/archives/2010/08/combining_media.html" target=_blank>Combining
-              media queries and JavaScript/a></li>
-        </ul>
-      </section>
-      <section class="reference-links">
-        <h3 id="git">Git/GitHub</h3>
-        <ul>
-          <li><a href="https://thoughtbot.com/upcase/videos/git-getting-to-confident" target=_blank>Getting to
-              Confident: Mastering Git</a></li>
-          <li><a href="https://guides.github.com" target=_blank>GitHub Guides</a></li>
-          <li><a href="https://docs.github.com/en/github/writing-on-github" target=_blank>Writing on GitHub</li></a>
-        </ul>
-      </section>
-      <section class="reference-links">
-        <h3 id="markdown">Markdown</h3>
-        <ul>
-          <li><a href="https://guides.github.com/features/mastering-markdown/" target=_blank>Mastering Markdown</a></li>
-          <li><a href="https://commonmark.org/help/" target=_blank>Markdown Reference</li></a>
-          <li><a href="https://www.markdownguide.org" target=_blank>Markdown Guide</a></li>
-          <li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target=_blank>Markdown
-              Cheatsheet</a></li>
-          <li><a href="https://markdowntohtml.com/" target=_blank>Markdown to HTML Converter (and Cheatsheet)</a></li>
-          <li><a href="https://parsedown.org/" target=_blank>Markdown Parser in PHP</a></li>
-          <li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet" target=_blank>Markdown
-              Here Cheatsheet</a></li>
-          <li><a href="https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project"
-              target=_blank>How to write a good README for your GitHub project?</a></li>
-        </ul>
-      </section>
-      <section class="reference-links">
-        <h3 id="other">Learning/Other</h3>
-        <ul>
-          <li><a href="https://codepip.com/games/" target=_blank>Learn to code by playing games</a></li>
-          <li><a href="https://discuss.codecademy.com/t/guide-how-developer-teams-work/394900" target=_blank>How
-              Developer Teams Work</a></li>
-          <li><a href="hhttps://lab.github.com/" target=_blank>GitHub Learning Lab</li></a>
-          <li><a href="https://github.com/yangshun/front-end-interview-handbook" target=_blank>Front-End Interview
-              Handbook</a></li>
-          <li><a href="https://www.thatjsdude.com/interview/" target=_blank>Interview Questions for Front-End
-              Developer</a></li>
-          <li><a
-              href="https://medium.com/wenchin-rolls-around/use-codemirror-to-build-your-online-code-editor-d29f379f7f1f"
-              target=_blank>Use CodeMirror to build your online code editor</a></li>
-        </ul>
-      </section>
+              <li><a href="https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c"
+                  target=_blank>Hide header on scroll down, show on scroll up</a></li>
+            </ul>
+          </section>
+          <section class="card">
+            <h3 id="javascript">JavaScript</h3>
+            <ul role="presentation">
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference" target=_blank>JavaScript
+                  reference</a></li>
+            </ul>
+          </section>
+          <section class="card">
+            <h3 id="uiux">UI/UX</h3>
+            <ul role="presentation">
+              <li><a href="https://webdesign.tutsplus.com/articles/a-beginners-guide-to-wireframing--webdesign-7399"
+                  target=_blank>A Beginner’s Guide to Wireframing</a></li>
+              <li><a href="https://careerfoundry.com/en/blog/ux-design/how-to-create-your-first-wireframe/"
+                  target=_blank>The Definitive Guide: How To Make Your First Wireframe</a></li>
+              <li><a
+                  href="https://webdesign.tutsplus.com/tutorials/20-must-have-wireframe-templates-and-ui-kits-for-your-design-library--cms-31568"
+                  target=_blank>25+ Must-Have Wireframe Templates and UI Kits for Your Design Library</a></li>
+            </ul>
+          </section>
+          <section class="card">
+            <h3 id="typography">Typography</h3>
+            <ul role="presentation">
+              <li><a
+                  href="https://www.bing.com/search?q=understanding+em+vs+rem&cvid=53544a812160415a86ed25befb9d9017&aqs=edge..69i57.6957j0j1&pglt=43&FORM=ANNTA1&PC=U531"
+                  target=_blank>Comprehensive Guide: When to Use Em vs. Rem</a></li>
+            </ul>
+          </section>
+          <section class="card">
+            <h3 id="accessibility">Accessibility</h3>
+            <ul role="presentation">
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" target=_blank>Accessibility</a>
+              </li>
+              <li><a href="https://www.boia.org/blog/what-is-a11y" target=_blank>What is a11y?</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target=_blank>ARIA</li></a>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques"
+                  target=_blank>Using ARIA: Roles, states, and properties</a></li>
+              <li><a href="https://www.w3.org/TR/html-aria" target=_blank>ARIA in HTML</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Web_Accessibility_Initiative" target=_blank>Web Accessibility
+                  Initiative (WAI)</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles" target=_blank>WAI-ARIA
+                  Roles</a></li>
+              <li><a href="https://www.toptal.com/designers/colorfilter" target=_blank>Colorblind Web Page Filter</a>
+              </li>
+              <li><a href="https://webaim.org/resources/contrastchecker/" target=_blank>Contrast Checker</a></li>
+              <li><a href="https://www.boia.org/blog/make-your-digital-media-more-accessible-by-providing-options"
+                  target=_blank>Make Your Digital Media More Accessible By Providing Options</a></li>
+              <li><a href="https://www.boia.org/blog/what-are-h-tags-how-headings-affect-user-experience"
+                  target=_blank>What
+                  Are H Tags? How Headings Affect User Experience</a></li>
+              <li><a href="https://www.boia.org/blog/web-design-mistakes-that-impact-light-sensitive-users"
+                  target=_blank>Web Design Mistakes That Impact Light-Sensitive Users</a></li>
+              <li><a href="https://medium.com/alistapart/writing-html-with-accessibility-in-mind-a62026493412"
+                  target=_blank>Writing HTML with Accessibility in Mind</a></li>
+            </ul>
+          </section>
+          <section class="card">
+            <h3 id="responsive-design">Responsive Design</h3>
+            <ul role="presentation">
+              <li><a href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/"
+                  target=_blank>Responsive Web Design - What It Is and How to Use It</a></li>
+              <li><a href="https://alistapart.com/article/responsive-web-design/" target=_blank>Responsive Web Design
+              </li>
+              </a>
+              <li><a href="https://www.taniarascia.com/you-dont-need-a-framework/" target=_blank>Understanding the
+                  Fundamentals of Responsive Design</a></li>
+              <li><a href="https://www.quirksmode.org/blog/archives/2010/08/combining_media.html/"
+                  target=_blank>Combining
+                  media queries and JavaScript</a></li>
+            </ul>
+          </section>
+          <section class="card">
+            <h3 id="git">Git/GitHub</h3>
+            <ul role="presentation">
+              <li><a href="https://thoughtbot.com/upcase/videos/git-getting-to-confident" target=_blank>Getting to
+                  Confident: Mastering Git</a></li>
+              <li><a href="https://guides.github.com" target=_blank>GitHub Guides</a></li>
+              <li><a href="https://docs.github.com/en/github/writing-on-github" target=_blank>Writing on GitHub</li></a>
+            </ul>
+          </section>
+          <section class="card">
+            <h3 id="markdown">Markdown</h3>
+            <ul role="presentation">
+              <li><a href="https://guides.github.com/features/mastering-markdown/" target=_blank>Mastering Markdown</a>
+              </li>
+              <li><a href="https://commonmark.org/help/" target=_blank>Markdown Reference</li></a>
+              <li><a href="https://www.markdownguide.org" target=_blank>Markdown Guide</a></li>
+              <li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target=_blank>Markdown
+                  Cheatsheet</a></li>
+              <li><a href="https://markdowntohtml.com/" target=_blank>Markdown to HTML Converter (and Cheatsheet)</a>
+              </li>
+              <li><a href="https://parsedown.org/" target=_blank>Markdown Parser in PHP</a></li>
+              <li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet" target=_blank>Markdown
+                  Here Cheatsheet</a></li>
+              <li><a href="https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project"
+                  target=_blank>How to write a good README for your GitHub project?</a></li>
+            </ul>
+          </section>
+          <section class="card">
+            <h3 id="other">Learning/Other</h3>
+            <ul role="presentation">
+              <li><a href="https://codepip.com/games/" target=_blank>Learn to code by playing games</a></li>
+              <li><a href="https://discuss.codecademy.com/t/guide-how-developer-teams-work/394900" target=_blank>How
+                  Developer Teams Work</a></li>
+              <li><a href="hhttps://lab.github.com/" target=_blank>GitHub Learning Lab</li></a>
+              <li><a href="https://github.com/yangshun/front-end-interview-handbook" target=_blank>Front-End Interview
+                  Handbook</a></li>
+              <li><a href="https://www.thatjsdude.com/interview/" target=_blank>Interview Questions for Front-End
+                  Developer</a></li>
+              <li><a
+                  href="https://medium.com/wenchin-rolls-around/use-codemirror-to-build-your-online-code-editor-d29f379f7f1f"
+                  target=_blank>Use CodeMirror to build your online code editor</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
     </div>
-    <!-- Main content ends -->
   </main>
   <footer>
     <!-- ABOUT SECTION -->
-    <div class="footer-section about">
+    <div id="about" class="footer-section">
       <h2 class="footer-section-title">ABOUT</h2>
       <p>My name is Peter Ghostine. I'm an avid technologist with a broad software development and IT experience
         spanning three decades.</p>
-      <a class="learn-more" href="about.html">Learn more...</a>
+      <div class="learn-more">
+        <a href="about.html">Learn more...</a>
+      </div>
       <div class="contact-info">
         <div class="phone">
           <a href="tel:7036295470" target=_blank>
@@ -311,9 +265,9 @@
       </div>
     </div>
     <!-- LINKS SECTION -->
-    <div class="footer-section links">
+    <div id="links" class="footer-section">
       <h2 class="footer-section-title">QUICK LINKS</h2>
-      <ul>
+      <ul role="presentation">
         <li>
           <a class="menu-wide" href="index.html">Home</a>
         </li>
@@ -332,7 +286,7 @@
       </ul>
     </div>
     <!-- CONTACT SECTION -->
-    <div class="footer-section reachout">
+    <div id="reachout" class="footer-section">
       <h2 class="footer-section-title">REACH OUT!</h2>
       <form id="contact-form" action="https://formspree.io/f/xeqvbrqv" method="POST">
         <input type="email" name="_replyto" placeholder="Your email address...">

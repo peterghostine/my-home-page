@@ -25,7 +25,7 @@ $(document).ready(function () {
 $('.slides').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 5000,
   dots: true,
   nextArrow: $('.next'),
@@ -116,3 +116,26 @@ async function handleSubmit(event) {
   });
 }
 form.addEventListener("submit", handleSubmit);
+
+function doSomething(e) {
+
+  var target = e.target;
+  var description = modal.getElementsByClassName("modal-content")[0];
+  description.innerHTML = target.parentNode.getElementsByClassName("description")[0].innerHTML;
+  modal.style.display = "flex";
+  modal.style.justifyContent = "center";
+  modal.style.alignContent = "center";
+}
+
+// Modal popup for portfolio projects
+const modal = document.getElementById("modal-container");  
+const slides = document.getElementById("slides");
+slides.addEventListener('click', doSomething, false);
+
+	// Get the <span> element that closes the modal.
+	var close = document.getElementById("close");
+
+	// When the user clicks on <span> (x), close the modal.
+	close.onclick = function() {
+		modal.style.display = "none";
+	}

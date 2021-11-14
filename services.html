@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Rev. B -->
 <html lang="en">
 
 <head>
@@ -10,12 +9,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--
-    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
-    -->
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech&family=Share+Tech+Mono&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@400;700&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -32,7 +27,6 @@
 
 <body>
     <header>
-        <!-- Image logo -->
         <div class="logo">
             <img src="images/logo-large.png" alt="Ghostine Technology Group">
         </div>
@@ -47,95 +41,46 @@
                     <a class="menu-wide" href="index.html">HOME</a>
                 </li>
                 <li>
+                    <a class="menu-wide" href="services.html">SERVICES</a>
+                </li>
+                <li>
+                    <a class="menu-wide" href="portfolio.html">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a class="menu-wide" href="resources.html">RESOURCES</a>
+                </li>
+                <li>
                     <a class="menu-wide" href="about.html">ABOUT</a>
                 </li>
                 <li>
-                    <a class="menu-wide" href="#">
-                        <span>SERVICES</span>
-                        <span class="fa fa-chevron-down fa-styling"></span>
-                    </a>
-                    <ul>
-                        <li>
-                            <a class="menu-wide" href="#">WEB DEVELOPMENT</a>
-                        </li>
-                        <li>
-                            <a class="menu-wide" href="#">WOOCOMMERCE DEVELOPMENT</a>
-                        </li>
-                        <!--
-            <li>
-              <a class="menu-wide" href="#">BLOCKCHAIN</a>
-            </li>
-            <li>
-              <a class="menu-wide" href="#">DEEP LEARNING</a>
-            </li>
-            -->
-                    </ul>
+                    <a class="menu-wide" href="#reachout">CONTACT</a>
                 </li>
-                <li>
-                    <a class="menu-wide" href="./resources.html">RESOURCES</a>
-                </li>
-                <!--
-        <li>
-          <a class="menu-wide" href="#">
-            <span>PETER GHOSTINE</span>
-            <span class="fa fa-user"></span>
-          </a>
-          <ul>
-            <li>
-              <a class="menu-wide" href="#">DASHBOARD</a>
-            </li>
-            <li>
-              <a class="logout menu-wide" href="#">LOGOUT</a>
-            </li>
-          </ul>
-        </li>
-        -->
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="content-upper">
-            <h2 class="upper-title">Services</h2>
-            <section id="wordpress" class="service">
-                <img src="./images/ecommerce-responsive.png" alt="Responsive e-commerce development">
-                <div class="details">
-                    <h3 id="wordpress">WordPress/WooCommerce</h3>
-                    <div class="description">
-                        <p>I design and build eCommerce storefronts optimized to sell efficiently and convert at a high
-                            rate. I use a mobile-first design strategy to ensure the UX and UI aren't an obstacle for
-                            on-the-go shoppers. I build everything to spec, and I aim to deliver effective systems that
-                            are flexible, intuitive, beautiful, and mobile-ready to help improve the shopping experience
-                            and drive sales forward.
-                        </p>
-                    </div>
+    <main id="services">
+        <div id="hero-background">
+            <div id="hero">
+                <div id="hero-content">
+                    <div id="tagline" class="text-center">LET'S BUILD SOMETHING<span> AMAZING.</span></div>
                 </div>
-            </section>
-            <section id="webdev" class="service">
-                <img src="./images/webdev-responsive.png" alt="Responsive web development">
-                <div class="details">
-                    <h3 id="php">Web Development</h3>
-                    <div class="description">
-                        <p>I design and build custom web applications that deliver the best possible experience across
-                            all devices. With business goals and objectives in mind, I work closely with customers to
-                            determine what to build, the best way to build it, and the right technologies to build it
-                            with. My focus is always on quality &#8211; That's why I don't outsource my work to
-                            subcontractors. I also don't offshore any work to cheaper, lower-quality developers and
-                            designers.</p>
-                    </div>
-                </div>
-            </section>
-
+            </div>
+        </div>
+        <div id="content-wrapper">
+            <div class="content width-100p">
+                <h1 class="content-title text-center">Coming soon.</h1>
+            </div>
+        </div>
     </main>
     <footer>
         <!-- ABOUT SECTION -->
-        <div class="footer-section about">
+        <div id="about" class="footer-section">
             <h2 class="footer-section-title">ABOUT</h2>
-            <!--
-            <div class="logo"><img class="footer-section-title" src="images/logo-large.png" alt="Ghostine Technology Group" width="279" height="92"></div>
-            -->
             <p>My name is Peter Ghostine. I'm an avid technologist with a broad software development and IT experience
                 spanning three decades.</p>
-            <a class="learn-more" href="about.html">Learn more...</a>
+            <div class="learn-more">
+                <a href="about.html">Learn more...</a>
+            </div>
             <div class="contact-info">
                 <div class="phone">
                     <a href="tel:7036295470" target=_blank>
@@ -163,17 +108,14 @@
             </div>
         </div>
         <!-- LINKS SECTION -->
-        <div class="footer-section links">
+        <div id="links" class="footer-section">
             <h2 class="footer-section-title">QUICK LINKS</h2>
             <ul>
                 <li>
                     <a class="menu-wide" href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#">Web Development</a>
-                </li>
-                <li>
-                    <a href="#">Woocommerce Development</a>
+                    <a href="services.html">Services</a>
                 </li>
                 <li>
                     <a class="menu-wide" href="./resources.html">Resources</a>
@@ -187,7 +129,7 @@
             </ul>
         </div>
         <!-- CONTACT SECTION -->
-        <div class="footer-section reachout">
+        <div id="reachout" class="footer-section">
             <h2 class="footer-section-title">REACH OUT!</h2>
             <form id="contact-form" action="https://formspree.io/f/xeqvbrqv" method="POST">
                 <input type="email" name="_replyto" placeholder="Your email address...">
@@ -209,7 +151,6 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Custom Scripts -->
     <script src="js/main.js"></script>
-    <script src="js/fixed-header.js"></script>
 </body>
 
 </html>

@@ -1,32 +1,13 @@
-/*
- ------------------- 
- MEDIA QUERIES 1495 
- ------------------- */ 
- @media only screen and (max-width: 1300px) {
-  .content-lower {
-    margin-bottom: 3rem;
-    flex-direction: column;
-  }
-
-  .services {
-    flex-basis: 100%;
-    margin-right: 0;
-  }
-}
-
-
-
-
-/* ------------------ */
-/* MEDIA QUERIES 992 */
-/* ------------------ */
+/* ------------------ 
+   MEDIA QUERIES 992  
+   ------------------ */
 @media only screen and (max-width: 992px) {
   header {
     height: 50px;
   }
 
   .logo {
-    width: 150px;
+    width: 140px;
   }
 
   .logo img {
@@ -41,13 +22,13 @@
     position: absolute;
   }
 
-  nav {
+  header>nav {
     width: 100%;
     overflow: hidden;
     z-index: 100;
   }
 
-  nav>ul {
+  header>nav>ul {
     background: #000;
     width: 100%;
     max-height: 100rem;
@@ -55,41 +36,41 @@
     overflow: hidden;
   }
 
-  nav ul li a {
+  header>nav ul li a {
     padding: 0.5rem;
     display: block;
   }
 
-  nav>ul>li:not(:last-child) a {
+  header>nav>ul>li:not(:last-child) a {
     border-bottom: 1px solid #292929;
   }
 
-  nav>ul>li:first-child a {
+  header>nav>ul>li:first-child a {
     border-top: 1px solid #292929;
   }
 
-  nav>ul>li>.menu-wide {
+  header>nav>ul>li>.menu-wide {
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
   }
 
-  nav ul li {
+  header>nav ul li {
     width: 100%;
   }
 
-  nav ul li ul {
+  header>nav ul li ul {
     position: static;
     display: none;
     width: 100%;
   }
 
-  nav ul li ul li a {
+  header>nav ul li ul li a {
     color: #000;
     text-align: right;
   }
 
-  nav ul li ul li a:hover {
+  header>nav ul li ul li a:hover {
     color: #fff;
     background: #272727;
   }
@@ -104,21 +85,47 @@
     top: 50px;
   }
 
+  #home .content {
+    margin-right: 0;
+    padding-right: 10vw; 
+  }
+
+  .sidebar {
+    margin-top: 2rem;
+    padding-left: 10vw; 
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  #content-wrapper {
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
   #hero {
     background-position: center;
     margin-left: 0;
     justify-content: center;
   }
 
-  #hero-content h1 {
-    background: #282f38c0;
-    display: flex;
-    flex-direction: column;
-    border-radius: 50px;
+  #hero-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #282f38a0;
   }
 
-  .content-upper {
-    margin: 2rem auto;
+  #tagline {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .content-list {
@@ -135,22 +142,10 @@
     top: 50px;
   }
 
-  .sidebar {
-    margin-top: 2rem;
+  #experience .card figure {
+    display: none;
   }
-
-  .service img {
-    width: 100%;
-    padding: 0;
-    margin-bottom: 1rem;
-  }
-
-  .service h3,
-  .service p {
-    text-align: center;
-    padding: 0 1rem;
-  }
-
+  
   footer {
     margin-top: 50px;
     width: 100%;
@@ -186,51 +181,61 @@
   }
 }
 
-/* ----------------- */
-/* MEDIA QUERIES 768 */
-/* ----------------- */
+/* ------------------ 
+   MEDIA QUERIES 768 
+   ------------------ */
 @media only screen and (max-width: 768px) {
   html {
     font-size: 22px;
   }
 
-  .copyright {
-    font-size: 0.9rem;
-  }
-
-  .upper-title,
-  .lower-title {
-    font-size: 1.5rem;
-  }
-
-  .arrow {
-    display: none;
-  }
-
-  .lower-title {
+  .content-title {
+    font-size: 1.8rem;
     text-align: center;
   }
 
-  .services .post {
+  .card {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
   }
 
-  .services .post-image {
+  .card-info {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+  }
+
+  #home .card {
+    padding-right: 0;
+  }
+
+  #home .card h3,
+  #portfolio .card h3 {
+  padding: 0;
+}
+
+  #home .card-image,
+  #competencies .card-image,
+  #portfolio .card-image {
     max-width: 100%;
     padding-right: 0;
-    border-top-right-radius: 5px;
   }
 
-  .services .post-info {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    text-align: center;
+  #home .card-image,
+  #portfolio .card-image {
+  border-top-right-radius: 5px;
+  }
+
+  #portfolio .card-info p {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
   }
 
   .copyright {
@@ -238,49 +243,11 @@
   }
 }
 
-/* ----------------- */
-/* MEDIA QUERIES 576 */
-/* ----------------- */
+/* ------------------ 
+   MEDIA QUERIES 576 
+   ------------------ */
 @media only screen and (max-width: 576px) {
   .copyright {
     font-size: 0.7rem;
-  }
-
-  .technology {
-    flex-direction: column;
-    padding: 0 0 1rem 0;
-  }
-
-  .technology figure {
-    margin-right: 0;
-    margin-bottom: 1rem;
-  }
-
-  .technology img {
-    width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-
-  .technology h3,
-  .technology p {
-    text-align: center;
-    padding: 0 1rem;
-  }
-
-  .experience figure {
-    display: none;
-  }
-
-  .experience p,
-  .experience li,
-  .technology p,
-  .reference-links li a {
-    font-size: 0.9rem;
-  }
-
-  .reference-links {
-    margin-top: 1rem;
-    padding: 1rem;
   }
 }

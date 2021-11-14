@@ -15,7 +15,7 @@
     href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@400;700&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/13954b8dca.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/4132dc5838.js" crossorigin="anonymous"></script>
   <!-- Slick carousel -->
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
@@ -35,7 +35,7 @@
     </div>
     <!-- Navigation menu -->
     <nav>
-      <ul>
+      <ul role="presentation">
         <li>
           <a class="menu-wide" href="index.html">HOME</a>
         </li>
@@ -57,143 +57,62 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main id="home">
     <div id="hero-background">
       <div id="hero">
         <div id="hero-content">
-          <h1><span id="project">YOUR PROJECT.</span><span id="mission"> MY MISSION.</span></h1>
+          <div id="tagline">YOUR PROJECT.<span> MY MISSION.</span></div>
           <a id="portfolio-btn" href="portfolio.html">View portfolio</a>
         </div>
       </div>
     </div>
-    <!--
-    <div class="content-upper">
-      <h2 class="upper-title">Portfolio</h2>
-      <div class="slides">
-        <div class="post">
-          <a href="http://www.peoplestournament.com" target=_blank>
-            <img src="images/tpt.png" alt="" class="post-image" alt="The People's Tournament website project">
-          </a>
-          <div class="post-info">
-            <h3 class="post-title">
-              <a href="http://www.peoplestournament.com" target=_blank>The People's Tournament</a>
-            </h3>
+    <div id="content-wrapper">
+      <div class="content margin-right-5vw padding-left-10vw">
+        <h1 class="content-title">Services</h1>
+        <div class="cards">
+          <div class="card">
+            <figure>
+              <img src="images/woocommerce.png" alt="WordPress and WooCommerce" class="card-image">
+            </figure>
+            <div class="card-info">
+              <h3>
+                <a href="services.html#woocommerce">WooCommerce Development</a>
+              </h3>
+              <p>I design and build eCommerce
+                storefronts optimized to sell efficiently and convert at a high rate. I use mobile-first design
+                strategies to ensure the UX and UI aren't an obstacle for on-the-go shoppers. I build everything to
+                spec, and I aim to deliver flexible, intuitive, beautiful, and mobile-ready shopping experiences that
+                drive sales forward.</p>
+            </div>
+            <div class="learn-more">
+              <a href="services.html#woocommerce">Learn more...</a>
+            </div>
           </div>
-        </div>
-        <div class="post">
-          <a href="https://www.outmatchusa.com" target=_blank>
-            <img src="images/omusa.png" alt="" class="post-image" alt="Outmatch USA project">
-          </a>
-          <div class="post-info">
-            <h3 class="post-title">
-              <a href="http://www.outmatch.com" target=_blank>Outmatch USA</a>
-            </h3>
-          </div>
-        </div>
-        <div class="post">
-          <a href="https://peterghostine.github.io/opp/la%20fitness" target=_blank>
-            <img src="images/lafitness.png" alt="" class="post-image" alt="LA Fitness project">
-          </a>
-          <div class="post-info">
-            <h3 class="post-title">
-              <a href="https://peterghostine.github.io/opp/la%20fitness" target=_blank>LA Fitness</a>
-            </h3>
-          </div>
-        </div>
-        <div class="post">
-          <a href="./mixedmessages.html">
-            <img src="images/mixed-messages-project.png" alt="" class="post-image" alt="Mixed Messages project">
-          </a>
-          <div class="post-info">
-            <h3 class="post-title">
-              <a href="./mixedmessages.html">Mixed Messages</a>
-            </h3>
-          </div>
-        </div>
-        <div class="post">
-          <img src="images/website-project.png" alt="" class="post-image" alt="Personal Website project">
-          <div class="post-info">
-            <h3 class="post-title">
-              <a href="#">Personal Website</a>
-            </h3>
-          </div>
-        </div>
-        <div class="post">
-          <img src="images/react-redux-project.png" alt="" class="post-image future-project" alt="React/Redux project">
-          <div class="post-info">
-            <h3 class="post-title">
-              <a href="#">React/Redux</a>
-            </h3>
-          </div>
-        </div>
-        <div class="post">
-          <img src="images/rest-api-project.png" alt="" class="post-image future-project"
-            alt="E-commerce REST API project">
-          <div class="post-info">
-            <h3 class="post-title">
-              <a href="#">E-Commerce App (REST API)</a>
-            </h3>
-          </div>
-        </div>
-        <div class="post">
-          <img src="images/ecommerce-project.png" alt="" class="post-image future-project"
-            alt="E-commerce client app project">
-          <div class="post-info">
-            <h3 class="post-title">
-              <a href="#">E-Commerce App (Client)</a>
-            </h3>
-          </div>
-        </div>
-        <div class="post">
-          <img src="images/pern-project.png" alt="" class="post-image future-project" alt="Final PERN project">
-          <div class="post-info">
-            <h3 class="post-title">
-              <a href="#">Final PERN App</a>
-            </h3>
+          <div class="card">
+            <figure>
+              <img src="images/htmlcssjs.png" alt="HTML, CSS, and JavaScript" class="card-image">
+            </figure>
+            <div class="card-info">
+              <h3>
+                <a href="services.html#webdev">Web Development</a>
+              </h3>
+              <p>I design and build custom web
+                applications that deliver the best possible
+                experience across all devices. With business goals and objectives in mind, I work closely with customers
+                to determine what to build, the best way to build it, and the right technologies to build it with. My
+                focus is always on quality &#8211; That's why I don't outsource my work to subcontractors. I also don't
+                offshore any work to cheaper, lower-quality developers and designers.</p>
+            </div>
+            <div class="learn-more">
+              <a href="services.html#webdev">Learn more...</a>
+            </div>
           </div>
         </div>
       </div>
-      <span class="fas fa-chevron-left arrow prev"></span>
-      <span class="fas fa-chevron-right arrow next"></span>
-    </div>
-    -->
-    <!-- Content Lower -->
-    <div class="content-lower">
-      <!-- Contains 2 elements: content-services and side-bar -->
-      <div class="services">
-        <h2 class="lower-title">Services</h2>
-        <div class="post">
-          <img src="images/woocommerce.png" alt="" class="post-image" alt="WordPress and WooCommerce">
-          <div class="post-info">
-            <h3>
-              <a href="services.html#woocommerce">WooCommerce Development</a>
-            </h3>
-            <p>I design and build eCommerce storefronts optimized to sell efficiently and convert at a high rate.
-              I use mobile-first design strategies to ensure the UX and UI aren't an obstacle for on-the-go shoppers.
-              I build everything to spec, and I aim to deliver flexible, intuitive, beautiful, and mobile-ready shopping
-              experiences that drive sales forward.</p>
-          </div>
-          <a class="learn-more" href="services.html#woocommerce">Learn more...</a>
-        </div>
-        <div class="post">
-          <img src="images/htmlcssjs.png" alt="" class="post-image" alt="Web development">
-          <div class="post-info">
-            <h3>
-              <a href="services.html#webdev">Web Development</a>
-            </h3>
-            <p>I design and build custom web applications that deliver the best possible experience across all devices.
-              With business goals and objectives in mind, I work closely with customers to determine what to build,
-              the best way to build it, and the right technologies to build it with. My focus is always on quality
-              &#8211; That's why I don't outsource my work to subcontractors. I also don't offshore any work to
-              cheaper, lower-quality developers and designers.</p>
-          </div>
-          <a class="learn-more" href="services.html#webdev">Learn more...</a>
-        </div>
-      </div>
-      <div class="sidebar">
+      <div class="sidebar padding-right-10vw">
         <div class="sidebar-section">
           <h3 class="sidebar-section-title">Core Competencies</h3>
-          <ul>
+          <ul role="presentation">
             <li>
               <a href="competencies.html">WordPress/WooCommerce</a>
             </li>
@@ -221,15 +140,18 @@
           </ul>
         </div>
       </div>
+
     </div>
   </main>
-  <footer>
+  <footer role="contentinfo">
     <!-- ABOUT SECTION -->
     <div id="about" class="footer-section">
       <h2 class="footer-section-title">ABOUT</h2>
       <p>My name is Peter Ghostine. I'm an avid technologist with a broad software development and IT experience
         spanning three decades.</p>
-      <a class="learn-more" href="about.html">Learn more...</a>
+      <div class="learn-more">
+        <a href="about.html">More about me...</a>
+      </div>
       <div class="contact-info">
         <div class="phone">
           <a href="tel:7036295470" target=_blank>
@@ -257,9 +179,9 @@
       </div>
     </div>
     <!-- LINKS SECTION -->
-    <div id="links" class="footer-section">
+    <nav id="links" class="footer-section">
       <h2 class="footer-section-title">QUICK LINKS</h2>
-      <ul>
+      <ul role="presentation">
         <li>
           <a class="menu-wide" href="index.html">Home</a>
         </li>
@@ -276,7 +198,7 @@
           <a href="./terms.html">Terms and Conditions</a>
         </li>
       </ul>
-    </div>
+    </nav>
     <!-- CONTACT SECTION -->
     <div id="reachout" class="footer-section">
       <h2 class="footer-section-title">REACH OUT!</h2>
