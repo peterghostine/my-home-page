@@ -1,22 +1,21 @@
 // Menu behavior
 $(document).ready(function () {
   $(document).on('click', function (event) {
-    if ($("nav > ul").is(":visible") &&
-      ($(".menu-toggle").is(":visible"))) {
-      if (!$(event.target).closest("nav > ul").length) {
-        $("nav > ul > li > ul").slideUp();
-        $("nav > ul").toggleClass("showing");
+    if ($("header > nav > ul").is(":visible") && ($(".menu-toggle").is(":visible"))) {
+      if (!$(event.target).closest("header > nav > ul").length) {
+        $("header > nav > ul > li > ul").slideUp();
+        $("header > nav > ul").toggleClass("showing");
       };
     } else if (($(event.target).closest(".menu-toggle").length)) {
-      $("nav > ul").toggleClass("showing");
+      $("header > nav > ul").toggleClass("showing");
     };
   });
-  $("nav > ul > li").click(function () {
-    $("nav > ul > li:hover > ul").slideToggle();
+  $("header>nav > ul > li").click(function () {
+    $("header > nav > ul > li:hover > ul").slideToggle();
   });
-  $("nav > ul > li").mouseleave(function () {
+  $("header > nav > ul > li").mouseleave(function () {
     if ($(".menu-toggle").is(":hidden")) {
-      $("nav > ul > li > ul").slideUp();
+      $("header > nav > ul > li > ul").slideUp();
     };
   });
 });
@@ -119,11 +118,13 @@ form.addEventListener("submit", handleSubmit);
 function showDescription(e) {
 
   var target = e.target;
-  var description = modal.getElementsByClassName("modal-content")[0];
-  description.innerHTML = target.parentNode.getElementsByClassName("description")[0].innerHTML;
-  modal.style.display = "flex";
-  modal.style.justifyContent = "center";
-  modal.style.alignContent = "center";
+  if (target.classList[1] === 'fa-question-circle') {
+    var description = modal.getElementsByClassName("modal-content")[0];
+    description.innerHTML = target.parentNode.getElementsByClassName("description")[0].innerHTML;
+    modal.style.display = "flex";
+    modal.style.justifyContent = "center";
+    modal.style.alignContent = "center";
+  };
 };
 
 // Modal popup for portfolio projects
