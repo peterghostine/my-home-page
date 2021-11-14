@@ -1,187 +1,69 @@
 <!DOCTYPE html>
 <!-- Rev. B -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Single Post </title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Post </title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--
     <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
     -->
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@400;700&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/liquibyte.css">
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/13954b8dca.js" crossorigin="anonymous"></script>
-    <!-- Styling -->
-    <link rel='stylesheet' href='css/style.css'>
-    <link rel='stylesheet' href='css/mobile.css'>
-  </head>
-  <body>
-    <header>
-      <!-- Image logo -->
-      <div class="logo">
-        <img src="images/logo-large.png" alt="Ghostine Technology Group">
-      </div>
-      <!-- Menu toggle (hidden until screen is too small to show default classic menu layout) -->
-      <div class="menu-toggle">
-        <span class="fa fa-bars"></span>
-      </div>
-      <!-- Navigation bar -->
-      <nav>
-        <ul>
-          <li>
-            <a class="menu-wide" href="index.html">HOME </a>
-          </li>
-          <li>
-            <a class="menu-wide" href="#">ABOUT </a>
-          </li>
-          <li>
-            <a class="menu-wide" href="#">
-              <span>SERVICES</span>
-              <span class="fa fa-chevron-down fa-styling"></span>
-            </a>
-            <ul>
-              <li>
-                <a class="menu-wide" href="#">HTML/CSS/JS DEVELOPMENT </a>
-              </li>
-              <li>
-                <a class="menu-wide" href="#">SOLIDITY DEVELOPMENT </a>
-              </li>
-              <li>
-                <a class="menu-wide" href="#">DEEP LEARNING </a>
-              </li>
-              <li>
-                <a class="menu-wide" href="#">DEVOPS </a>
-              </li>
-              <li>
-                <a class="menu-wide" href="#">AWS / AZURE </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a class="menu-wide" href="./resources.html">RESOURCES </a>
-          </li>
-          <li>
-            <a class="menu-wide" class="has-submenu" href="#">
-              <span>PETER GHOSTINE</span>
-              <span class="fa fa-user"></span>
-            </a>
-            <ul>
-              <li>
-                <a class="menu-wide" href="#">DASHBOARD </a>
-              </li>
-              <li>
-                <a class="menu-wide" href="#" class="logout">LOGOUT </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!-- Navigation bar ends -->
-      <!-- Content -->
-      <!-- Main content -->
-      <div class="content-upper">
-        <h1 class="upper-title">Mixed Messages</h1>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@400;700&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/liquibyte.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/13954b8dca.js" crossorigin="anonymous"></script>
+  <!-- Styling -->
+  <link rel='stylesheet' href='css/style.css'>
+  <link rel='stylesheet' href='css/mobile.css'>
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+    <div id="content-wrapper" class="column">
+      <div class="content margin-top-2rem padding-right-10vw padding-left-10vw">
+        <h1 class="content-title text-center">Mixed Messages</h1>
         <!--
           <textarea id="codearea" name="codearea" rows="20" cols="50">
           </textarea>
         -->
-        <p class="codepen" data-height="800" data-default-tab="html,result" data-slug-hash="bGrvGKv" data-user="peterghostine" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <p class="codepen" data-height="800" data-default-tab="html,result" data-slug-hash="bGrvGKv"
+          data-user="peterghostine"
+          style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
           <span>See the Pen <a href="https://codepen.io/peterghostine/pen/bGrvGKv">
-          Mixed Messages</a> by Peter Ghostine (<a href="https://codepen.io/peterghostine">@peterghostine</a>)
-          on <a href="https://codepen.io">CodePen</a>.</span>
-        </p>  
+              Mixed Messages</a> by Peter Ghostine (<a href="https://codepen.io/peterghostine">@peterghostine</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
       </div>
-      <!-- Content ends -->
-    </main>
-    <footer>
-      <!-- ABOUT SECTION -->
-      <div class="footer-section about">
-        <h2 class="footer-section-title">ABOUT </h2>
-        <!--
-        <div class="logo"><img class="footer-section-title" src="images/logo-large.png" alt="Ghostine Technology Group" width="279" height="92"></div>
-        -->
-        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolore voluptatum omnis, doloremque amet dicta necessitatibus, iure debitis quaerat sapiente id temporibus. Reprehenderit, dolores vitae! </p>
-        <div class="contact">
-          <div class="phone">
-            <span class="fas fa-phone"></span> 703-629-5470
-          </div>
-          <div class="email">
-            <span class="fas fa-envelope"></span> peterghostine@gmail.com
-          </div>
-        </div>
-        <div class="socials">
-          <a href="#">
-            <span class="fab fa-facebook"></span>
-          </a>
-          <a href="#">
-            <span class="fab fa-instagram"></span>
-          </a>
-          <a href="#">
-            <span class="fab fa-twitter"></span>
-          </a>
-          <a href="#">
-            <span class="fab fa-linkedin"></span>
-          </a>
-        </div>
-      </div>
-      <!-- LINKS SECTION -->
-      <div class="footer-section links">
-        <h2 class="footer-section-title">QUICK LINKS </h2>
-        <ul>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a class="menu-wide" href="./resources.html">Resources</a>
-          </li>
-          <li>
-            <a href="#">Privacy Policy</a>
-          </li>
-          <li>
-            <a href="#">Terms and Conditions</a>
-          </li>
-        </ul>
-      </div>
-      <!-- CONTACT SECTION -->
-      <div class="footer-section contact-form">
-        <h2 class="footer-section-title">CONTACT ME </h2>
-        <form action="index.html" method="POST">
-          <input type="email" name="email" placeholder="Your email address...">
-          <textarea name="message" placeholder="Your message..."></textarea>
-          <button type="submit" class="btn btn-big">
-            <span class="fas fa-envelope"></span> SEND </button>
-          <!--
-            <span class="fas fa-envelope"></span>
-            -->
-        </form>
-      </div>
-      <div class="footer-section copyright">
-        <p>Copyright &copy 2021, Ghostine Technology Group, LLC. ALL RIGHTS RESERVED.</p>
-      </div>  
-    </footer>
-    <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Slick Carousel -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- CodeMirror -->
-    <script src= "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.js"></script>
-    <script src= "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/javascript/javascript.js"></script>
-    <!-- Custom Script -->
-    <script src="js/scripts.js"></script>
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <!--
-      <script src="js/mixedmessages.js"></script> 
-    -->
-  </body>
+    </div>
+  </main>
+  <footer role="contentinfo">
+  </footer>
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Slick Carousel -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- CodeMirror -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/javascript/javascript.js"></script>
+  <!-- Custom Scripts -->
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/fixed-header.js"></script>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+</body>
+
 </html>
