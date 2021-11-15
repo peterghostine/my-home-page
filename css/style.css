@@ -286,11 +286,14 @@ main {
 }
 
 #portfolio #hero {
-  background-image: url(../images/hero-services.png);
+  background-image: url(../images/hero-portfolio.png);
+}
+
+#competencies #hero {
+  background-image: url(../images/hero-competencies.png);
 }
 
 #hero-content {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;

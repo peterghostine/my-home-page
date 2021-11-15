@@ -112,7 +112,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #282f38a0;
+    background: #282f38c0;
   }
 
   #tagline {
@@ -241,7 +241,7 @@
     display: none;
     overflow: hidden;
   }
-  
+
   .copyright {
     font-size: 0.8rem;
   }
