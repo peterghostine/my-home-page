@@ -93,10 +93,6 @@
     padding-left: 10vw; 
   }
 
-  .arrow {
-    display: none;
-  }
-
   #content-wrapper {
     flex-direction: column;
     padding-top: 2rem;
@@ -241,6 +237,11 @@
     padding-bottom: 0;
   }
 
+  #prev, #next {
+    display: none;
+    overflow: hidden;
+  }
+  
   .copyright {
     font-size: 0.8rem;
   }

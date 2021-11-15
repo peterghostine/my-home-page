@@ -285,7 +285,7 @@ main {
   background-image: url(../images/hero-main.png);
 }
 
-#competencies #hero {
+#portfolio #hero {
   background-image: url(../images/hero-services.png);
 }
 
@@ -595,7 +595,7 @@ main {
   cursor: pointer;
 }
 
-.arrow {
+#prev, #next {
   font-size: 1rem;
   color: #ffffff;
   opacity: .75;
@@ -604,15 +604,16 @@ main {
   z-index: 50;
 }
 
-.arrow:hover {
+#prev:hover,
+#next:hover {
   opacity: 1;
 }
 
-.prev {
+#prev {
   left: 20%;
 }
 
-.next {
+#next {
   right: 20%;
 }
 /* ---------------------------------------------------------------------
