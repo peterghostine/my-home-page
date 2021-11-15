@@ -5,9 +5,9 @@ color: #6d92c7; That's the blue used throughout the site (logo, etc).
 */
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   border-collapse: collapse;
 }
 
@@ -133,6 +133,7 @@ header * {
 }
 
 .logo {
+  height: 100%;
   display: flex;
   align-items: center;
   width: 250px;
