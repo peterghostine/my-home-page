@@ -118,7 +118,6 @@ form.addEventListener("submit", handleSubmit);
 
 // The code below shows the project description on the Portfolio page when "?" is clicked.
 function showDescription(e) {
-
   var target = e.target;
   if (target.classList[1] === 'fa-question-circle') {
     var description = modal.getElementsByClassName("modal-content")[0];
@@ -134,10 +133,18 @@ const modal = document.getElementById("modal-container");
 const slides = document.getElementById("slides");
 slides.addEventListener('click', showDescription, false);
 
-// Get the <span> element that closes the modal.
-var close = document.getElementById("close");
+/* jQuery alternative
+$modal = $('#modal-container');
+$slides = $('#slides');
+$slides.on('click', showDescription(e));
+*/
 
+// Get the <span> element that closes the modal.
+//close = document.getElementById("close");
 // When the user clicks on <span> (x), close the modal.
-close.onclick = function () {
-  modal.style.display = "none";
-};
+//close.onclick = function () {
+//  modal.style.display = "none";
+//};
+// jQuery alternative
+$close = $('#close');
+$close.on('click', () => modal.style.display = 'none');
