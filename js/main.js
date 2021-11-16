@@ -1,19 +1,21 @@
 // Menu behavior
-$(document).ready(function () {
+$(function () {
   $(document).on('click', function (event) {
-    if ($("header > nav > ul").is(":visible") && ($(".menu-toggle").is(":visible"))) {
+    $topLevelUL = $("header > nav > ul");
+    if ($topLevelUL.is(":visible") && ($(".menu-toggle").is(":visible"))) {
       if (!$(event.target).closest("header > nav > ul").length) {
         $("header > nav > ul > li > ul").slideUp();
-        $("header > nav > ul").toggleClass("showing");
+        $topLevelUL.toggleClass("showing");
       };
     } else if (($(event.target).closest(".menu-toggle").length)) {
-      $("header > nav > ul").toggleClass("showing");
+        $topLevelUL.toggleClass("showing");
     };
   });
-  $("header>nav > ul > li").click(function () {
+  $topLevelUL_LI = $("header > nav > ul > li");
+  $topLevelUL_LI.click(function () {
     $("header > nav > ul > li:hover > ul").slideToggle();
   });
-  $("header > nav > ul > li").mouseleave(function () {
+  $topLevelUL_LI.mouseleave(function () {
     if ($(".menu-toggle").is(":hidden")) {
       $("header > nav > ul > li > ul").slideUp();
     };
