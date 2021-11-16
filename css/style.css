@@ -497,7 +497,7 @@ main {
 
 #portfolio .card blockquote {
   margin: auto;
-  padding: 2vw;
+  padding: 2rem 2vw;
   text-align: center;
 }
 

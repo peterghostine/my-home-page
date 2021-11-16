@@ -245,14 +245,15 @@
     .next {
       display: none;
       overflow: hidden;
+      bottom: 45%;
     }
   
     .prev {
-      left: 10vw;
+      left: 4vw;
     }
   
     .next {
-      right: 10vw;
+      right: 4vw;
     }
   
     .copyright {
