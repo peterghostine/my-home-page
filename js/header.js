@@ -1,5 +1,5 @@
 //Header contents
-let header = document.querySelector("header");
+var header = document.querySelector("header");
 header.innerHTML = `
 <div class="logo">
   <img src="images/logo-large.png" alt="Ghostine Technology Group">

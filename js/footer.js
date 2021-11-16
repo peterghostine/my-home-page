@@ -1,5 +1,5 @@
 //Header contents
-let footer = document.querySelector("footer");
+var footer = document.querySelector("footer");
 footer.innerHTML = `
 <!-- ABOUT SECTION -->
 <div id="about" class="footer-section">

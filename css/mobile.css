@@ -136,6 +136,10 @@
     top: 50px;
   }
 
+  .card blockquote {
+    margin-left: 0;
+  }
+
   #experience .card figure {
     display: none;
   }
@@ -237,9 +241,18 @@
     padding-bottom: 0;
   }
 
-  #prev, #next {
+  .prev, 
+  .next {
     display: none;
     overflow: hidden;
+  }
+
+  .prev {
+    left: 10vw;
+  }
+  
+  .next {
+    right: 10vw; 
   }
 
   .copyright {

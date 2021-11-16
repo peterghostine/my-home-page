@@ -407,7 +407,7 @@ main {
 
 .card blockquote {
   font-style: italic;
-  margin-left: 2rem;
+  margin-left: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -598,7 +598,8 @@ main {
   cursor: pointer;
 }
 
-#prev, #next {
+.prev, 
+.next {
   font-size: 1rem;
   color: #ffffff;
   opacity: .75;
@@ -607,17 +608,17 @@ main {
   z-index: 50;
 }
 
-#prev:hover,
-#next:hover {
+.prev:hover,
+.next:hover {
   opacity: 1;
 }
 
-#prev {
-  left: 20%;
+.prev {
+  left: 30%;
 }
 
-#next {
-  right: 20%;
+.next {
+  right: 30%;
 }
 /* ---------------------------------------------------------------------
    ---------------------------------------------------------------------
