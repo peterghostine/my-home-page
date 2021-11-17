@@ -117,7 +117,9 @@ async function handleSubmit(event) {
 form.addEventListener("submit", handleSubmit);
 
 /*
-// The code below shows the project description on the Portfolio page when "?" is clicked.
+The code below shows the project description on the Portfolio page when "?" is clicked.
+It's been commented out in favor of jQuery altrnative below.
+
 function showDescription(e) {
   var target = e.target;
   if (target.classList[1] === 'fa-question-circle') {
@@ -144,29 +146,17 @@ close = document.getElementById("close");
 };
 */
 
-// jQuery alternative.
-function showDescription(e) {
-  var target = e.target;
-  if ($(target).class === 'fa-question-circle') {
-    var description = $modal.getElementsById("modal-content");
-    description.innerHTML = target.parentNode.getElementsById("description").innerHTML;
-    modal.style.display = "flex";
-    modal.style.justifyContent = "center";
-    modal.style.alignContent = "center";
-  };
-};
-
 /* jQuery alternative. */
-$modal = $('.modal-container');
-$description = $('.modal-container > p')
+$modal = $('#modal-container');
+$content = $('#modal-container > p')
 $slides = $('#slides');
 $slides.on(
   'click',
-  '.fa-question-circle',
-   () => window.alert("1")
- );
+  '.fa-question-circle', function() {
+    $content.html($($(this).parent().children('p').first()).html());
+    $modal.css('display', 'flex');
+  });
 
-// jQuery alternative
 $close = $('#close');
-$close.on('click', () => modal.style.display = 'none');
+$close.on('click', () => $modal.css('display', 'none'));
 
