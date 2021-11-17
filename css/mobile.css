@@ -213,6 +213,12 @@
       align-items: center;
       text-align: center;
     }
+
+    .description li,
+    .description p {
+      font-size: 0.9rem;
+      text-align: left;
+    }
   
     #home .card {
       padding-right: 0;
@@ -223,6 +229,12 @@
       padding: 0;
     }
   
+    #competencies .card-info p,
+    #competencies blockquote {
+      font-size: 0.9rem;
+      text-align: left;
+    }
+
     #home .card-image,
     #competencies .card-image,
     #portfolio .card-image {
