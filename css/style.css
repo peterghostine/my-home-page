@@ -222,7 +222,7 @@ main {
 /* ---------------------------------------------------------------------
    MODAL ---------------------------------------------------------------
    --------------------------------------------------------------------- */
-.modal {
+#modal-container {
   background-color: #3d3d3de6;
   padding: 2rem;
   width: 70%;
@@ -235,7 +235,7 @@ main {
   border-radius: 5px;
 }
 
-.modal p {
+#modal-container p {
   color: #fff;
   margin: auto;
 }
@@ -453,16 +453,12 @@ main {
   padding-bottom: 1rem;
 }
 
-#portfolio .card p {
-  padding: 1rem 2rem 1rem 0.5rem;
-}
-
 #experience .card figure {
   margin-right: 1rem;
 }
 
 #portfolio .card {
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

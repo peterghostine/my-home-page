@@ -139,16 +139,24 @@
     .card blockquote {
       margin-left: 0;
     }
-  
+
     #experience .card figure {
       display: none;
     }
-  
+
+    #experience .card-info {
+      padding: 0;
+    }
+
     .reviews {
       padding-left: 10vw;
       padding-right: 10vw;
     }
   
+    .reviews .card {
+      padding: 0.5rem;
+    }
+
     footer {
       margin-top: 50px;
       width: 100%;
@@ -214,12 +222,26 @@
       text-align: center;
     }
 
-    .description li,
-    .description p {
+    #competencies .card p,
+    #competencies .card blockquote,
+    #resources .card ul,
+    .description p,
+    .description ul {
       font-size: 0.9rem;
       text-align: left;
     }
+
+    #experience .card .title {
+      font-size: 1.3rem;
+    }
+
   
+    #experience .card .company,
+    #experience .card .location,
+    #experience .card .date {
+      font-size: 0.9rem;
+    }
+
     #home .card {
       padding-right: 0;
     }
@@ -229,10 +251,8 @@
       padding: 0;
     }
   
-    #competencies .card-info p,
-    #competencies blockquote {
-      font-size: 0.9rem;
-      text-align: left;
+    #home .card p {
+      padding-left: 0;
     }
 
     #home .card-image,
@@ -247,7 +267,7 @@
       border-top-right-radius: 5px;
     }
   
-    #portfolio .card-info p {
+    #portfolio .card p {
       padding-left: 0;
       padding-right: 0;
       padding-bottom: 0;
@@ -281,4 +301,3 @@
       font-size: 0.7rem;
     }
   }
-  

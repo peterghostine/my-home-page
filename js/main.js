@@ -12,10 +12,10 @@ $(function () {
     };
   });
   $topLevelUL_LI = $("header > nav > ul > li");
-  $topLevelUL_LI.click(function () {
+  $topLevelUL_LI.on('click', function () {
     $("header > nav > ul > li:hover > ul").slideToggle();
   });
-  $topLevelUL_LI.mouseleave(function () {
+  $topLevelUL_LI.on('mouseleave', function () {
     if ($(".menu-toggle").is(":hidden")) {
       $("header > nav > ul > li > ul").slideUp();
     };
@@ -23,7 +23,7 @@ $(function () {
 });
 
 // Carousel
-$('.slides').slick({
+$('#slides').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: false,
@@ -116,6 +116,7 @@ async function handleSubmit(event) {
 };
 form.addEventListener("submit", handleSubmit);
 
+/*
 // The code below shows the project description on the Portfolio page when "?" is clicked.
 function showDescription(e) {
   var target = e.target;
@@ -132,19 +133,40 @@ function showDescription(e) {
 const modal = document.getElementById("modal-container");
 const slides = document.getElementById("slides");
 slides.addEventListener('click', showDescription, false);
-
-/* jQuery alternative
-$modal = $('#modal-container');
-$slides = $('#slides');
-$slides.on('click', showDescription(e));
 */
 
+/*
 // Get the <span> element that closes the modal.
-//close = document.getElementById("close");
 // When the user clicks on <span> (x), close the modal.
-//close.onclick = function () {
-//  modal.style.display = "none";
-//};
+close = document.getElementById("close");
+  close.onclick = function () {
+  modal.style.display = "none";
+};
+*/
+
+// jQuery alternative.
+function showDescription(e) {
+  var target = e.target;
+  if ($(target).class === 'fa-question-circle') {
+    var description = $modal.getElementsById("modal-content");
+    description.innerHTML = target.parentNode.getElementsById("description").innerHTML;
+    modal.style.display = "flex";
+    modal.style.justifyContent = "center";
+    modal.style.alignContent = "center";
+  };
+};
+
+/* jQuery alternative. */
+$modal = $('.modal-container');
+$description = $('.modal-container > p')
+$slides = $('#slides');
+$slides.on(
+  'click',
+  '.fa-question-circle',
+   () => window.alert("1")
+ );
+
 // jQuery alternative
 $close = $('#close');
 $close.on('click', () => modal.style.display = 'none');
+
