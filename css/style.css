@@ -393,7 +393,7 @@ main {
   text-decoration: underline;
 }
 
-.card h3 {
+.card-title {
   font-size: 1.5rem;
 }
 
@@ -425,17 +425,17 @@ main {
   margin-left: 0.5rem;
 }
 
-#home .card h3,
-#portfolio .card h3 {
+#home .card-title,
+#portfolio .card-title {
   padding: 0.5rem 0 0.25rem 0;
 }
 
-#resources .card h3 {
+#resources .card-title {
   padding-bottom: 1rem;
 }
 
-#resources .card h3,
-#competencies .card h3 {
+#resources .card-title,
+#competencies .card-title {
   margin-top: -215px;
   padding-top: 215px;
 }
