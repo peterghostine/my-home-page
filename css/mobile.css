@@ -215,10 +215,10 @@
     .card-info {
       width: 100%;
       padding: 1rem;
-      display: flex;
+      /* display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
-      align-items: center;
+      align-items: center; */
       text-align: center;
     }
 
@@ -245,6 +245,10 @@
     #home .card {
       padding-right: 0;
     }
+
+    #competencies .card {
+      padding: 0;
+    }
   
     #home .card h3,
     #portfolio .card h3 {
@@ -256,15 +260,15 @@
     }
 
     #home .card-image,
-    #competencies .card-image,
-    #portfolio .card-image {
+    #competencies .card-image {
       max-width: 100%;
       padding-right: 0;
     }
   
     #home .card-image,
-    #portfolio .card-image {
+    #competencies .card-image {
       border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
     }
   
     #portfolio .card p {

@@ -369,10 +369,7 @@ main {
 }
 
 #experience .card,
-#competencies .card {
-  padding: 1rem;
-}
-
+#competencies .card,
 #resources .card {
   padding: 1rem;
 }
@@ -381,8 +378,7 @@ main {
   max-width: 180px;
 }
 
-#home .card-image,
-#portfolio .card-image {
+#home .card-image {
   padding-right: 0.5rem;
   border-top-left-radius: 5px;
   float: left;
@@ -390,7 +386,7 @@ main {
 
 #competencies .card-image {
   padding-right: 0.5rem;
-  float: none;
+  display: block;
 }
 
 .card p a {
