@@ -657,6 +657,7 @@ main {
 
 .content-list a {
   color: #ffffffb0;
+  background: #000000;
   margin: 0.2rem;
   padding: 0.3rem;
   display: block;
