@@ -12,13 +12,13 @@ footer.innerHTML = `
   <div class="contact-info">
     <div class="phone">
       <a href="tel:7036295470" target=_blank>
-        <span class="fas fa-phone"></span>
+        <i class="fas fa-phone" aria-hidden="true"></i>
         <span>703-629-5470</span>
       </a>
     </div>
     <div class="email">
       <a href="mailto:peterghostine@gmail.com" target=_blank>
-        <span class="fas fa-envelope"></span>
+        <i class="fas fa-envelope" aria-hidden="true"></i>
         <span>peterghostine@gmail.com</span>
       </a>
     </div>
