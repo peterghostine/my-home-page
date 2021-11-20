@@ -6,8 +6,8 @@ footer.innerHTML = `
   <h2 class="footer-section-title">ABOUT</h2>
   <p>My name is Peter Ghostine. I'm an avid technologist with a broad software development and IT experience
     spanning three decades.</p>
-  <div class="learn-more">
-    <a href="about.html">More about me...</a>
+  <div class="btn">
+    <a href="about.html">About me &raquo;</a>
   </div>
   <div class="contact-info">
     <div class="phone">
@@ -25,13 +25,13 @@ footer.innerHTML = `
   </div>
   <div class="socials">
     <a href="https://www.facebook.com/peterghostine/" target=_blank>
-      <span class="fab fa-facebook"></span>
+      <i class="fab fa-facebook" aria-hidden="true"></i>
     </a>
     <a href="https://twitter.com/PeterGhostine" target=_blank>
-      <span class="fab fa-twitter"></span>
+      <i class="fab fa-twitter" aria-hidden="true"></i>
     </a>
     <a href="https://www.linkedin.com/in/peterghostine/" target=_blank>
-      <span class="fab fa-linkedin"></span>
+      <i class="fab fa-linkedin" aria-hidden="true"></i>
     </a>
   </div>
 </div>
@@ -44,6 +44,9 @@ footer.innerHTML = `
     </li>
     <li>
       <a href="services.html">Services</a>
+    </li>
+    <li>
+      <a href="portfolio.html">Portfolio</a>
     </li>
     <li>
       <a class="menu-wide" href="./resources.html">Resources</a>

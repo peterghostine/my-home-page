@@ -48,12 +48,17 @@ button {
   padding: 0.25rem;
 }
 
-.learn-more a {
-  font-size: 0.8rem;
+.btn a {
+  font-size: 0.9rem;
   color: #6d92c7;
-  padding: 0.1rem;
-  border: 1px solid;
+  padding: 0.2rem;
+  border: 1px solid #6d92c7;
   border-radius: 5px;
+}
+
+.btn a:hover {
+  color: #83aeeb;
+  border: 1px solid #83aeeb;
 }
 
 /* ---------------------------------------------------------------------
@@ -420,7 +425,7 @@ main {
   text-decoration: underline;
 }
 
-.card .learn-more {
+.card .btn {
   margin-top: 1rem;
   margin-left: 0.5rem;
 }
@@ -772,7 +777,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.socials span {
+.socials i {
   background: #6d92c7;
   padding: 0.3rem;
   margin: 0.25rem;
@@ -780,12 +785,12 @@ footer {
   border-radius: 50%;
 }
 
-.socials:hover span {
+.socials:hover i {
   color: #fff;
 }
 
-.socials span:hover {
-  background: #3c69a8;
+.socials i:hover {
+  background: #83aeeb;
 }
 
 #links ul {
@@ -840,7 +845,7 @@ footer {
 }
 
 #contact-form button:hover {
-  background: #3c69a8;
+  background: #83aeeb;
 }
 
 #status {
