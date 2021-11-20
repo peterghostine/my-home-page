@@ -73,5 +73,5 @@ footer.innerHTML = `
   <div id="status"></div>
 </div>
 <div class="footer-section copyright">
-  <p>Copyright &copy 2021, Ghostine Technology Group, LLC. ALL RIGHTS RESERVED.</p>
+  <p>Copyright &copy 2021, Ghostine Inspired Tech, LLC. ALL RIGHTS RESERVED.</p>
 </div>`;
