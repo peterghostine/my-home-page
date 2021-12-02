@@ -41,7 +41,8 @@
   
   header nav ul {
   }
-  
+ 
+/*
   main {
     display: grid;
     grid-template-columns: 1fr;
@@ -59,48 +60,47 @@
       "disney"
       "rewards";
   }
-  
+*/
+.section--grey {
+  background: #f4f6f8;
+  border-top: 1px solid #c0cad5;
+  border-bottom: 1px solid #c0cad5;
+}
+
   #find {
-    grid-area: find;
+    height: 511px;
     color: white;
     background: url(https://images.ctfassets.net/sdx4pteldsvw/1BCUgM5lfV6ytyUnL6az80/dbf567487cd96d1c0019ef67bb9b91db/winding-road-with-fall-foliage.jpg);
     background-size: cover;
   }
   
   #find-your-trip {
-    grid-area: find-your-trip;
     background: #f4f6f8;
   }
   
   #recent-searches {
-    grid-area: recent-searches;
     background: #f4f6f8;
   }
   
   #pricebreakers {
-    grid-area: pricebreakers;
     background: #fff;
   }
   
   #help-24-7 {
-    grid-area: help-24-7;
     background: #f4f6f8;
     border-top: 1px solid #c0cad5;
     border-bottom: 1px solid #c0cad5;
   }
   
   #signup-save {
-    grid-area: signup-save;
     background: #f4f6f8;
   }
   
   #hotel-flight-deals {
-    grid-area: hotel-flight-deals;
     background: #fff;
   }
   
   #savings {
-    grid-area: savings;
     background: #f4f6f8;
     border-top: 2px solid #c0cad5;
     border-bottom: 2px solid #c0cad5;
@@ -111,18 +111,24 @@
   }
   
   #cities {
-    grid-area: city-deals;
-    padding: 0 2vw;
     margin: auto;
-    border: 1px solid red;
+    padding: 4rem 2vw;
   }
   
+  #cities-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   #cities #title {
+    margin-bottom: 2rem;
     font-size: 1.7rem;
     background: #fff;
   }
   
   #cities-grid {
+    width: fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -136,8 +142,6 @@
   }
   
   .city-img {
-    width: 100%;
-    height: 100%;
     display: block;
   }
 
@@ -186,18 +190,14 @@
   /* ------------------------------------------------ */
   #savings,
   #disney {
-    background: #f4f6f8;
-    border-top: 1px solid #c0cad5;
-    border-bottom: 1px solid #c0cad5;
     display: flex;
     align-items: center;
   }
 
-  #savings-wrapper,
-  #disney-wrapper {
-    grid-area: disney;
+  #savings-content,
+  #disney-content {
     margin: auto;
-    padding: 0 2vw;
+    padding: 2rem 2vw;
     max-width: 1280px;
     display: flex;
     justify-content: space-between;
@@ -290,7 +290,6 @@
   /* ------------------------------------------------ */
   /* ------------------------------------------------ */
   #rewards {
-    grid-area: rewards;
     padding: 4rem 2vw;
     background: #fff;
     border-bottom: 1px solid #c0cad5;
